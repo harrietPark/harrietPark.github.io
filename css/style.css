@@ -267,6 +267,7 @@ a.tab-profile.active i{
 #portfolio-list{
     width: 820px;
     overflow: hidden;
+    padding-left: 100px;
 }
 
 #portfolio-list li{
