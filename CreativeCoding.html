@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    zs
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/css/CreativeCoding.css">
+</head>
+<body>
+ 
+ <span class="goback">
+     <button class="gobackbtn">
+        <a href="/index.html"><i class="fa-solid fa-circle-left"></i></a>
+     </button>
+ </span>
+ 
+<section id="vrplanet">
+    <div class="title">
+        <br><br><h2>Color of Nature : Creative Coding</h2>
+    </div>
+
+   <div class="hastag">
+       <span class="firsttext">
+           C++
+       </span>
+      <span class="secondtext">
+          Openframeworks
+       </span>
+       <span class="thridtext">
+           Projection Mapping
+       </span>
+
+   </div>
+   
+   <br><br><br>
+    <div class="video-container">
+      
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/P2F7lA1GdzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+   <div class="videotext">
+       Walkthrough Video
+   </div>
+   
+   <div class="concept">
+       <br><p>
+           
+       <br><b>Color of Nature</b> was an individual coursework for the Workshops in Creative Coding1 module. It  is a projection mapping piece focused on exploring the colours of nature. I got inspired by a Korean traditional pattern called Dancheong, and its colours which is usually a combination of colours of nature. This project consists of five scenes in total, which starts by opening a door and ends with closing a door. Also, created some Korean traditional patterns using traditional colours.<br><br>
+       </p>
+   </div>
+    <div class="headingText">
+        <p>Concept and Backtround Research</p>
+    </div>
+    <div class="img1">
+        <img src="/img/cc1.png" alt="">
+    </div>
+    <div>
+        <p>
+           Dancheong is a form of decorative art applied to Korean architecture, usually can see as a painting on the woodwork in traditional buildings. It means 'red and green' but metaphorically alludes to the colour combina- tion of a tree or forest. Dancheong paintings borrow colours and patterns from nature and use them to create systemized and sophisticated artwork. Along with that, I derived my main colour pallet from the Korean traditional colour spectrum called Obangsaek, which is a colour scheme of the five Korean traditional colours of white, black, blue, yellow, and red. It's mostly used in traditional arts and traditional textile patterns. <br><br>
+        </p>
+    </div>
+        <div class="headingText">
+        <p>Technical Implementation</p>
+    </div>
+    <div class="partText">
+        <p>1. Door</p>
+    </div>
+    <div class="img1">
+        <img src="/img/cc2.png" alt="">
+    </div>
+    <div>
+        <p>
+           <br>The first part "Opening the door" opens the door as the scene starts. I made two doors for both on left and right. The pattern of the door was inspired by a Korean traditional wave pattern. Technically, I used two nested for-loops, which differentiates by odd and even numbers. As time passes a black coloured rectangle gradually scales up and covers the whole shape, to make an animation of opening the door. This correlates with the last scene "Closing the door", which have the same door shape, but the black coloured rectangle gradually shrinks as if it's closing the door. <br><br>
+        </p>
+    </div>
+    
+    <div class="partText">
+        <p>2. Obangsaek</p>
+    </div>
+    <div class="img1">
+        <img src="/img/cc4.png" alt="">
+    </div>
+    <div>
+        <p>
+           <br>The second part, "Obangsaek" is a generative coloured pattern. Terming, Obangsaek is a colour scheme of the five Korean traditional colours of white, black, blue, yellow, and red. I tried to make the main colour pallet out of these colours. <br><br>
+        </p>
+    </div>
+    
+    <div class="partText">
+        <p>3. The Dancheong pattern</p>
+    </div>
+    <div class="img1">
+        <img src="/img/cc3.png" alt="">
+    </div>
+    <div>
+        <p>
+           <br>In Part3, the "Dancheong pattern" is a combination of grid and generative shape. It was challeng- ing for me to make a flower shape, but week4's Mandala Shapes helped me to implement the pattern. Basic trigonometry has been used to generate a shape. I made two different flower shape creating functions, which the first one having two different vertexes, and another one having three different vertexes, which results in a different flower shape. Every flower rotates and scales as time pass. The flower shape consists of three different colours and featured flowers. The flower shape at the back rotates at a different angle with the other two flower shapes at the front. Also, the background's grid patterns are made using for-nested loops, which references week4's Magnetic grid. For the flowers at each corner, I used ofPath to draw an oval shape for the flower's leaves. <br><br>
+        </p>
+    </div>
+    
+    <div class="partText">
+        <p>4. Colourful Wave</p>
+    </div>
+    <div class="img1">
+        <img src="/img/cc5.png" alt="">
+    </div>
+    <div>
+        <p>
+           <br>This scene consists of four waves, and each wave has an outline. It references week 5's Noisy Waves code. To outline, I made every parameter of the two waves the same except for the y and shapeDepth value. Then used a colour lerp function to change between two colours gradually. The periodical cosine wave is used to change the colour effect <br><br>
+        </p>
+    </div>
+
+
+            <br><br><br>
+            <footer>
+                <div class="copyright">Copyright &copy; 2022 Seonjeong Park</div>
+            </footer>
+</section>
+   <br><br><br>
+
+   
+     
+</body>
+
+
+</html>

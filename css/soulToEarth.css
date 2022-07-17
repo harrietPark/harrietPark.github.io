@@ -1,0 +1,156 @@
+body{
+    //background-image: url(..//img/bg.png);
+}
+
+
+span.goback{
+    position: absolute;
+    left: 20px;
+    color: white;
+    padding: 2px 9px;
+    font-size: 22px;
+    
+    cursor: pointer;
+    top: 10px;
+    border-radius: 70px;
+}
+.gobackbtn{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    line-height: 15px;
+    border: none;
+    box-shadow: 0 0 0 0 rgb(101,100,100);
+    background-color: #ffc72f;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#vrplanet{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.title{
+    text-align:left;
+}
+.hastag{
+    padding-top:10px;
+}
+span.firsttext{
+    position: relative;
+   right: 0px;
+    padding: 2px 9px;
+    border-radius: 70px;
+    width: 35px;
+    height: 35px;
+    line-height: 15px;
+    border: none;
+    box-shadow: 0 0 0 0 rgb(101,100,100);
+    background-color: #ffc72f;
+    color: white;
+    font-size: 18px
+}
+span.secondtext{
+   position: relative;
+    right: -10px;
+    padding: 2px 9px;
+    border-radius: 70px;
+    width: 35px;
+    height: 35px;
+    line-height: 15px;
+    border: none;
+    box-shadow: 0 0 0 0 rgb(101,100,100);
+    background-color: #ffc72f;
+    color: white;
+    font-size: 18px
+}
+span.thridtext{
+    position: relative;
+   right: -20px;
+    padding: 2px 9px;
+    border-radius: 70px;
+    width: 35px;
+    height: 35px;
+    line-height: 15px;
+    border: none;
+    box-shadow: 0 0 0 0 rgb(101,100,100);
+    background-color: #ffc72f;
+    color: white;
+    font-size: 18px
+}
+span.fourtext{
+   position: relative;
+   right: -30px;
+    padding: 2px 9px;
+    border-radius: 70px;
+    width: 35px;
+    height: 35px;
+    line-height: 15px;
+    border: none;
+    box-shadow: 0 0 0 0 rgb(101,100,100);
+    background-color: #ffc72f;
+    color: white;
+    font-size: 18px
+}
+
+span.fivetext{
+   position: relative;
+   right: -40px;
+    padding: 2px 9px;
+    border-radius: 70px;
+    width: 35px;
+    height: 35px;
+    line-height: 15px;
+    border: none;
+    box-shadow: 0 0 0 0 rgb(101,100,100);
+    background-color: #ffc72f;
+    color: white;
+    font-size: 18px
+}
+
+.videotext{
+    text-align: center;
+    font-style: italic;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+}
+.concept{
+
+}
+.techused{
+    font-weight: bold;
+    font-style: italic;
+}
+.whyvrimg{
+    text-align: center; 
+}
+
+.whyvrtext{
+    line-height: 160%;
+}
+
+.AIStateMachine{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.img2{
+    text-align: center;
+}
+
+.ProceduralGeneration{
+    font-size: 21px;
+    font-weight: bold;
+}
+.VoronoiTessellation{
+    font-size: 18px;
+    font-weight: bold;
+}
+.img3{
+    text-align: center;
+}

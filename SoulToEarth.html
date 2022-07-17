@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/soulToEarth.css">
+</head>
+<body>
+ 
+ <span class="goback">
+     <button class="gobackbtn">
+        <a href="/index.html"><i class="fa-solid fa-circle-left"></i></a>
+     </button>
+ </span>
+ 
+<section id="vrplanet">
+    <div class="title">
+        <br><br><h2>Soul to Earth</h2>
+    </div>
+
+   <div class="hastag">
+       <span class="firsttext">
+           C# 
+       </span>
+      <span class="secondtext">
+          Unity Engine 
+       </span>
+       <span class="thridtext">
+           AI
+       </span>
+       <span class="fourtext">
+           Simulation
+       </span>
+        <span class="fivetext">
+           Shader
+       </span>
+   </div>
+   
+   <br><br><br>
+    <div class="video-container">
+      
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/p3O880XoVkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+   <div class="videotext">
+       Walkthrough Video
+   </div>
+   
+   <div class="concept">
+       <br><p>
+           
+       <br><b>Soul to Earth</b> was individual coursework for the Advanced Programming for Games module.<br><br> This is a simulation game inspired by the Disney movie 'Soul' and 'Inside out'. The game begins in a place called sOUL land, a place where souls develop and gain emotions before being transported to a newborn child. Each soul needs to obtain a feeling of Joy, Anger, Sadness, Disgust, and Fear. When the soul gains all the emotions, they are qualified to travel to Earth.
+       </p>
+   </div>
+   <div class="techused">
+       <p>
+          Technology used : <br>- Procedural Generation using Voronoi Tesselation,<br>- Random Object Spawning,<br>- AI State Machine,<br>- Unity Shader Graph<br><br><br>
+       </p>
+   </div>
+   <div class="whyvrHeader">
+       <h3>UI Elements</h3><br>
+   </div>
+   <div class="whyvrimg">
+        <img src="/img/howto.png" alt="">
+   </div>
+   <div class="whyvrtext">
+       <p>
+           <br>A player can move around with the keyboard with <b>W, S, A, and D keys</b> and zoom in and out using a <b>mouse wheel</b>.<br><br>The Control panel consists of three elements. A reset button turns everything back to the first default settings and also changes the object spawn points and terrain shape. A home button allows you to go back to the menu scene.<br><br>Also, the player has the power to create a new soul, some trees, and emotion balls by clicking buttons in the control panel. They can spawn the objects in any location they want inside the map.<br><br>If the player wants to know the soul’s current state, they can just click the soul you want to know then the information updates on the 'Soul Details' panel. I made a custom red circle mouse indicator to help players know where they are selecting. <br><br>
+       </p>
+   </div>
+            
+   <div class="technique">
+       <h3>Techniques Used</h3><br>
+   </div>
+   <div class="AIStateMachine">
+       <p>1. AI State Machine</p>
+   </div>
+   <div class="img2">
+       <img src="img/img2.png" alt="">
+   </div>
+   <div class="AISttateMachineDetail">
+       <b>Simple Rules for Simulation</b><br>
+       <br>1. Souls can be in six different states: joy, anger, sadness, disgust, fear, default, and complete.
+       <br><br>2. When the game begins, they stay in the default state. Default is a state of nothing, just like a newborn baby. It doesn't aim or do anything. They just wander around the random locations on the map. 
+       <br><br>3. Souls can change their states in two ways: 
+    <br>- Eating the emotion balls 
+    <br>- Getting caught by the other state's soul<br>
+But this can vary according to which emotional state the soul is in. There are two exceptions: the joy state and the anger state. When the soul is in a joy state, whether they get caught by the other souls or eat emotion balls, they just stay in a joy state. Also, when the soul is in an angry state, the rest of the emotions except the joy, including fear, sadness, and disgust can't change its emotional state.
+        <br><br>4.  Souls can collect the emotion balls by eating the emotion balls on the map. But also when the soul gets caught by the other emotional state soul, they not only change their states but also obtain the emotion ball.  
+        <br><br>5. The joy state soul likes other souls. So they chase the other souls and try to make them be in joy state too. When the soul is in a joy state whether they get caught by the other souls or eat other emotion balls, they stay in a joy state. It's the most powerful one.
+        <br><br>6. The anger state is the second most powerful one. It likes to attack other souls. When the anger state attacks, it takes all the emotion balls the other soul has, and only leaves the anger emotion ball left. But as said before, it doesn't work for the joy state soul since it's the powerful one.
+        <br><br>7. The emotion of disgust is contagious. So when the soul becomes a disgust-state, it replicates into two separate disgust-state souls. They don’t think about others, so they just wander random locations.
+        <br><br>8. When the soul becomes in a  fear state, they flee away from other souls. They are the fastest ones.  
+        <br><br>9. When the soul becomes in a sad state, they also flee away from other souls. But because they feel sad, they don't have the energy to hide from others, so they are the slowest. 
+        <br><br>10. The complete state means the soul has collected all the emotion balls(joy, anger, fear, sadness, and disgust). When the soul becomes a complete state, they fly to the earth. <br><br><br><br>
+
+   </div>
+    <div class="ProceduralGeneration">
+        <p>2. Procedural Generation</p>
+    </div>
+    <div class="VoronoiTessellation">
+        <p>2-1. Voronoi Tessellation </p>
+    </div>
+    <div class="img3">
+        <img src="img/hills.png" alt="">
+    </div>
+    <div class="VoronoiText">
+        <br>To make the movie Soul’s hills, I used Voronoi Tessellation. I took a random peak location on the map and lifted the surrounding area according to its height and how far away it is from the peak location. To do this, I calculated the distance between the peak location and the surrounding area. Then took the distance away from the actual height of the peak. Here, I used the Mathf. Pow function to make a nice curving hill.<br><br>
+    </div>
+    <div class="VoronoiTessellation">
+        <p>2-2. Random Object Spawning</p>
+    </div>
+    <div>
+        <p>
+            Since I have seven different types of objects to spawn (Tree, Joy ball, Anger ball, Sad ball, Fear ball, Disgust ball, and Soul), I needed to make them don’t overlap with each other when randomly spawning. I used the Raycast to check if there’s a collider on the spot I’m trying to spawn the object. If there’s no collider, spawn the object, and if there is, spawn at a different location. Then, I randomly spawned objects not only its position, but also in rotation, and scale value. When the game restarts, the shape of the Voronoi map and the spawned objects also randomly change. <br><br>
+        </p>
+    </div>
+    <div class="ProceduralGeneration">
+        <p>3.Shader Graph</p>
+    </div>
+    <div>
+        <p>
+            The thing I cared about most in terms of design aspects is to get a similar vibe to the movie 'Soul'. The soul character is made by me using Blender, trees were made with Unity ProBuilder. Shader was the key point in my game to get the movie 'Soul' vibe.  A total of seven shaders were used in this project.<br><br><b>Shaders Used</b> : <br>- Hill Shader <br>- Sky Shader<br>- Tree Shader <br>- Emotion Ball Shader<br>- Soul Shader<br>- Soul Complete State Shader<br>- Soul Dissolve Shader
+        </p>
+    </div>
+    <div class="img3">
+        <img src="img/img3.png" alt="">
+    </div>
+
+            
+
+            <br><br><br><br><br>
+            <footer>
+                <div class="copyright">Copyright &copy; 2022 Seonjeong Park</div>
+            </footer>
+</section>
+   <br><br><br>
+
+   
+     
+</body>
+
+
+</html>
