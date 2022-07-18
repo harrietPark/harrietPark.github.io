@@ -80,6 +80,7 @@ span.socials-text{
     cursor: pointer;
     top: 10px;
     border-radius: 70px;
+    text-align: center;
 }
 
 span.socials-linkedin{
@@ -91,6 +92,7 @@ span.socials-linkedin{
     cursor: pointer;
     top: 10px;
     border-radius: 70px;
+    text-align: center;
 }
 
 span.socials-github{
@@ -102,6 +104,7 @@ span.socials-github{
     cursor: pointer;
     top: 10px;
     border-radius: 70px;
+    text-align: center;
 }
 
 span.socials-itchio{
@@ -113,6 +116,7 @@ span.socials-itchio{
     cursor: pointer;
     top: 10px;
     border-radius: 70px;
+    text-align: center;
 }
 
 ul.socialicons{
