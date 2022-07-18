@@ -19,8 +19,7 @@ a, a:hover{
 }
 
 #profile{
-    //background : #687ea2;
-    background-image: url(../img/backgroundimg.png);
+    background : #6b929f;
     border-image: url(../img/header-shadow.png);
     background-position: center bottom;
     background-repeat: repeat-x;
@@ -133,7 +132,7 @@ ul.socialicons{
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 0 0 rgb(101,100,100);
-    background-color: #91effc;
+    background-color: #f8ff52;
     cursor: pointer;
     color: white;
     font-size: 20px;
@@ -147,7 +146,7 @@ ul.socialicons{
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 0 0 rgb(101,100,100);
-    background-color: #ee9ef8;
+    background-color: #ca9cf8;
     cursor: pointer;
     color: white;
     font-size: 20px;
@@ -184,10 +183,11 @@ ul.socialicons{
 
 .menu{
     height: 100px;
-    background-color: #9fa6cc;
+    background-color: #a1c5d3;
     position: relative;
     padding-left: 130px;
     padding-right: 130px;
+
 }
 
 .tabs{
