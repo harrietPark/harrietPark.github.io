@@ -85,7 +85,10 @@ span.socials-text{
 
 .social-icon-text {
     color: white;
-    text-align: center;
+/*    text-align: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icon-text2{
