@@ -28,6 +28,10 @@ span.goback{
     border-radius: 10px;
 }
 
+.social-icon{
+    color : white;
+}
+
 #vrplanet{
     padding-left: 200px;
     padding-right: 200px;

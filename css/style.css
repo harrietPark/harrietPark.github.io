@@ -83,6 +83,22 @@ span.socials-text{
     text-align: center;
 }
 
+.social-icon-text {
+    color: white
+}
+
+.social-icon-text2{
+    color: white
+}
+
+.social-icon-text3{
+    color: white
+}
+
+.social-icon-text4{
+    color: white
+}
+
 span.socials-linkedin{
     position: absolute;
     right: 45px;
@@ -128,6 +144,8 @@ ul.socialicons{
     left: -7px;
 }
 
+
+
 .pulse-button{
     position: relative;
     width: 35px;
@@ -136,7 +154,7 @@ ul.socialicons{
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 0 0 rgb(101,100,100);
-    background-color: #f8ff52;
+    background-color: #ffd137;
     cursor: pointer;
     color: white;
     font-size: 20px;
