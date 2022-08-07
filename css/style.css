@@ -84,19 +84,23 @@ span.socials-text{
 }
 
 .social-icon-text {
-    color: white
+    color: white;
+    text-align: center;
 }
 
 .social-icon-text2{
-    color: white
+    color: white;
+    text-align: center;
 }
 
 .social-icon-text3{
-    color: white
+    color: white;
+    text-align: center;
 }
 
 .social-icon-text4{
-    color: white
+    color: white;
+    text-align: center;
 }
 
 span.socials-linkedin{
