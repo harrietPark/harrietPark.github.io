@@ -291,14 +291,16 @@ a.tab-profile.active i{
 
 #cv{
     image-resolution: from-image;
-    image-resolution: 600dpi;
+    image-resolution: 300dpi;
     image-resolution: front-image 300dpi; 
     image-resolution: 300dpi snap;
 }
 .cvImages{
     width : 840px;
     height: 1300px;
-    margin-left: -20px;
+    margin-left: -15px;
+    max-width: 100%;
+    height: auto;
 }
 
 #portfolio{
