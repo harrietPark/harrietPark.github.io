@@ -12,10 +12,6 @@ function toggleSection(sectionId) {
     }
 }
 
-
-
-
-
 function filterProjects(category) {
     const allProjects = document.querySelectorAll('.grid-item');
     
