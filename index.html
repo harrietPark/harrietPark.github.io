@@ -2,305 +2,163 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seonjeong's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&family=Noto+Sans+KR&family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Patrick+Hand&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    
-    
-    
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- jQuery Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <header>
+        <div id="language-switcher" style="float: left;">
+            <a href="#" id="lang-en" onclick="switchLanguage('en')">English</a> | 
+            <a href="#" id="lang-ko" onclick="switchLanguage('ko')">한국어</a>
+        </div>
+        <nav style="float: right;">
+            <a href="index.html"><button class="nav-button bio">BIO</button></a>
+            <a href="playground.html"><button class="nav-button playground">PLAYGROUND</button></a>
+            <a href="projects.html"><button class="nav-button projects">PROJECTS</button></a>
+        </nav>
+    </header>
     
-    <section id="container">
-        <header>
-            <div id="logo">
-                <h2>SEONJEONG PARK</h2>
-                <h4>CREATIVE TECHNOLOGIST</h4>
-            </div>
-            
-            <div class="social-icons-container">
-                <span class="socials-text">
-                     <button class="pulse-button">
-                       <a href="https://www.instagram.com/norangi__/"><i class="fa-brands fa-instagram social-icon-text"></i></a>
-                    </button>
-                </span>
-                
-                <span class="socials-linkedin">
-                     <button class="linkedin-button">
-                       <a href="https://www.linkedin.com/in/seonjeongharrietpark/"><i class="fa-brands fa-linkedin-in social-icon-text"></i></a>
-                    </button>
-                </span>
-                    
-                <span class="socials-github">
-                     <button class="github-button">
-                       <a href="https://github.com/harrietPark"><i class="fa-brands fa-github social-icon-text"></i></a>
-                    </button>
-                </span>
-                
-                <span class="socials-itchio">
-                     <button class="itchio-button">
-                       <a href="https://29harriet.itch.io/"><i class="fa-brands fa-itch-io social-icon-text"></i></a>
-                    </button>
-                </span>
-                
-                <ul class="socialicons">
-                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
-                </ul>
-           
-            </div>
-        </header>
-        
-        <section id="content">
-            <div id="profile">
-                <div class="about">
-                    <div class="photo-inner">
-                        <ul>
-                            <li><img src="img/profilepics5.png" alt=""></li>
-                        </ul>
+    <!-- English Content -->
+    <div id="content-en">
+        <main>
+            <div class="content-wrapper">
+                <section id="intro">
+                    <h1 class="intro-heading">Hi, I'm Seonjeong! 👋</h1>
+                    <p class="intro-subheading">✍️ Writer → 🎥 Film Maker → 👀 Contents Marketer → 🎨 Illustrator → 👾 XR Developer + 💡 Prototyper + 🛠️ Creative Technologist + 📚 Researcher</p>
+                </section>
+                <section id="description">
+                    <p class="intro-description">Ever since I met Harry Potter in third-grade elementary school, I’ve been captivated by the world of immersive storytelling. My journey began with writing stories, editing videos, and drawing illustrations and cartoons. Now I am deeply involved in XR technology, where I blend my creativity with cutting-edge technology to create unique experiences.</p>
+                </section>
+                <section id="buttons">
+                    <div class="button-container">
+                        <div class="button-wrapper">
+                            <button class="nav-button" 
+                                    onclick="toggleSection('personal-en')" 
+                                    title="Click the button to reveal more about my life journey (only if you want)">
+                                A BIT MORE personal ABOUT ME...
+                            </button>
+                        </div>
+                        <div class="button-wrapper">
+                            <button class="nav-button" 
+                                    onclick="toggleSection('professional-en')" 
+                                    title="Click the button to reveal my CV">
+                                A BIT MORE professional ABOUT ME...
+                            </button>
+                        </div>
                     </div>
-                    <h1>Hi, I'm Seonjeong</h1>
-                    <h3>I'm a Creative Technologist</h3>
-                    <br>
+                </section>
+                
+                <section id="personal-en" class="content-section" style="display: none;">
                     <p>
-                        Since I met Harry Potter in third grade elementary school, I was into immersive storytelling. I write stories, edit videos, draw illustrations and cartoons, and now I'm into AR&VR. This September I'll be graduating with MSc Vritual and Augmented Reality at Goldsmiths University of London. I gained hands-on experience in developing XR projects, as well as gaining an understanding of the latest features in both AR&VR. I use C#, C++, Unity and Unreal Engine to create XR experiences. Creativity has always been my passion :D <br><br>
-    
-                        <h>
-        
-                  </h>
+                        My twenties have been full of exploration. As soon as I became a university student, free from the traditional path, my goal was to explore a lot, make mistakes, and experience everything I could!<br><br>
                         
+                        I changed my major once, from Creative Writing to Chinese Literature and Language. I also double-majored, initially in Real Estate, and later switched to Game Interactive & Media. And later, as a post-graduate, I pursued an MSc in VR/AR.<br><br>
+                        
+                        During my first winter vacation at university, I grabbed a big backpack, about 600 pounds, and went backpacking in Southeast Asia with a friend. We travelled for a month through Thailand, Cambodia, Vietnam, and Laos. This sparked my love for exploring the world. I spent over six months in Australia on a working holiday, picking strawberries and working in a bread factory – an experience I hope to turn into content someday! I also studied in Taiwan, where I began to draw. If it weren't for the cockroaches, I'd love to live there forever; it's one of my favourite countries. I taught English in Cebu, Philippines, which taught me that teaching wasn't my thing. I've backpacked through many European countries and Japan, fueling my passion for travel.<br><br>
+                        
+                        Besides travelling, I've explored myself through various part-time jobs. Have you heard of a clapping and laughing part-time job for TV shows? I did multiple of those, participated as an extra actor, worked in a Korean fried chicken shop, TGI Fridays, assisted with auto-scripting for TV show writers, content marketing, video editing jobs, and more.<br><br>
+                        
+                        In 2020, I planned to travel the world, but the pandemic kept me in Korea. That's when I started my career as a content marketer, ironically at a travel agency. While I enjoyed the job, I couldn’t resist my passion for XR, which led me to the UK to study. Now, I work as an XR developer.<br><br>
+                        
+                        I still love to explore, experience new things, and present them through content using my technical skills. The world is full of inspiration, and I strive to create a spoonful of magic within it.
                     </p>
-                </div>
+                </section>
+                
+                <section id="professional-en" class="content-section" style="display: none;">
+                    <iframe src="files/SeonjeongPark_CV.pdf" width="100%" height="600px"></iframe>
+                </section>
                 
             </div>
-            
-            <nav class="menu">
-                <ul class="tabs">
-                   
-                    <li class="tmenu">
-                       <a href="#profile" class="tab-profile active">
-                        <i><i class="fa-solid fa-user"></i></i>
-                        PROFILE
-                        </a>
-                    </li>
-                        
-                    <li class="tmenu">
-                        <a href="#cv">
-                        <i><i class="fa-solid fa-file"></i></i>
-                        CV
-                        </a>
-                    </li>
-                        
-                    <li class="tmenu">
-                        <a href="#portfolio">
-                        <i><i class="fa-solid fa-vr-cardboard"></i></i>
-                        PORTFOLIO
-                        </a>
-                    </li>
-                        
-                    <li class="tmenu">
-                        <a href="#contact">
-                        <i><i class="fa-solid fa-phone"></i></i>
-                        CONTACT
-                        </a>
-                    </li>
-                    
-                </ul>
-            </nav>
-            
-            <section id="cv">
-                <ul>
-                    <li><img src="img/sj.png" class = "cvImages" alt=""></li>
-                </ul>
-          
-           
+        </main>
+    </div>
+    
+    <!-- Korean Content -->
+<div id="content-ko" class="korean-style" style="display: none;">
+    <main>
+        <div class="content-wrapper">
+            <section id="intro">
+                <h1 class="intro-heading">상상을 현실로 바꾸는 XR 개발자, 박선정입니다👋</h1>
+                <p class="intro-subheading">✍️ 동화작가 → 🎥 영화 감독 → 👀 콘텐츠 마케터 → 🎨 일러스트레이터 → 👾 XR 개발자 + 💡 프로토타이퍼 + 🛠️ 크리에이티브 테크놀로지스트 + 📚 연구자</p>
             </section>
-            
-            <section id="portfolio">
-            
-                <ul class="cats-filter" id="portfolio-filter">
-                    <li><a href="" class="current transition" data-filter="*">ALL</a></li>
-                    
-                    <li><a href="" class="transition" data-filter=".vreality">VR</a></li>
-                    
-                    <li><a href="" class="transition" data-filter=".ar">AR</a></li>
-                    
-                
-                    <li><a href="" class="transition" data-filter=".game">Game</a></li>
-                    
-                    <li><a href="" class="transition" data-filter=".creativeCoding">CreativeCoding</a></li>
-                    
-                    <li><a href="" class="transition" data-filter=".illustration">Illustration</a></li>
-                </ul>
-                
-                     <ul id="portfolio-list">
-                           
-                               
-                            <li class="vreality">
-                                <a href="/vrplanet.html" class="folio">
-                                    <img src="img/vr1.gif" alt="">
-                                    <h2 class="title">vR Planet Creator </h2>
-                                    <span class="categorie">VR</span>
-                                </a>
-                            </li>
-                               
-                            <li class="vreality">
-                                <a href="/lucidDream.html" class="folio">
-                                    <img src="img/vr2.png" alt="">
-                                    <h2 class="title">Lucid Dream </h2>
-                                    <span class="categorie">VR</span>
-                                </a>
-                            </li> 
-                              
-                            <li class="vreality">
-                                <a href="/Presentation.html" class="folio">
-                                    <img src="img/vr3.jpg" alt="">
-                                    <h2 class="title">VR Presentation </h2>
-                                    <span class="categorie">VR</span>
-                                </a>
-                            </li>  
-            
-                            <li class="ar">
-                                <a href="/GuyFawkes.html" class="folio">
-                                    <img src="img/ar1.png" alt="">
-                                    <h2 class="title">Guy Fawkes AR Game </h2>
-                                    <span class="categorie">AR</span>
-                                </a>
-                            </li>
-                               
-                            <li class="ar">
-                                <a href="/Goblin.html" class="folio">
-                                    <img src="img/ar2.png" alt="">
-                                    <h2 class="title">The Goblin's Room </h2>
-                                    <span class="categorie">AR</span>
-                                </a>
-                            </li> 
-                              
-                            <li class="ar">
-                                <a href="/SparkAR.html" class="folio">
-                                    <img src="img/travel.jpg" alt="">
-                                    <h2 class="title">Spark AR </h2>
-                                    <span class="categorie">AR</span>
-                                </a>
-                            </li>                                
-                               
-                            <li class="game">
-                                <a href="/VirusAttack.html" class="folio">
-                                    <img src="img/game1.jpg" alt="">
-                                    <h2 class="title">Virus Attack</h2>
-                                    <span class="categorie">Game</span>
-                                </a>
-                            </li>    
-                              
-                            <li class="game">
-                                <a href="/SoulToEarth.html" class="folio">
-                                    <img src="img/game2.png" alt="">
-                                    <h2 class="title">Soul to Earth</h2>
-                                    <span class="categorie">Game</span>
-                                </a>
-                            </li>  
-                              
-                            <li class="game">
-                                <a href="/Cake.html" class="folio">
-                                    <img src="img/game3.jpg" alt="">
-                                    <h2 class="title">Who took my cake?</h2>
-                                    <span class="categorie">Game</span>
-                                </a>
-                            </li>                               
-                               
-                            <li class="creativeCoding">
-                                <a href="/CreativeCoding.html" class="folio">
-                                    <img src="img/creativecoding.png" alt="">
-                                    <h2 class="title">Colour of Nature</h2>
-                                    <span class="categorie">Creative Coding</span>
-                                </a>
-                            </li>                               
-                               
-                            <li class="illustration">
-                                <a href="/Illustration.html" class="folio">
-                                    <img src="img/illu1.png" alt="">
-                                    <h2 class="title">Travel Illustration</h2>
-                                    <span class="categorie">Illustration</span>
-                                </a>
-                            </li>                                                      
-                        </ul>
-                       
-
+            <section id="description">
+                <p class="intro-description">초등학교 3학년 때 처음 해리 포터 시리즈를 읽으며 동화작가라는 꿈을 키우게 되었습니다. 어린 나이이지만, 해리 포터를 통해 서양 문화를 자연스럽게 흡수하고 영어를 공부하는 제 모습을 보며 콘텐츠의 힘을 깨닫게 되었습니다. 현재 우리는 변화무쌍한 시대에 살고 있으며, 콘텐츠 제작자의 역할도 그에 맞춰 확장되고 있습니다. 저는 글쓰기, 그림, 만화, 영상 제작 등 다양한 콘텐츠 제작 경험을 쌓아왔습니다. 그러던 중 '미래의 스토리텔링은 어떻게 변화할까?'라는 질문을 던졌고, 그 해답으로 XR 기술에 주목하게 되었습니다. 단순히 일방향적으로 소비하는 것이 아니라, 스토리 안에서 직접 경험하고 상호작용하는 것이 인간의 본능이라고 생각했기 때문입니다. 그렇게 현재는 2년차 XR 개발자로서 다양한 XR 앱 개발 경험을 쌓았으며, AI 활용과 XR 내 공간적 상호작용에도 많은 관심을 가지고 있습니다.</p>
             </section>
-            
-            <section id="contact">
-                <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.6932655218!2d-0.3817808730108541!3d51.52830797450882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z65-w642Y!5e0!3m2!1sko!2suk!4v1657807983872!5m2!1sko!2suk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                
-                <div class="contact-info">
-                    <h3 class="main-heading"><span>Contact Info</span></h3>
-                    <ul>
-                        <li>London, United Kingdom</li>
-                        <br>
-                        <li>EMAIL : harrietsjpark@gmail.com</li>
-                    </ul>
-                </div>
-                
-                <div class="contact-form">
-                    <h3 class="main-heading"><span>Let's keep in touch</span></h3>
-                    <br><br>
-                    <div id="contact-status">
-                        <form action="" id="contactform">
-                            <div class="form-group">
-                                <input type="text" id="name" class="form-control">
-                                <label class="form-control-placeholder" for="name">Your Name</label>
-                            </div>                            
-                               
-                            <div class="form-group">
-                                <input type="text" id="email" class="form-control">
-                                <label class="form-control-placeholder" for="email">Your Email</label>
-                            </div>
-                            
-                            <label for="message">Your message</label>
-                            <textarea name="message" id="" cols="88" rows="7" class="textarea"></textarea>
-                            
-                            <input type="submit" name="submit" value="Send your message" class="button transition">
-                            <br><br><br><br>
-                            
-                        </form>
+            <section id="buttons">
+                <div class="button-container">
+                    <div class="button-wrapper">
+                        <button class="nav-button" 
+                                onclick="toggleSection('personal-ko')" 
+                                title="약간 TMI일수도 있는 사적인 이야기">
+                            인간 박선정을 더 알고 싶다면?
+                        </button>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="nav-button" 
+                                onclick="toggleSection('professional-ko')" 
+                                title="제 이력서를 보실 수 있습니다">
+                            개발자 박선정을 더 알고 싶다면?
+                        </button>
                     </div>
                 </div>
-                
             </section>
+            
+            <section id="personal-ko" class="content-section" style="display: none;">
+                <p>
+                    20살, 성인이 되자마자 다짐했던 것은 후회 없는 수많은 경험을 쌓는 것이었습니다. 중고등학교 시절, 공부를 해야 하는 이유를 잘 모르고 단지 지금까지의 노력이 아까워 열심히 공부하여 대학에 진학했지만, 20대는 오로지 제 선택으로 가득 채우고 싶었습니다. <br><br>
 
-        </section>
-        
-            <footer>
-                <div class="copyright">Copyright &copy; 2022 Seonjeong Park</div>
-            </footer>
-        
-    </section>
-    
+                    그렇게 스스로를 찾는 여정을 시작했습니다. 무엇을 좋아하고 싫어하는지, 어떤 일에 열정을 느끼는지 등 다양한 시도와 실패를 통해 저 자신을 알아갔습니다. 처음에는 문예창작학과에서 공부하다가 중국어문학으로 전과하고, 복수전공으로 도시계획 부동산학과를 잠깐 경험한 후 문화콘텐츠학과를 거쳐 게임 인터랙티브 미디어 학과를 졸업하게 되었습니다. 또한, 영국에서 Virtual & Augmented Reality 공학 석사를 취득했습니다.<br><br>
 
-    
-    
-    <script src= "https://code.jquery.com/jquery-3.6.0.js"></script>
-    
-    <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+                    대학교 1학년 첫 겨울방학에 친구와 함께 단 돈 100만원을 들고 한 달동안 동남아 배낭여행을 다녀온 경험이 인상 깊어, 이후로도 세계 곳곳을 탐험했습니다. 호주에서 딸기를 따고 빵공장에서 일해보는 등 (언젠간 애니메이션으로 만들어보고 싶은 경험 중 하나입니다) 다양한 경험을 쌓았으며, 대만으로 교환학생을 가 중국어를 공부하며 여유를 느끼고 그림 그리기라는 소중한 취미도 갖게 되었습니다. 코로나로 국경이 막히기 직전에는 필리핀 세부에서 영어 캠프 강사로 일하기도 했습니다.<br><br>
+
+                    여행 외에도 다양한 아르바이트를 통해 사회 경험을 쌓고 저를 알아갔습니다. 방송작가의 꿈을 꾸며 프리뷰 아르바이트, 방청객, 보조출연 등 여러 일을 경험했습니다. 마케팅, 영상 편집, TGI Fridays, 치킨집, 백반집 등 다양한 아르바이트를 통해 스스로를 발견했습니다.<br><br>
+
+                    2020년에는 세계여행을 떠나기 위해 자금을 마련하고자 콘텐츠 마케터로 인턴을 시작했지만, 코로나로 인해 여행이 중단되어 1년 넘게 그 회사에서 일하게 되었습니다. 그 과정에서 XR 분야에 대한 관심이 커져 영국으로 떠나 VR/AR 관련 석사를 취득한 후 현재는 2년 넘게 XR 개발자로 활동하고 있습니다. 저는 도전을 즐기고 실패를 두려워하지 않으며 새로운 것을 탐구하는 것을 좋아합니다. 기획, 디자인, 개발, 마케팅 등 다양한 분야에 관심을 가지고 있으며, 사용자 친화적인 앱 개발을 위해 노력하고 있습니다. 상상력을 현실로 구현할 수 있다는 점에 매료되어, 기술과 결합해 재미있고 혁신적인 경험을 창출하는 데 기대가 됩니다.<br><br>
+                </p>
+            </section>
+            
+            <section id="professional-ko" class="content-section" style="display: none;">
+                <iframe src="files/SeonjeongPark_CV.pdf" width="100%" height="600px"></iframe>
+            </section>
+            
+        </div>
+    </main>
+</div>
+
+
+<footer class="footer">
+    <span>seOn JeOng pArK</span>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://harrietpark.github.io/" style="margin-right: 10px;"><i class="fa-brands fa-github"></i></a>
+        <a href="https://29harriet.itch.io/" style="margin-right: 10px;"><i class="fa-brands fa-itch-io"></i></a>
+    </div>
+</footer>
+
+    <!-- Ensure this script tag is at the end of the body -->
+    <script type="text/javascript">
+
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                document.getElementById('content-en').style.display = 'block';
+                document.getElementById('content-ko').style.display = 'none';
+            } else if (lang === 'ko') {
+                document.getElementById('content-en').style.display = 'none';
+                document.getElementById('content-ko').style.display = 'block';
+            }
+        }
+    </script>
     
     <script src="js/main.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js"></script>
-    
-
-    
 </body>
 </html>

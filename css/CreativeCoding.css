@@ -1,142 +1,226 @@
-body{
-    //background-image: url(..//img/bg.png);
+/* Base Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
 
-
-span.goback{
-    position: absolute;
-    left: 20px;
-    color: white;
-    padding: 2px 9px;
-    font-size: 22px;
-    
-    cursor: pointer;
-    top: 10px;
-    border-radius: 70px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
-.gobackbtn{
-    position: relative;
-    width: 35px;
-    height: 35px;
-    line-height: 15px;
+
+#language-switcher {
+    font-size: 14px;
+}
+
+#language-switcher a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-button {
+    background-color: #FFF279;
+    color: black;
     border: none;
-    box-shadow: 0 0 0 0 rgb(101,100,100);
-    background-color: #ffc72f;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.1s;
 }
 
-.social-icon{
+.nav-button:hover {
+    background-color: #D1C989;
+    color: white;
+}
+
+main {
+    padding: 60px 20px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.social-icon {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#vrplanet{
-    padding-left: 200px;
-    padding-right: 200px;
-}
-.title{
-    text-align:left;
-}
-.hastag{
-    padding-top:10px;
-}
-span.firsttext{
-    position: relative;
-   right: 0px;
-    padding: 2px 9px;
-    border-radius: 70px;
-    width: 35px;
-    height: 35px;
-    line-height: 15px;
-    border: none;
-    box-shadow: 0 0 0 0 rgb(101,100,100);
-    background-color: #ffc72f;
-    color: white;
-    font-size: 18px
-}
-span.secondtext{
-   position: relative;
-    right: -10px;
-    padding: 2px 9px;
-    border-radius: 70px;
-    width: 35px;
-    height: 35px;
-    line-height: 15px;
-    border: none;
-    box-shadow: 0 0 0 0 rgb(101,100,100);
-    background-color: #ffc72f;
-    color: white;
-    font-size: 18px
-}
-span.thridtext{
-    position: relative;
-   right: -20px;
-    padding: 2px 9px;
-    border-radius: 70px;
-    width: 35px;
-    height: 35px;
-    line-height: 15px;
-    border: none;
-    box-shadow: 0 0 0 0 rgb(101,100,100);
-    background-color: #ffc72f;
-    color: white;
-    font-size: 18px
-}
-span.fourtext{
-   position: relative;
-   right: -30px;
-    padding: 2px 9px;
-    border-radius: 70px;
-    width: 35px;
-    height: 35px;
-    line-height: 15px;
-    border: none;
-    box-shadow: 0 0 0 0 rgb(101,100,100);
-    background-color: #ffc72f;
-    color: white;
-    font-size: 18px
+#vrplanet {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 13px;
+    text-align: left;
 }
 
-span.fivetext{
-   position: relative;
-   right: -40px;
-    padding: 2px 9px;
-    border-radius: 70px;
-    width: 35px;
-    height: 35px;
-    line-height: 15px;
-    border: none;
-    box-shadow: 0 0 0 0 rgb(101,100,100);
-    background-color: #ffc72f;
-    color: white;
-    font-size: 18px
+.title {
+    text-align: left;
+    font-weight: bold;
 }
 
-.videotext{
-    text-align: center;
-    font-style: italic;
+.hastag {
+    padding-top: 10px;
+    text-align: left;
 }
 
-.video-container{
+.hastag span {
+    display: inline-block;
+    margin-right: 2px;
+    color: #333; /* Dark text color */
+    font-size: 16px;
+}
+
+/* Video Section */
+.video-container {
     display: flex;
     justify-content: center;
+    text-align: left;
 }
-.concept{
 
+.videotext {
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
 }
-.headingText{
+
+/* Concept Section */
+.concept {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+}
+
+.headingText {
     font-size: 21px;
     font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
 }
-.img1{
-    text-align:center;
-}
-.partText{
+
+.partText {
     font-size: 17px;
     font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.img1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Ensuring Images Are Responsive */
+.img1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: rgb(218, 218, 218);
+}
+
+footer .social-icons {
+    margin-left: auto;
+}
+
+footer .social-icons a {
+    color: grey;
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-button {
+        padding: 8px 13px; /* Adjust padding for smaller buttons on mobile */
+        font-size: 8px; /* Adjust font size for smaller buttons on mobile */
+    }
+
+    #buttons {
+        gap: 10px; /* Reduce gap between buttons on mobile */
+    }
+
+    #language-switcher a {
+        font-size: 12px; /* Reduced font size for mobile */
+        margin: 0 1px;
+        text-decoration: none;
+        color: black;
+    }
+
+
+    main {
+        padding: 20px;
+    }
+
+    #vrplanet {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .hastag span {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .concept,
+    .headingText,
+    .partText {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .img1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .social-icons {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }

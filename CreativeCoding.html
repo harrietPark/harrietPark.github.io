@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    zs
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -16,11 +15,16 @@
 </head>
 <body>
  
- <span class="goback">
-     <button class="gobackbtn">
-        <a href="/index.html"><i class="fa-solid fa-circle-left social-icon"></i></a>
-     </button>
- </span>
+    <header>
+        <div id="language-switcher">
+            <a href="#" id="lang-ko">한국어</a> | <a href="#" id="lang-en">English</a>
+        </div>
+        <nav>
+            <a href="index.html"><button class="nav-button bio">BIO</button></a>
+            <a href="playground.html"><button class="nav-button playground">PLAYGROUND</button></a>
+            <a href="projects.html"><button class="nav-button projects">PROJECTS</button></a>
+        </nav>
+    </header>
  
 <section id="vrplanet">
     <div class="title">
@@ -32,10 +36,10 @@
            C++
        </span>
       <span class="secondtext">
-          Openframeworks
+          | Openframeworks
        </span>
        <span class="thridtext">
-           Projection Mapping
+           | Projection Mapping
        </span>
 
    </div>
@@ -116,12 +120,15 @@
            <br>This scene consists of four waves, and each wave has an outline. It references week 5's Noisy Waves code. To outline, I made every parameter of the two waves the same except for the y and shapeDepth value. Then used a colour lerp function to change between two colours gradually. The periodical cosine wave is used to change the colour effect <br><br>
         </p>
     </div>
-
-
-            <br><br><br>
-            <footer>
-                <div class="copyright">Copyright &copy; 2022 Seonjeong Park</div>
-            </footer>
+    <footer class="footer">
+        <span>seOn JeOng pArK</span>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://harrietpark.github.io/" style="margin-right: 10px;"><i class="fa-brands fa-github"></i></a>
+            <a href="https://29harriet.itch.io/" style="margin-right: 10px;"><i class="fa-brands fa-itch-io"></i></a>
+        </div>
+    </footer>
 </section>
    <br><br><br>
 

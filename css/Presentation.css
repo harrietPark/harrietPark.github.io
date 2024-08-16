@@ -38,6 +38,7 @@ span.goback{
 #vrplanet{
     padding-left: 200px;
     padding-right: 200px;
+    font-size : 13px;
 }
 .title{
     text-align:left;
@@ -127,7 +128,7 @@ span.fivetext{
     justify-content: center;
 }
 .concept{
-
+    font-size : 13px;
 }
 .techused{
     font-weight: bold;

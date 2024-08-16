@@ -1,0 +1,236 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#language-switcher {
+    font-size: 14px;
+}
+
+#language-switcher a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-button {
+    background-color: #FFF279;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.nav-button:hover {
+    background-color: #D1C989;
+    color: white;
+}
+
+main {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.playground-avatar {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.intro-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #1d1d1d;
+}
+
+.emoji-icons {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+#categories {
+    display: flex;
+    justify-content: flex-start; /* Ensure buttons align to the left */
+    gap: 10px;
+    margin-bottom: 40px;
+    padding-left: 15px; /* Adjust to align with grid items */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 15px; /* Align with the buttons */
+}
+
+
+.category-button {
+    background-color: #FFFDE8;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* For 3D effect */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.1s;
+}
+
+.category-button.active {
+    background-color: #FDFF9A;
+    transform: translateY(-3px); /* Slight lift for active state */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for active state */
+}
+
+.category-button:hover {
+    background-color: #FDFF9A;
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.category-button:active {
+    background-color: #FDFF9A;
+    transform: translateY(1px); /* Button presses down */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px; /* Align grid with buttons */
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-thumbnail {
+    width: 200px;
+    height: 200px;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Increased shadow for 3D effect */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.project-thumbnail:hover,
+.grid-item:active .project-thumbnail {
+    background-color: #DDDDDD;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.project-category {
+    font-size: 12px; /* Smaller font size */
+    color: #999;
+    margin-top: 15px; /* Reduced margin-top */
+    margin-bottom: 3px; /* Added margin-bottom for tighter spacing */
+}
+
+.project-title {
+    font-size: 14px; /* Slightly smaller font size */
+    font-weight: bold;
+    color: #333;
+    margin-top: 0; /* No margin-top to bring the texts closer */
+}
+
+
+footer {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: rgb(218, 218, 218);
+}
+
+footer .social-icons {
+    margin-left: auto;
+}
+
+footer .social-icons a {
+    color: grey;
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-button {
+        padding: 8px 16px; /* Adjust padding for smaller buttons on mobile */
+        font-size: 8px; /* Adjust font size for smaller buttons on mobile */
+    }
+
+    #buttons {
+        gap: 10px; /* Reduce gap between buttons on mobile */
+    }
+
+    #language-switcher a {
+        font-size: 12px; /* Reduced font size for mobile */
+        margin: 0 1px;
+        text-decoration: none;
+        color: black;
+    }
+
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .social-icons {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .intro-description {
+        font-size: 10px;
+    }
+}
