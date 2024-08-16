@@ -203,6 +203,9 @@ footer .social-icons a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    nav {
+        gap: 10px; /* Reduce gap between buttons */
+    }
     .nav-button {
         padding: 8px 16px; /* Adjust padding for smaller buttons on mobile */
         font-size: 8px; /* Adjust font size for smaller buttons on mobile */
@@ -210,6 +213,17 @@ footer .social-icons a {
 
     #buttons {
         gap: 10px; /* Reduce gap between buttons on mobile */
+    }
+
+    #categories {
+        gap: 5px; /* Reduce gap between buttons */
+        padding-left: 0; /* Remove padding */
+    }
+
+    .category-button {
+        padding: 5px 10px; /* Smaller padding for mobile */
+        font-size: 10px; /* Smaller font size for mobile */
+        border-radius: 5px; /* Smaller border radius */
     }
 
     #language-switcher a {
@@ -231,6 +245,8 @@ footer .social-icons a {
     }
 
     .intro-description {
-        font-size: 10px;
+        font-size: 8px;
     }
+
+
 }

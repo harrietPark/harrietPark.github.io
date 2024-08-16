@@ -231,6 +231,14 @@ footer .social-icons a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    nav {
+        gap: 10px; /* Reduce gap between buttons */
+    }
+
+    .nav-button {
+        padding: 8px 13px; /* Adjust padding for smaller buttons */
+        font-size: 12px; /* Adjust font size for smaller buttons */
+    }
     .intro-heading {
         font-size: 32px; /* Adjust heading size for mobile */
     }
