@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baobab Diary - MR Mindfulness App</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/BaobabDiary.css">
+</head>
+<body>
+ 
+<header>
+    <div id="language-switcher">
+        <a href="#" id="lang-ko">한국어</a> | <a href="#" id="lang-en">English</a>
+    </div>
+    <nav>
+        <a href="index.html"><button class="nav-button bio">BIO</button></a>
+        <a href="playground.html"><button class="nav-button playground">PLAYGROUND</button></a>
+        <a href="projects.html"><button class="nav-button projects">PROJECTS</button></a>
+    </nav>
+</header>
+<br>
+<section id="baobab-diary">
+    <div class="title">
+        <h2>Baobab Diary - MR Mindfulness App</h2>
+    </div>
+
+    <div class="hastag">
+        <span class="firsttext">C#</span>
+        <span class="secondtext">| Unity Engine</span>
+        <span class="thirdtext">| Mixed Reality</span>
+        <span class="fourthtext">| Gen AI</span>
+    </div>
+
+    <!-- Video Walkthrough Section -->
+    <div class="video-section">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://youtu.be/8UXkcGIigVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="videotext">
+            Walkthrough Video (Korean version)
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://youtu.be/vKldUPWXP2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="videotext">
+            Walkthrough Video (English version)
+        </div>
+    </div>
+
+    <br><br><br>
+    <!-- Overview Section -->
+    <div class="concept">
+        <h4>Overview</h4>
+        <p>
+            Baobab Diary is a Mixed Reality (MR) mindfulness app that transforms the practice of "mindful journaling" into an 
+            immersive MR experience. The app allows users to reflect on their emotions creatively before sleep, 
+            encouraging self-awareness and emotional regulation. By answering daily questions, users can identify emotional patterns and
+            gain a clearer perspective on their feelings, promoting mental health and maturity. Utilizing OpenAI technologies, 
+            the app provides positive, adaptive feedback to enhance user engagement, ultimately shifting focus from the past or future
+            to the present self, aiming to improve overall mental well-being.
+            <br><br>
+            <span>🏆 <b>Winner of the 2024 Metaverse Developer Contest, awarded by the Korea Metaverse Industry Association</b> selected out of 125 teams.</span>
+        </p>
+    </div>
+    
+    <br>
+    <!-- Team Roles Section -->
+    <div class="concept">
+        <h4>Team Roles</h4>
+        <p>
+            <b>Seonjeong Park :</b> Ideation, app development using Unity, spatial interaction, UI/UX design, GitHub pipeline setup.<br>
+            <b>Kyungjoo Min:</b> Ideation, narration script writing, 3D modeling, and animation using Blender, spatial sound design.
+        </p>
+    </div>
+    <br>
+    <!-- Development Background and Purpose Section -->
+    <div class="concept">
+        <h4>Development Background and Purpose</h4>
+        <p>
+            South Korea has the highest suicide rate among OECD countries, with stress being identified as a major factor.
+             Many individuals suppress their emotions, lacking time and space for self-reflection, leading to deteriorating mental health.
+              We saw the need for an accessible, universally applicable MR app that helps users manage stress and emotions through 
+              meaningful interactions and self-reflection.
+        </p>
+        <p>
+            The app aims to provide a space for users to objectively observe and organize their emotions before sleep. 
+            Through mindful journaling, users are guided to focus on the present, fostering emotional health and maturity.
+        </p>
+    </div>
+    <br>
+    <!-- Development Environment and Tools Section -->
+    <div class="concept">
+        <h4>Development Environment and Tools</h4>
+        <p>
+            <b>Platform :</b> Meta Quest<br>
+            <b>Game Engine :</b> Unity3D<br>
+            <b>Programming Language :</b> C#<br>
+            <b>Gen AI : Whisper API, OpenAI API</b>
+            <b>Plugins :</b> HypeRate Pulgin, Meta SDK<br>
+            <b>Collaboration Tool :</b> GitHub
+        </p>
+    </div>
+    <br>
+    <!-- System Architecture and Key Features Section -->
+    <div class="concept">
+        <h4>System Architecture and Key Features</h4>
+        <p>
+            <b>Meta SDK Integration:</b> Utilises Meta SDK to create a rich and engaging MR environment with advanced hand-tracking 
+            for various gestures, enhancing user experience.<br>
+            <b>Passthrough Technology:</b> Creates a night sky using stencil shaders and supports smooth interactions.<br>
+            <b>OpenAI Integration:</b> Uses Whisper API for voice-to-text conversion and GPT for personalized feedback.<br>
+            <b>Data Storage:</b> Features a robust system for storing emotional data, audio recordings, and text transcriptions.<br>
+            <b>Real-time Biometric Integration:</b> Integrates real-time heart rate monitoring with the Hype Rate plugin.
+        </p>
+    </div>
+    <br>
+    <!-- Core Features Section -->
+    <div class="concept">
+        <h4>Core Features</h4>
+        <p>
+            <b>1. Emotional Guardian - The Baobab Tree:</b> Users interact with the Baobab tree to record emotions, stored as fruits. 
+            The app offers an emotional analysis report and personalized feedback.<br>
+            <b>2. Mindfulness Journey:</b> Guides users through breathing exercises, heart rate monitoring, and character interactions.<br>
+            <b>3. Emotion Exploration through Fruits:</b> Allows users to revisit their saved emotions and interact with AI-generated healing messages.
+        </p>
+    </div>
+    <br><br>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <span>seOn JeOng pArK</span>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://harrietpark.github.io/" style="margin-right: 10px;"><i class="fa-brands fa-github"></i></a>
+            <a href="https://29harriet.itch.io/" style="margin-right: 10px;"><i class="fa-brands fa-itch-io"></i></a>
+        </div>
+    </footer>
+</section>
+
+</body>
+</html>

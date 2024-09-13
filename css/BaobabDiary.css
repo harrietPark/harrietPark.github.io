@@ -1,0 +1,227 @@
+/* Base Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#language-switcher {
+    font-size: 14px;
+}
+
+#language-switcher a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-button {
+    background-color: #FFF279;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.nav-button:hover {
+    background-color: #D1C989;
+    color: white;
+}
+
+main {
+    padding: 60px 20px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.social-icon {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#baobab-diary {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 13px;
+    text-align: left; /* Ensure left alignment */
+}
+
+.title {
+    text-align: left;
+    font-weight: bold;
+}
+
+.hastag {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.hastag span {
+    display: inline-block;
+    margin-right: 2px;
+    color: #333; /* Dark text color */
+    font-size: 16px;
+}
+
+/* Video Section */
+.video-section {
+    margin: 30px 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.videotext {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Concept Section */
+.concept {
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for differentiation */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.conceptText {
+    font-style: italic;
+    font-size: 14px;
+    text-align: left;
+    color: #666;
+}
+
+/* Ensuring Images Are Responsive */
+.img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensure positioning for before pseudo-element */
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: rgb(218, 218, 218);
+}
+
+footer .social-icons {
+    margin-left: auto;
+}
+
+footer .social-icons a {
+    color: grey;
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-button {
+        padding: 8px 13px; /* Adjust padding for smaller buttons on mobile */
+        font-size: 8px; /* Adjust font size for smaller buttons on mobile */
+    }
+
+    #buttons {
+        gap: 10px; /* Reduce gap between buttons on mobile */
+    }
+
+    #language-switcher a {
+        font-size: 12px; /* Reduced font size for mobile */
+        margin: 0 1px;
+        text-decoration: none;
+        color: black;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    #baobab-diary {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 13px;
+        text-align: left; /* Ensure left alignment */
+    }
+
+    .hastag {
+        padding-top: 10px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .hastag span {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .concept,
+    .conceptText,
+    .tech {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left; /* Ensure left alignment */
+    }
+
+    .img img {
+        max-width: 100%; /* Ensure images scale properly */
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .social-icons {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
