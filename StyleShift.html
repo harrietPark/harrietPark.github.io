@@ -60,7 +60,7 @@
     <h4>Tools</h4>
     <p>
         <b>Engine:</b> Unity (C#)<br>
-        <b>Gen AI:</b> Stable Diffusion Web UI API<br>
+        <b>Gen AI:</b> Stable Diffusion Web UI API + ControlNet<br>
         <b>Platform:</b> Meta Quest<br>
     </p>
 </div>
@@ -83,9 +83,10 @@
 <div class="concept">
     <h4>System Structure</h4>
     <p>
-        The system takes a text prompt (e.g., "wooden texture", "futuristic metal", "cozy hand-drawn"), sends it to Stable Diffusion, and applies the generated texture back into the Unity scene in real time. It started with a small object (a cup), and was expanded to affect the entire room environment.
+        The system enables real-time texture transformation based on user-defined prompts. A descriptive text prompt (e.g., "wooden texture", "futuristic metal", "cozy hand-drawn") is sent from Unity to the Stable Diffusion Web UI API, along with a conditional image using the object’s UV Map (via ControlNet). 
+        The resulting AI-generated texture is decoded and applied directly to 3D models within the Unity scene.
     </p>
-    <p style="font-size: 16px;"><b>💬 Prompt ➝ 🧠🎨 Stable Diffusion ➝ 🖼️ Texture Generation ➝ 🏠 Scene Update</b></p>
+    <p style="font-size: 16px;"><b>💬 Prompt ➝ 🧠🎨 Stable Diffusion (with ControlNet) ➝ 🖼️ Texture Generation ➝ 🏠 Scene Update</b></p>
 </div>
 
 
