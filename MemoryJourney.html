@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Journey</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/MemoryJourney.css">
+</head>
+<body>
+ 
+<header>
+    <div id="language-switcher">
+        <a href="#" id="lang-ko">한국어</a> | <a href="#" id="lang-en">English</a>
+    </div>
+    <nav>
+        <a href="index.html"><button class="nav-button bio">BIO</button></a>
+        <a href="playground.html"><button class="nav-button playground">PLAYGROUND</button></a>
+        <a href="projects.html"><button class="nav-button projects">PROJECTS</button></a>
+    </nav>
+</header>
+<br>
+<section id="baobab-diary">
+    <div class="title">
+        <h2>Memory Journey : Generative Art Installation </h2>
+    </div>
+
+    <div class="hastag">
+        <span class="firsttext">Processing</span>
+        <span class="secondtext">| Generative Art</span>
+        <span class="fourthtext">| Gen AI</span>
+    </div>
+
+    <!-- Video Walkthrough Section -->
+    <div class="video-section">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gkoUwIk0F3I?si=Ok9JyU_EM_wARuHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="videotext">
+            Playthrough Video
+        </div>
+    </div>
+
+    <div class="concept">
+        <h4>Overview</h4>
+        <p>
+            <b>Developed for:</b> 2023 Art and Technology Convergence Program (Korea)<br>
+            <b>Presented at:</b> Musinsa Studio Hannam (1st Branch), Dec 1–2, 2023
+        </p>
+        <p>
+            <em>The Memory Journey Project</em> is a prototype for an immersive art installation that transforms personal memories into generative visuals. Created as part of a government-funded initiative in South Korea, the piece explores the emotional resonance of memory through real-time voice input, AI analysis, and projection-mapped imagery.
+        </p>
+        <p>
+            Though not a full-scale installation, the prototype laid the technical and conceptual groundwork for a future interactive space—where light, movement, and personal reflection converge in a meditative environment.
+        </p>
+        <p>
+            <b>🌐 Project Website:</b>
+            <a href="https://memory-journey-fe.vercel.app/" target="_blank" 
+               style="text-decoration: none; font-weight: 500; color: #444; border-bottom: 1px solid #ccc;">
+               https://memory-journey-fe.vercel.app/
+            </a>
+        </p>
+    </div>
+
+    <div class="concept">
+        <h4>My Role</h4>
+        <div style="line-height: 1.8; font-size: 13px;">
+            <p><b>Creative Technologist</b><br>
+            &nbsp;&nbsp;• Designed real-time generative visuals using <b>Processing</b><br>
+            &nbsp;&nbsp;• Integrated <b>OpenAI Whisper & GPT APIs</b> to receive and process voice input from the web client</p>
+            <p><b>Design & Prototyping</b><br>
+            &nbsp;&nbsp;• Contributed to the interactive flow and implementation from user input to visual feedback</p>
+        </div>
+    </div>
+
+    <div class="concept">
+        <h4 style="margin-bottom: 28px;">Prototype Interaction Flow</h4>
+    
+        <div style="margin-bottom: 36px;">
+            <p style="font-weight: 600; font-size: 15px; margin-bottom: 6px;">1. Memory Input via Web Interface</p>
+            <p>Users began by visiting a custom website to record a personal memory. Before speaking, they selected three emotional filters:</p>
+            <ul style="padding-left: 24px; line-height: 1.8;">
+                <li><b>🕰️ Time</b> — Recent or distant memory</li>
+                <li><b>❤️ Feeling</b> — Positive or negative emotion</li>
+                <li><b>👁️ Consciousness</b> — Vivid or faint recollection</li>
+            </ul>
+        </div>
+    
+        <div style="margin-bottom: 36px;">
+            <p style="font-weight: 600; font-size: 15px; margin-bottom: 6px;">2. AI Processing & Emotional Analysis</p>
+            <ul style="padding-left: 24px; line-height: 1.8;">
+                <li>📝 Voice input transcribed using <b>OpenAI Whisper</b></li>
+                <li>🧠 Emotional content analyzed by <b>GPT</b> to extract tone and key concepts</li>
+            </ul>
+        </div>
+    
+        <div style="margin-bottom: 36px;">
+            <p style="font-weight: 600; font-size: 15px; margin-bottom: 6px;">3. Generative Visual Creation in Processing</p>
+            <p>Insights from the analysis were sent to <b>Processing</b>, where generative visuals were created in response to the emotional filters:</p>
+        </div>
+    
+        <div>
+            <p style="font-weight: 600; font-size: 15px; margin-bottom: 6px;">4. Real-Time Projection Mapping</p>
+            <p>The visuals were projection-mapped onto layered fabrics, creating a soft, immersive environment where memories came to life in real time.</p>
+        </div>
+    </div>
+    
+
+    <div class="concept">
+        <h4>Presentation</h4>
+        <p>
+            The prototype was developed and tested at <b>The Coronet Theatre: Home</b> in London, where initial interaction and visual flow were explored in a physical context.
+        </p>
+        <p>
+            A documentary video of the project was later showcased at <b>Musinsa Studio Hannam (1st Branch)</b> in Seoul during a curated concept screening event held on <b>December 1–2, 2023</b>.
+        </p>
+    </div>
+    
+
+    <div class="concept">
+        <h4>Technologies Used</h4>
+        <p>
+            <b>Tools:</b> Processing, OpenAI Whisper API, GPT<br>
+            <b>Interaction Method:</b> Web-based multilingual voice input<br>
+            <b>Focus Areas:</b> Generative Art, Projection Mapping, Emotionally Driven Visuals
+        </p>
+    </div>
+
+    <br><br>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <span>seOn JeOng pArK</span>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://harrietpark.github.io/" style="margin-right: 10px;"><i class="fa-brands fa-github"></i></a>
+            <a href="https://29harriet.itch.io/" style="margin-right: 10px;"><i class="fa-brands fa-itch-io"></i></a>
+        </div>
+    </footer>
+</section>
+
+</body>
+</html>
