@@ -44,19 +44,46 @@
         </div>
     </div>
 
+    <!-- GIF Row -->
+    <div class="container my-4">
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <img src="img/8pm.gif" alt="GIF 1" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="img/eraser.gif" alt="GIF 2" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="img/8pmCat.gif" alt="GIF 3" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
     <div class="concept">
-        <h4>Overview</h4>
+        <h4 style="margin-bottom: 0.5em;">Overview</h4>
         <p>
-            <b>Funded by:</b> AT Lab at KArts<br>
-            <b>Targeted Submission:</b> Venice Immersive Film Festival 2025
+            <strong>Funded by:</strong> AT Lab at KArts<br>
+            <strong>Targeted Submission:</strong> Venice Immersive Film Festival 2025
+        </p>
+    
+        <hr style="margin: 1.5em 0; border: none; border-top: 1px solid #ccc;" />
+    
+        <h5 style="margin-bottom: 0.5em;">Synopsis</h5>
+        <p style="font-style: italic; margin-bottom: 1em;">
+            At 8PM, when time halts after the loss of a loved one, a quiet room, a sleeping cat, and lingering memories unfold like panels in a dreamlike comic.
         </p>
         <p>
-            At 8PM, when time stops after the loss of a loved one, a quiet room, a sleeping cat, and lingering memories unfold like panels in a dreamlike comic.
+            After losing his partner Mina in the <a href="https://en.wikipedia.org/wiki/Seoul_Halloween_crowd_crush" target="_blank" style="text-decoration: underline;">Itaewon crowd crush</a>, cartoonist Haru’s world freezes at 8PM. He drifts between two realities—one where she still arrives home, and one where she never will. He draws her endlessly, speaks to her endlessly. In this generative VR experience, monologues and visuals emerge in real time, each moment fleeting, each encounter singular. The audience steps into Haru’s stillness, gently bearing witness to the enduring weight of her absence.
         </p>
+    
+        <h5 style="margin-top: 2em; margin-bottom: 0.5em;">Project Overview</h5>
         <p>
-            <em>8PM and the Cat</em> is a 13-minute, AI-driven VR narrative that offers a personalized, emotionally adaptive experience. Through the intertwined perspectives of Haru and Mina, users explore the fragile space between longing and healing—where time stands still, but memories continue to breathe.
+            <em>8PM and the Cat</em> is a 13-minute, AI-driven VR narrative offering a personalized and emotionally adaptive experience. Through the interwoven perspectives of Haru and Mina, users navigate the tender space between longing and healing—where time stands still, but memories continue to breathe.
         </p>
     </div>
+    
+    
+    
 
     <!-- My Role -->
 <div class="concept">
@@ -82,6 +109,48 @@
         </p>
     </div>
 
+    <!-- Prototype Section -->
+<div class="concept">
+    <h4>Prototype</h4>
+    <p>
+        <p style="text-align: center; font-weight: 700; font-size: 1.2em; font-style: italic; margin-bottom: 1em;">
+            💡 How can AI shape interactive storytelling in XR?
+        </p>
+        This question guided the early development of <em>8PM and the Cat</em>, a 13-minute AI-driven VR narrative about a man named Haru and his partner Mina. After losing Mina, Haru’s world freezes at 8PM—the hour they always spent together. 
+    </p>
+
+    <p>
+        The story is inspired by the idea that just as ants live in a two-dimensional world, unaware of the third, we humans may not fully perceive the fourth dimension—time. In this view, past, present, and future may coexist, and those we’ve lost might still be with us in ways we can’t yet perceive. We wanted this narrative to go beyond one man’s grief and speak to a collective human experience of loss, memory, and connection. To bring this idea to life in an immersive and deeply personal way, we turned to AI.
+    </p>
+
+    <p>
+        As both prototyper and developer, I spent several months experimenting with how generative AI could help bring this vision to life—crafting a story that responds and adapts to each user. I explored ways to generate voice narration, images, and room textures in real time, and tested how the story could change depending on what the user types or chooses.
+    </p>
+    <p>
+        Two key prototypes emerged from this phase: <strong>Gaze to Voice</strong> and <strong>StyleShift</strong>. Each explored a different technique for real-time AI storytelling. Together, they not only helped refine the final system used in <em>8PM and the Cat</em>, but also revealed how AI can unlock new emotional and spatial dimensions in XR narrative design.
+    </p>
+
+    <section id="projects-grid" class="grid-container d-flex justify-content-center flex-wrap gap-4 mt-4">
+        <a href="gazeToVoice.html" class="project-link grid-item text-center" data-category="ai" style="text-decoration: none; color: inherit; max-width: 250px;">
+            <div class="project-thumbnail mb-2">
+                <img src="img/voiceToText.gif" alt="Gaze to Voice" class="img-fluid rounded shadow-sm">
+            </div>
+            <p class="project-category mb-1" style="color: #666;">#AI</p>
+            <p class="project-title fw-bold">Gaze to Voice:<br>Real-Time Story</p>
+        </a>
+
+        <a href="StyleShift.html" class="project-link grid-item text-center" data-category="ai" style="text-decoration: none; color: inherit; max-width: 250px;">
+            <div class="project-thumbnail mb-2">
+                <img src="img/realTimeTexture.gif" alt="StyleShift" class="img-fluid rounded shadow-sm">
+            </div>
+            <p class="project-category mb-1" style="color: #666;">#AI</p>
+            <p class="project-title fw-bold">StyleShift: Real-Time Texture Generation<br>with Stable Diffusion</p>
+        </a>
+    </section>
+</div>
+
+
+
     <!-- System Structure -->
     <div class="concept">
         <h4>System Structure</h4>
@@ -94,12 +163,12 @@
             The response is used to generate real-time imagery that reflects the user’s emotional world.
         </p>
 
-        <p style="font-size: 16px;"><b>🗂️ Predefined Prompts ➝ 🎨 GPT-4o Image Generation</b></p>
+        <p style="font-size: 16px;"><b>🗂️ Pre-defined Prompts ➝ 🎨 GPT-4o Image Generation</b></p>
         <p>
             In the experience, both the 2D visuals and the room’s textures change in real time based on predefined emotional prompts. Since Haru is a comic artist, the images are styled like illustrated panels. At the same time, the entire room environment transforms to match the mood expressed in the prompt. For example, if the prompt describes a tense or uneasy emotional state, both the visual content and the space around the user shift to reflect that atmosphere—creating a fully immersive emotional experience.
         </p>
 
-        <p style="font-size: 16px;"><b>🗂️ Predefined Prompts ➝ 🧠 GPT Narration ➝ 🔊 ElevenLabs Voice ➝ 🎧 Immersive Playback</b></p>
+        <p style="font-size: 16px;"><b>🗂️ Pre-defined Prompts ➝ 🧠 GPT Narration ➝ 🔊 ElevenLabs Voice ➝ 🎧 Immersive Playback</b></p>
         <p>
             Emotional voice-over monologues are dynamically generated by GPT and instantly synthesized into natural speech using ElevenLabs—based on a custom-trained voice model of the main characters.
         </p>
