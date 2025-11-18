@@ -159,6 +159,14 @@ a:hover, a:active {
     margin-bottom: 3px; /* Added margin-bottom for tighter spacing */
 }
 
+.project-year {
+    font-size: 12px;
+    margin-top: -12px;
+    color: #383838;
+    font-weight: 300;
+}
+
+
 .project-title {
     font-size: 14px; /* Slightly smaller font size */
     font-weight: bold;
