@@ -11,138 +11,120 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/site-header.css">
 
-    <link rel="icon" href="img/profilepics4.png" type="image/png">
+    <link rel="icon" href="img/profile.png" type="image/png">
     
     <!-- jQuery Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
-    <header>
-        <div id="language-switcher" style="float: left;">
-            <a href="#" id="lang-en" onclick="switchLanguage('en')">English</a> | 
-            <a href="#" id="lang-ko" onclick="switchLanguage('ko')">한국어</a>
+<body class="home-page">
+    <header class="site-header">
+        <div class="avatar-home-button">
+            <a class="avatar-button" href="index.html" aria-label="Go to home" title="Seonjeong">
+                <img class="avatar-image avatar-image-default" src="img/SJDefault.png" alt="Seonjeong Park avatar">
+                <img class="avatar-image avatar-image-hover" src="img/SJClicked.png" alt="">
+            </a>
+            <div class="pronunciation-bubble" role="tooltip">
+                <span>How to pronounce my name :</span>
+                <button class="pronounce-button" type="button" aria-label="Play name pronunciation">🔊</button>
+            </div>
         </div>
-        <nav style="float: right;">
-            <a href="index.html"><button class="nav-button bio">BIO</button></a>
-            <a href="playground.html"><button class="nav-button playground">PLAYGROUND</button></a>
-            <a href="projects.html"><button class="nav-button projects">PROJECTS</button></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="project.html"><button class="nav-button" type="button">WORK</button></a>
+            <a href="playground.html"><button class="nav-button" type="button">PLAYGROUND</button></a>
+            <a href="about.html"><button class="nav-button" type="button">ABOUT</button></a>
+            <a href="easterEgg.html"><button class="nav-button" type="button">🥚</button></a>
+            <button class="language-toggle" type="button" data-language="en" aria-label="Toggle language">EN</button>
         </nav>
     </header>
     
-    <!-- English Content -->
-    <div id="content-en">
-        <main>
-            <div class="content-wrapper">
-                <section id="intro">
-                    <h1 class="intro-heading">Hi, I'm Seonjeong! <span class="wave">👋</span></h1>
-                    <p class="intro-subheading">✍️ Writer → 🎥 Film Maker → 👀 Contents Marketer → 🎨 Illustrator →  👾 XR Developer && 💡 Prototyper && 🛠️ Creative Technologist && 📚 Researcher</p>
-                </section>
-                <section id="description">
-                    <p class="intro-description">Ever since I met Harry Potter in third grade, I've been captivated by the world of immersive storytelling. 
-                        My journey began with writing stories, editing videos, and drawing illustrations and cartoons. 
-                        Now I'm an XR developer based in London, passionate about blending creativity with cutting-edge technology to craft unique, meaningful experiences. 
-                        <br><br>I'm especially interested in designing intuitive spatial interactions and exploring how AI technologies can enrich immersive environments. 
-                         I’ve developed and prototyped a variety of XR experiences, many of which have grown into collaborative, public, or research-driven projects.</p>
-                </section>
-                <section id="buttons">
-                    <div class="button-container">
-                        <div class="button-wrapper">
-                            <button class="nav-button" 
-                                    onclick="toggleSection('personal-en')" 
-                                    title="Click the button to reveal more about my life journey (only if you want)">
-                                A BIT MORE personal ABOUT ME...
-                            </button>
-                        </div>
-                        <div class="button-wrapper">
-                            <button class="nav-button" 
-                                    onclick="toggleSection('professional-en')" 
-                                    title="Click the button to reveal my CV">
-                                A BIT MORE professional ABOUT ME...
-                            </button>
-                        </div>
-                    </div>
-                </section>
-                
-                <section id="personal-en" class="content-section" style="display: none;">
-                    <p>
-                        My twenties have been full of exploration. As soon as I became a university student, free from the traditional path, my goal was to explore a lot, make mistakes, and experience everything I could!<br><br>
-                        
-                        I changed my major once, from Creative Writing to Chinese Literature and Language. I also double-majored, initially in Real Estate, and later switched to Game Interactive & Media. And later, as a post-graduate, I pursued an MSc in VR/AR.<br><br>
-                        
-                        During my first winter vacation at university, I grabbed a big backpack, about 600 pounds, and went backpacking in Southeast Asia with a friend. We travelled for a month through Thailand, Cambodia, Vietnam, and Laos. This sparked my love for exploring the world. I spent over six months in Australia on a working holiday, picking strawberries and working in a bread factory – an experience I hope to turn into content someday! I also studied in Taiwan, where I began to draw. If it weren't for the cockroaches, I'd love to live there forever; it's one of my favourite countries. I taught English in Cebu, Philippines, which taught me that teaching wasn't my thing. I've backpacked through many European countries and Japan, fueling my passion for travel.<br><br>
-                        
-                        Besides travelling, I've explored myself through various part-time jobs. Have you heard of a clapping and laughing part-time job for TV shows? I did multiple of those, participated as an extra actor, worked in a Korean fried chicken shop, TGI Fridays, assisted with auto-scripting for TV show writers, content marketing, video editing jobs, and more.<br><br>
-                        
-                        In 2020, I planned to travel the world, but the pandemic kept me in Korea. That's when I started my career as a content marketer, ironically at a travel agency. While I enjoyed the job, I couldn’t resist my passion for XR, which led me to the UK to study. Now, I work as an XR developer.<br><br>
-                        
-                        I still love to explore, experience new things, and present them through content using my technical skills. The world is full of inspiration, and I strive to create a spoonful of magic within it.
-                    </p>
-                </section>
-                
-                <section id="professional-en" class="content-section" style="display: none;">
-                    <iframe src="files/SeonjeongPark_CV.pdf" width="100%" height="600px"></iframe>
-                </section>
-                
-            </div>
-        </main>
-    </div>
-    
-    <!-- Korean Content -->
-<div id="content-ko" class="korean-style" style="display: none;">
-    <main>
-        <div class="content-wrapper">
-            <section id="intro">
-                <h1 class="intro-heading">상상을 현실로 바꾸는 XR 개발자, 박선정입니다<span class="wave">👋</span></h1>
-                <p class="intro-subheading">✍️ 동화작가 → 🎥 영화 감독 → 👀 콘텐츠 마케터 → 🎨 일러스트레이터 → 👾 XR 개발자 && 💡 프로토타이퍼 && 🛠️ 크리에이티브 테크놀로지스트 && 📚 연구자</p>
+    <main class="home-main" id="content-en">
+        <div class="home-wrapper">
+            <section class="home-hero">
+                <h1>Hey, I’m Seonjeong! <span class="wave">👋</span></h1>
+                <p class="hero-kicker">Design Engineer based in London, working at the intersection of AI & XR.</p>
+                <p>I work across research, design, and engineering to prototype, validate, and ship immersive experiences, from production VR/MR projects to research-led experiments.</p>
+                <p class="currently">📍 Currently building immersive experiences at <a href="https://www.noghost.co.uk/" target="_blank" rel="noopener noreferrer">@NoGhost</a></p>
+                <br><br>
             </section>
-            <section id="description">
-                <p class="intro-description">초등학교 3학년 때 처음 해리 포터 시리즈를 읽으며 동화작가라는 꿈을 키우게 되었습니다. 어린 나이이지만, 해리 포터를 통해 서양 문화를 자연스럽게 흡수하고 영어를 공부하는 제 모습을 보며 콘텐츠의 힘을 깨닫게 되었습니다. 현재 우리는 변화무쌍한 시대에 살고 있으며, 콘텐츠 제작자의 역할도 그에 맞춰 확장되고 있습니다. 저는 글쓰기, 그림, 만화, 영상 제작 등 다양한 콘텐츠 제작 경험을 쌓아왔습니다. 그러던 중 '미래의 스토리텔링은 어떻게 변화할까?'라는 질문을 던졌고, 그 해답으로 XR 기술에 주목하게 되었습니다. 단순히 일방향적으로 소비하는 것이 아니라, 스토리 안에서 직접 경험하고 상호작용하는 것이 인간의 본능이라고 생각했기 때문입니다. 그렇게 현재는 3년차 XR 개발자로서 다양한 XR 앱 개발 경험을 쌓았으며, AI 활용과 XR 내 공간적 상호작용에도 많은 관심을 가지고 있습니다.</p>
+
+            <section class="mind-map-section" aria-label="Recently I'm mind map">
+                <div class="mind-map-composite">
+                    <img src="img/MindMap.png" alt="Recently I'm mind map">
+                    <a class="debuggy-link" href="https://www.youtube.com/@TurtleneckPlaylist" target="_blank" rel="noopener noreferrer" aria-label="Open Turtleneck Playlist YouTube channel">
+                        <img src="img/debuggy.png" alt="Debuggy turtle at laptop">
+                    </a>
+                    <a class="mind-postit postit-green" href="https://www.youtube.com/@TurtleneckPlaylist" target="_blank" rel="noopener noreferrer" aria-label="Open Turtleneck Playlist YouTube channel">Making my own focus music playlist on YouTube</a>
+                    <a class="mind-postit postit-yellow" href="#" aria-label="Open playlist channel">Prototyping for Snap Spectacles</a>
+                    <a class="mind-postit postit-blue" href="#" aria-label="Open playlist channel">Learning Framer &
+3D Math</a>
+                    <a class="mind-postit postit-red" href="#" aria-label="Open playlist channel">Exploring Korean Traditional 
+Myth</a>
+                </div>
             </section>
-            <section id="buttons">
-                <div class="button-container">
-                    <div class="button-wrapper">
-                        <button class="nav-button" 
-                                onclick="toggleSection('personal-ko')" 
-                                title="약간 TMI일수도 있는 사적인 이야기">
-                            인간 박선정을 더 알고 싶다면?
-                        </button>
-                    </div>
-                    <div class="button-wrapper">
-                        <button class="nav-button" 
-                                onclick="toggleSection('professional-ko')" 
-                                title="제 이력서를 보실 수 있습니다">
-                            개발자 박선정을 더 알고 싶다면?
-                        </button>
+
+            <br>
+            <br>
+            <section class="home-section">
+                <h2>🪄 Recent Experiments</h2>
+                <div class="experiment-grid">
+                    <a class="experiment-card" href="gazeToVoice.html">
+                        <img src="img/voiceToText.gif" alt="Gaze to Voice prototype">
+                        <span>Gaze to Voice: Real-Time Storytelling</span>
+                    </a>
+                    <a class="experiment-card" href="StyleShift.html">
+                        <img src="img/realTimeTexture.gif" alt="StyleShift prototype">
+                        <span>StyleShift: Real-Time Texture Generation with Stable Diffusion</span>
+                    </a>
+                    <div class="experiment-card experiment-empty" aria-label="Empty experiment slot">
+                        <span>More soon</span>
                     </div>
                 </div>
             </section>
-            
-            <section id="personal-ko" class="content-section" style="display: none;">
-                <p>
-                    20살, 성인이 되자마자 다짐했던 것은 후회 없는 수많은 경험을 쌓는 것이었습니다. 중고등학교 시절, 공부를 해야 하는 이유를 잘 모르고 단지 지금까지의 노력이 아까워 열심히 공부하여 대학에 진학했지만, 20대는 오로지 제 선택으로 가득 채우고 싶었습니다. <br><br>
 
-                    그렇게 스스로를 찾는 여정을 시작했습니다. 무엇을 좋아하고 싫어하는지, 어떤 일에 열정을 느끼는지 등 다양한 시도와 실패를 통해 저 자신을 알아갔습니다. 처음에는 문예창작학과에서 공부하다가 중국어문학으로 전과하고, 복수전공으로 도시계획 부동산학과를 잠깐 경험한 후 문화콘텐츠학과를 거쳐 게임 인터랙티브 미디어 학과를 졸업하게 되었습니다. 또한, 영국에서 Virtual & Augmented Reality 공학 석사를 취득했습니다.<br><br>
-
-                    대학교 1학년 첫 겨울방학에 친구와 함께 단 돈 100만원을 들고 한 달동안 동남아 배낭여행을 다녀온 경험이 인상 깊어, 이후로도 세계 곳곳을 탐험했습니다. 호주에서 딸기를 따고 빵공장에서 일해보는 등 (언젠간 애니메이션으로 만들어보고 싶은 경험 중 하나입니다) 다양한 경험을 쌓았으며, 대만으로 교환학생을 가 중국어를 공부하며 여유를 느끼고 그림 그리기라는 소중한 취미도 갖게 되었습니다. 코로나로 국경이 막히기 직전에는 필리핀 세부에서 영어 캠프 강사로 일하기도 했습니다.<br><br>
-
-                    여행 외에도 다양한 아르바이트를 통해 사회 경험을 쌓고 저를 알아갔습니다. 방송작가의 꿈을 꾸며 프리뷰 아르바이트, 방청객, 보조출연 등 여러 일을 경험했습니다. 마케팅, 영상 편집, TGI Fridays, 치킨집, 백반집 등 다양한 아르바이트를 통해 스스로를 발견했습니다.<br><br>
-
-                    2020년에는 세계여행을 떠나기 위해 자금을 마련하고자 콘텐츠 마케터로 인턴을 시작했지만, 코로나로 인해 여행이 중단되어 1년 넘게 그 회사에서 일하게 되었습니다. 그 과정에서 XR 분야에 대한 관심이 커져 영국으로 떠나 VR/AR 관련 석사를 취득한 후 현재는 2년 넘게 XR 개발자로 활동하고 있습니다. 저는 도전을 즐기고 실패를 두려워하지 않으며 새로운 것을 탐구하는 것을 좋아합니다. 기획, 디자인, 개발, 마케팅 등 다양한 분야에 관심을 가지고 있으며, 사용자 친화적인 앱 개발을 위해 노력하고 있습니다. 상상력을 현실로 구현할 수 있다는 점에 매료되어, 기술과 결합해 재미있고 혁신적인 경험을 창출하는 데 기대가 됩니다.<br><br>
-                </p>
+            <section class="home-section">
+                <h2>✨ Selected Work</h2>
+                <div class="selected-grid">
+                    <a class="selected-card" href="8pmAndCat.html">
+                        <img src="img/8pmCat.gif" alt="8pm and the Cat">
+                        <h3>8pm and the Cat</h3>
+                        <p>AI-driven VR film that generates personalised narratives in real-time using gaze, voice, and LLMS. Selected for Venice Immersive 2025 and BFI Expanded 2025</p>
+                        <span>#AI #VR #Storytelling</span>
+                    </a>
+                    <a class="selected-card" href="Presentation.html">
+                        <img src="img/vrPresentation.gif" alt="Public Speaking in VR Research">
+                        <h3>Public Speaking in VR Research</h3>
+                        <p>A research-led VR app for educing foreign language anxiety, tested with 40+ participants. Published in Frontiers in Virtual Reality and presented at IEEE VR 2023</p>
+                        <span>#VR #Research</span>
+                    </a>
+                    <a class="selected-card" href="PinPoint.html">
+                        <img src="img/gif1.gif" alt="PinPoint">
+                        <h3>PinPoint</h3>
+                        <p>A multi-platform spatial computing system that delivers contextual briefings through AR glasses, built on Snap Spectacles, Snap Cloud, and a companion web app. Finalist, XRCC 2026</p>
+                        <span>#Spectacles #AR #AI</span>
+                    </a>
+                    <a class="selected-card" href="BaobabDiary.html">
+                        <img src="img/Baobab.gif" alt="Baobab Diary">
+                        <h3>Baobab Diary</h3>
+                        <p>A mixed-reality journaling app where memories live in physical space, exploring embodied interaction and AI-assisted reflection. Winner, 2024 Korea Metaverse Developer Contest</p>
+                        <span>#MR #AI #Worlds</span>
+                    </a>
+                </div>
             </section>
-            
-            <section id="professional-ko" class="content-section" style="display: none;">
-                <iframe src="files/SeonjeongPark_CV.pdf" width="100%" height="600px"></iframe>
+
+            <section class="home-contact">
+                <h2>Want to chat about AI, XR, or future interfaces?</h2>
+                I’m always up for a coffee or a quick call 🥤
+                <span style="font-size: 0.8em;">(Only if it’s iced oat-milk latte...)</span>
             </section>
-            
         </div>
     </main>
-</div>
 
+    <div id="content-ko" style="display: none;"></div>
 
 <footer class="footer">
-    <span>Seonjeong Park @2025</span>
+    <span>Seonjeong Park © 2026</span>
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
@@ -152,19 +134,7 @@
 </footer>
 
     <!-- Ensure this script tag is at the end of the body -->
-    <script type="text/javascript">
-
-        function switchLanguage(lang) {
-            if (lang === 'en') {
-                document.getElementById('content-en').style.display = 'block';
-                document.getElementById('content-ko').style.display = 'none';
-            } else if (lang === 'ko') {
-                document.getElementById('content-en').style.display = 'none';
-                document.getElementById('content-ko').style.display = 'block';
-            }
-        }
-    </script>
-    
     <script src="js/main.js"></script>
+    <script src="js/avatarHomeButton.js"></script>
 </body>
 </html>

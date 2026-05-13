@@ -2,28 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>8PM and the Cat</title>
+    <title>Seonjeong Park</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/8pmAndCat.css">
+    <link rel="stylesheet" href="css/site-header.css">
 
-    <link rel="icon" href="img/profilepics4.png" type="image/png">
+    <link rel="icon" href="img/profile.png" type="image/png">
 </head>
 <body>
  
-<header>
-    <div id="language-switcher">
-        <a href="#" id="lang-ko">한국어</a> | <a href="#" id="lang-en">English</a>
-    </div>
-    <nav>
-        <a href="index.html"><button class="nav-button bio">BIO</button></a>
-        <a href="playground.html"><button class="nav-button playground">PLAYGROUND</button></a>
-        <a href="projects.html"><button class="nav-button projects">PROJECTS</button></a>
-    </nav>
-</header>
+<header class="site-header">
+        <div class="avatar-home-button">
+            <a class="avatar-button" href="index.html" aria-label="Go to home" title="Seonjeong">
+                <img class="avatar-image avatar-image-default" src="img/SJDefault.png" alt="Seonjeong Park avatar">
+                <img class="avatar-image avatar-image-hover" src="img/SJClicked.png" alt="">
+            </a>
+            <div class="pronunciation-bubble" role="tooltip">
+                <span>How to pronounce my name :</span>
+                <button class="pronounce-button" type="button" aria-label="Play name pronunciation">🔊</button>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="project.html"><button class="nav-button" type="button">WORK</button></a>
+            <a href="playground.html"><button class="nav-button" type="button">PLAYGROUND</button></a>
+            <a href="about.html"><button class="nav-button" type="button">ABOUT</button></a>
+            <a href="easterEgg.html" title="EasterEgg"><button class="nav-button" type="button" aria-label="EasterEgg">🥚</button></a>
+            <button class="language-toggle" type="button" data-language="en" aria-label="Toggle language">EN</button>
+        </nav>
+    </header>
 <br>
 <section id="baobab-diary">
     <div class="title">
@@ -212,7 +222,7 @@
     <br><br>
     <!-- Footer Section -->
     <footer class="footer">
-        <span>Seonjeong Park @2025</span>
+        <span>Seonjeong Park © 2026</span>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
@@ -222,5 +232,6 @@
     </footer>
 </section>
 
+    <script src="js/avatarHomeButton.js"></script>
 </body>
 </html>

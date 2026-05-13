@@ -1,0 +1,242 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.avatar-home-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-top: -8px;
+}
+
+.avatar-button {
+    display: inline-flex;
+    width: 150px;
+    height: 150px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    cursor: pointer;
+    overflow: visible;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.avatar-button:hover,
+.avatar-button:focus {
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.avatar-image-hover {
+    display: none;
+}
+
+.avatar-home-button:hover .avatar-image-default,
+.avatar-home-button:focus-within .avatar-image-default,
+.avatar-button:active .avatar-image-default {
+    display: none;
+}
+
+.avatar-home-button:hover .avatar-image-hover,
+.avatar-home-button:focus-within .avatar-image-hover,
+.avatar-button:active .avatar-image-hover {
+    display: block;
+}
+
+.pronunciation-bubble {
+    position: absolute;
+    left: 120px;
+    top: 30px;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    width: 156px;
+    height: 86px;
+    padding: 30px 10px 28px 30px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+    background: url("../img/SpeechBubble.png") center / 100% 100% no-repeat;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+    box-shadow: none;
+}
+
+.pronunciation-bubble span {
+    display: block;
+    max-width: 125px;
+}
+
+.avatar-home-button:hover .pronunciation-bubble,
+.avatar-home-button:focus-within .pronunciation-bubble {
+    display: inline-flex;
+}
+
+.pronounce-button {
+    position: absolute;
+    right: 40px;
+    top: 60%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: #fff27900;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+    text-align: center;
+    appearance: none;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.pronounce-button:hover,
+.pronounce-button:focus {
+    background: #d1c98900;
+    transform: translateY(calc(-50% - 1px));
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+.nav-button,
+.language-toggle {
+    background-color: #FFF279;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.2s ease, transform 0.1s;
+}
+
+.nav-button:hover,
+.nav-button:focus,
+.language-toggle:hover,
+.language-toggle:focus {
+    background-color: #D1C989;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.language-toggle {
+    min-width: 44px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: none;
+}
+
+.footer,
+footer {
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.footer::before,
+footer::before {
+    content: none !important;
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        align-items: flex-start;
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .avatar-home-button {
+        margin-top: -4px;
+    }
+
+    .avatar-button {
+        width: 96px;
+        height: 96px;
+    }
+
+    .main-nav {
+        gap: 8px;
+    }
+
+    .nav-button,
+    .language-toggle {
+        padding: 8px 11px;
+        font-size: 8px;
+    }
+
+    .pronunciation-bubble {
+        left: 70px;
+        top: 10px;
+        width: 87px;
+        min-width: 0;
+        height: 53px;
+        padding: 26px 12px 28px 20px;
+        font-size: 7px;
+    }
+
+    .pronunciation-bubble span {
+        max-width: 110px;
+    }
+
+    .pronounce-button {
+        font-size: 9px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .site-header {
+        gap: 8px;
+    }
+
+    .avatar-button {
+        width: 76px;
+        height: 76px;
+    }
+
+    .main-nav {
+        gap: 6px;
+    }
+
+    .nav-button,
+    .language-toggle {
+        padding: 7px 9px;
+        font-size: 9px;
+    }
+}
