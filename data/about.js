@@ -27,7 +27,7 @@ const ABOUT_DATA = {
             role: "XR Developer",
             description: [
                 "NoGhost is a London-based immersive content studio creating VR, MR, and interactive experiences.",
-                "I have shipped production-ready VR/MR applications in Unity and Unreal Engine across Meta Quest, Apple Vision Pro, and mobile platforms, collaborating with organisations including Epic Games, Aardman, City of Bradford, and Felix & Paul Studios."
+                "I have shipped 6+ production-ready VR/MR applications in Unity and Unreal Engine across Meta Quest, Apple Vision Pro, and mobile platforms, collaborating with organisations including Epic Games, Aardman, City of Bradford, and Felix & Paul Studios."
             ],
             projects: [
                 {

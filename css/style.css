@@ -554,7 +554,7 @@ footer .social-icons a {
 
 @media (max-width: 768px) {
     .home-main {
-        padding: 34px 26px 72px;
+        padding: 40px 40px 72px;
     }
 
     .experiment-grid,
@@ -562,10 +562,17 @@ footer .social-icons a {
         grid-template-columns: 1fr;
     }
 
+    .mind-map-composite {
+    position: relative;
+    display: block;
+    width: min(220px, 100%);
+    margin: 0 auto;
+    }
+
     .mind-postit {
-        width: clamp(80px, 17%, 64px);
-        padding: 5px;
-        font-size: 7px;
+        width: clamp(58px, 15%, 68px);
+        padding: 6px;
+        font-size: 6.5px;
     }
 
     .debuggy-link {
@@ -578,8 +585,8 @@ footer .social-icons a {
 
 @media (max-width: 560px) {
     .home-main {
-        padding-left: 22px;
-        padding-right: 22px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .home-hero h1 {
@@ -597,5 +604,13 @@ footer .social-icons a {
     .debuggy-link {
         left: -12%;
         width: 34px;
+    }
+
+    
+
+    .mind-postit {
+        width: clamp(48px, 14%, 56px);
+        padding: 5px;
+        font-size: 6px;
     }
 }

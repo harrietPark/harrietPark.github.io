@@ -211,6 +211,11 @@ footer .social-icons a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    main {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     nav {
         gap: 10px; /* Reduce gap between buttons */
     }
@@ -253,8 +258,16 @@ footer .social-icons a {
     }
 
     .intro-description {
-        font-size: 8px;
+        font-size: 12px;
+        line-height: 1.5;
     }
 
 
+}
+
+@media (max-width: 560px) {
+    main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }

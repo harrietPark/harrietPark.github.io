@@ -325,7 +325,7 @@ footer .social-icons a {
 
 @media (max-width: 768px) {
     main {
-        padding: 18px 28px 80px;
+        padding: 40px 40px 80px;
     }
 
     .about-wrapper {
@@ -396,8 +396,8 @@ footer .social-icons a {
 
 @media (max-width: 560px) {
     main {
-        padding-left: 22px;
-        padding-right: 22px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .experience-meta {
