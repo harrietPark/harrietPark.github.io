@@ -270,4 +270,9 @@ footer .social-icons a {
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    .intro-description {
+        font-size: 8px;
+        line-height: 1.5;
+    }
 }

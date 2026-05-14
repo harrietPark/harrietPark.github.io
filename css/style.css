@@ -314,7 +314,7 @@ footer .social-icons a {
 }
 
 .home-main {
-    padding: 42px 20px 88px;
+    padding: 42px 42px 88px;
 }
 
 .home-wrapper {
@@ -565,7 +565,7 @@ footer .social-icons a {
     .mind-map-composite {
     position: relative;
     display: block;
-    width: min(200px, 100%);
+    width: min(180px, 100%);
     margin: 0 auto;
     }
 
