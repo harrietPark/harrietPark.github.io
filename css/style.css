@@ -565,7 +565,7 @@ footer .social-icons a {
     .mind-map-composite {
     position: relative;
     display: block;
-    width: min(220px, 100%);
+    width: min(200px, 100%);
     margin: 0 auto;
     }
 
@@ -605,8 +605,6 @@ footer .social-icons a {
         left: -12%;
         width: 34px;
     }
-
-    
 
     .mind-postit {
         width: clamp(48px, 14%, 56px);
