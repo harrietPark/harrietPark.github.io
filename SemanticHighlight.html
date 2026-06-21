@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SemanticHighlight — Seonjeong Park</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/site-header.css">
+    <link rel="stylesheet" href="css/SemanticHighlight.css">
+
+    <link rel="icon" href="img/profile.png" type="image/png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="avatar-home-button">
+            <a class="avatar-button" href="index.html" aria-label="Go to home" title="Seonjeong">
+                <img class="avatar-image avatar-image-default" src="img/SJDefault.png" alt="Seonjeong Park avatar">
+                <img class="avatar-image avatar-image-hover" src="img/SJClicked.png" alt="">
+            </a>
+            <div class="pronunciation-bubble" role="tooltip">
+                <span>How to pronounce my name :</span>
+                <button class="pronounce-button" type="button" aria-label="Play name pronunciation">🔊</button>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="project.html"><button class="nav-button" type="button">WORK</button></a>
+            <a href="playground.html"><button class="nav-button" type="button">PLAYGROUND</button></a>
+            <a href="about.html"><button class="nav-button" type="button">ABOUT</button></a>
+            <a href="easterEgg.html" title="EasterEgg"><button class="nav-button" type="button" aria-label="EasterEgg">🥚</button></a>
+            <button class="language-toggle" type="button" data-language="en" aria-label="Toggle language">EN</button>
+        </nav>
+    </header>
+
+    <main class="sh-main">
+        <h1 class="sh-title">Semantic Highlight</h1>
+
+        <div class="sh-hero-gifs">
+            <img src="img/notes.gif" data-gif-src="img/notes.gif" alt="Floating AI post-it note interaction" decoding="async">
+            <img data-gif-src="img/nextButton.gif" alt="Next button interaction on post-it note" decoding="async">
+            <img data-gif-src="img/recording.gif" alt="Recording interaction on post-it note" decoding="async">
+        </div>
+
+        <section class="sh-overview" aria-label="Project overview">
+            <ul class="sh-meta-list">
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Year</span>
+                    <p class="sh-meta-value">2026 (on-going!)</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Project Type</span>
+                    <p class="sh-meta-value">Spatial AI/XR Prototyping</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Tech Stack</span>
+                    <ul class="sh-tech-list">
+                        <li>Engine : Lens Studio</li>
+                        <li>Platform : Snap Spectacles</li>
+                        <li>Language : TypeScript</li>
+                        <li>Gen AI : Gemini, OCR</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sh-overview-content">
+                <h2>Highlight text in AR. Pull out meaning.</h2>
+                <p>
+                    SemanticHighlight is a Spectacles lens that lets users calibrate a physical page, create AR highlights with hand gestures, and pull out floating AI-powered post-it notes. Each colour represents a reading intent — Important, Question, Reference, or Disagreement — and Gemini responds accordingly using live camera OCR and page-level context.
+                </p>
+            </div>
+        </section>
+
+        <section class="sh-section">
+            <h2>Context</h2>
+            <p>
+                I have always loved stationery, notebooks, journaling, and the small rituals of recording thoughts while reading. Highlighting, underlining, and placing post-its feel personal and immediate — they help me capture the exact moment when something matters.
+            </p>
+
+            <figure class="sh-context-figure">
+                <img src="img/highlightConcept.png" alt="Annotated book page with highlights and sticky notes">
+                <figcaption>Source: Pinterest</figcaption>
+            </figure>
+
+            <p>
+                At the same time, the way we learn has changed. AI has become a natural part of how we summarise, question, connect, and reflect on information. But physical reading is still largely disconnected from that intelligence.
+            </p>
+            <p>
+                When I highlight something in a book and want to ask AI about it, I usually have to interrupt the reading flow: open another device, type the passage manually, take a photo, or move the thought into a separate app. The moment of attention happens on the page, but the conversation with AI happens somewhere else.
+            </p>
+            <p>
+                SemanticHighlight started from this gap.
+            </p>
+
+            <blockquote class="sh-pullquote">
+                <p>
+                    <span class="sh-pullquote-mark">“</span>
+                    What if the act of highlighting itself could become the input to AI?
+                    <span class="sh-pullquote-mark">”</span>
+                </p>
+            </blockquote>
+
+            <p>
+                Instead of replacing paper reading with a screen, SemanticHighlight keeps the physical page at the centre and adds an editable AR annotation layer on top of it. When the user creates an AR highlight, the system understands the selected passage, the page context, and the user's reading intent. The highlight can then expand into a floating post-it note that summarises, questions, references, or critiques the passage.
+            </p>
+            <p>
+                The goal is to turn moments of attention into contextual learning notes — without breaking the flow of reading.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>Design Hypothesis</h2>
+            <p>
+                Highlighting is already a reader's way of saying, "this matters."
+            </p>
+            <p>
+                If an AR highlight can capture the selected passage, surrounding page context, and the user's reading intent, then the highlight can become a lightweight AI input. Instead of asking the user to leave the page and talk to AI somewhere else, the system can respond directly within the reading moment.
+            </p>
+            <p>
+                Over time, these highlight-to-note interactions could become a personal learning archive: a collection of what the user noticed, questioned, connected, disagreed with, and wanted to remember.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>How It Works</h2>
+
+            <div class="sh-steps">
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img data-gif-src="img/calibration.gif" alt="Calibrating a physical page with hand gestures" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>1. Calibrate a physical page</h3>
+                        <p>
+                            The user pinches the four corners of a page to lock the AR layer onto the paper. After calibration, the system runs OCR to capture page-level context.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img data-gif-src="img/colorPalette.gif" alt="Choosing a semantic reading intent colour palette" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>2. Choose a semantic reading intent</h3>
+                        <p>
+                            Holding a pinch opens a colour palette. Each colour represents a different reading intent
+                        </p>
+                        <ul class="sh-intent-list">
+                            <li class="sh-intent-item">
+                                <span class="sh-intent-label sh-intent-label--yellow">Yellow - Important</span>
+                                <span class="sh-intent-desc">Inspired by the familiar yellow highlighter. Used for key takeaways and summaries</span>
+                            </li>
+                            <li class="sh-intent-item">
+                                <span class="sh-intent-label sh-intent-label--green">Green - Question</span>
+                                <span class="sh-intent-desc">Used for curiosity, uncertainty, and things the reader wants to investigate further.</span>
+                            </li>
+                            <li class="sh-intent-item">
+                                <span class="sh-intent-label sh-intent-label--blue">Blue - Reference</span>
+                                <span class="sh-intent-desc">Used for connections, related concepts, and links to previous knowledge.</span>
+                            </li>
+                            <li class="sh-intent-item">
+                                <span class="sh-intent-label sh-intent-label--red">Red - Disagreement</span>
+                                <span class="sh-intent-desc">Used for critique, counterpoints, and alternative interpretations. I chose coral instead of strong red so disagreement feels thoughtful rather than aggressive.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img data-gif-src="img/highlight.gif" alt="Creating AR highlights with hand gestures" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>3. Create AR highlights with hand gestures</h3>
+                        <p>
+                            The user pinches and drags across a passage to draw an AR highlight directly over the physical text.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img data-gif-src="img/notes.gif" alt="Pulling out floating AI-powered post-it notes" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>4. Pull out floating AI-powered post-it notes</h3>
+                        <p>
+                            An orb appears at the end of the highlight. The user can pinch and pull it outward to reveal a floating post-it note generated from the highlighted passage, surrounding context, and selected reading intent.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="sh-section">
+            <h2>Design Decisions</h2>
+
+            <div class="sh-decisions-grid">
+                <article class="sh-decision-card sh-decision-card--tall">
+                    <h3>Q. Why highlight-to-note?</h3>
+                    <p>
+                        I chose highlight-to-note because highlighting is already a natural signal of attention. When a reader highlights something, they are implicitly saying that the passage is important, confusing, interesting, or worth returning to.
+                    </p>
+                    <p>
+                        Instead of adding a separate AI button or asking the user to manually copy text into a chat, SemanticHighlight treats the AR highlight itself as the input. The highlight becomes the bridge between the physical page and AI-assisted thinking.
+                    </p>
+                </article>
+
+                <article class="sh-decision-card">
+                    <h3>Q. Why pull out the note?</h3>
+                    <p>
+                        I did not want AI to appear automatically because reading is a focused activity. An instant AI pop-up could feel disruptive.
+                    </p>
+                    <p>
+                        The orb-and-pull interaction makes the AI feel invited. The user actively pulls meaning out of the highlight, so the response feels spatial, intentional, and under their control.
+                    </p>
+                </article>
+
+                <article class="sh-decision-card">
+                    <h3>Q. Why semantic colours?</h3>
+                    <p>
+                        I designed the colour system as a set of reading intentions, not just a visual palette. Each colour changes how the AI responds, so choosing a colour becomes a small act of reflection.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sh-section">
+            <h2>Technical Prototype</h2>
+            <p>
+                The prototype combines hand tracking, page calibration, OCR, AI text generation, and spatial UI.
+            </p>
+            <p>
+                After the user calibrates the page, the system runs OCR to understand the page-level context. When the user creates an AR highlight, the selected region is interpreted together with the surrounding page transcription. Gemini then generates a note based on the highlighted passage, the broader context, and the selected semantic intent.
+            </p>
+            <p>
+                The interaction is managed through gesture states: holding still opens the colour palette, intentional movement creates a highlight, and pulling an orb reveals the post-it note.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>Future Development</h2>
+            <p>
+                This is an ongoing prototype. The next step is to turn SemanticHighlight from a single-page interaction into a persistent contextual learning system.
+            </p>
+            <ol class="sh-future-list">
+                <li>
+                    <h3>1. Accuracy &amp; Trust</h3>
+                    <p>
+                        Improve OCR accuracy and make the AI response more transparent. Each note should clearly show the highlighted source text, page number or spatial position, the context AI referenced, and whether the content was written by the user or generated by AI.
+                    </p>
+                </li>
+                <li>
+                    <h3>2. Note Stack</h3>
+                    <p>
+                        Turn individual post-its into a structured personal note system. Users could save, edit, organise, and revisit highlights by page, book, topic, or reading intent. Highlight thickness, opacity, and note style could also become customisable.
+                    </p>
+                </li>
+                <li>
+                    <h3>3. Companion App &amp; Contextual Archive</h3>
+                    <p>
+                        Connect the prototype with Snap Cloud and a companion app so notes can persist across sessions. Over time, AI could connect related notes, detect repeated themes, summarise reading sessions, and help users build a contextual learning archive from accumulated highlights.
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="sh-section">
+            <h2>Reflection</h2>
+            <p>
+                This prototype helped me explore AR not as a replacement for physical media, but as a layer that can make physical experiences more flexible, contextual, and intelligent.
+            </p>
+            <p>
+                The biggest design challenge was balancing AI assistance with reading focus. AI is powerful, but if it appears too aggressively, it can interrupt the quiet rhythm of reading. The pull-out post-it interaction became a way to keep the user in control while still making AI feel close to the reading moment.
+            </p>
+            <p>
+                Long term, I see SemanticHighlight as more than an AR reading tool. It could become a way to highlight the physical world itself, turning books, objects, diagrams, and everyday observations into a contextual learning archive.
+            </p>
+        </section>
+    </main>
+
+    <footer class="sh-footer">
+        <span>Seonjeong Park © 2026</span>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/norangi__/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://harrietpark.github.io/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://29harriet.itch.io/" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/avatarHomeButton.js"></script>
+    <script src="js/semanticHighlightMedia.js"></script>
+</body>
+</html>
