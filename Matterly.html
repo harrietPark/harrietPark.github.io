@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matterly — Seonjeong Park</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/site-header.css">
+    <link rel="stylesheet" href="css/SemanticHighlight.css">
+
+    <link rel="icon" href="img/profile.png" type="image/png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="avatar-home-button">
+            <a class="avatar-button" href="index.html" aria-label="Go to home" title="Seonjeong">
+                <img class="avatar-image avatar-image-default" src="img/SJDefault.png" alt="Seonjeong Park avatar">
+                <img class="avatar-image avatar-image-hover" src="img/SJClicked.png" alt="">
+            </a>
+            <div class="pronunciation-bubble" role="tooltip">
+                <span>How to pronounce my name :</span>
+                <button class="pronounce-button" type="button" aria-label="Play name pronunciation">🔊</button>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="project.html"><button class="nav-button" type="button">WORK</button></a>
+            <a href="playground.html"><button class="nav-button" type="button">PLAYGROUND</button></a>
+            <a href="about.html"><button class="nav-button" type="button">ABOUT</button></a>
+            <a href="easterEgg.html" title="EasterEgg"><button class="nav-button" type="button" aria-label="EasterEgg">🥚</button></a>
+            <button class="language-toggle" type="button" data-language="en" aria-label="Toggle language">EN</button>
+        </nav>
+    </header>
+
+    <main class="sh-main">
+        <h1 class="sh-title">Matterly</h1>
+
+        <div class="sh-video-embed">
+            <iframe src="https://www.youtube.com/embed/IlRC-NTF9X4?si=z4r9Z_k0atHWG4b5" title="Matterly — YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <section class="sh-overview" aria-label="Project overview">
+            <ul class="sh-meta-list">
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Role</span>
+                    <ul class="sh-tech-list">
+                        <li>Backend Development &amp; Integration</li>
+                        <li>Companion Web Development</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Team</span>
+                    <ul class="sh-tech-list">
+                        <li>Sylvan Shen</li>
+                        <li>Grass Park</li>
+                        <li>Steve Lukas</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Year</span>
+                    <p class="sh-meta-value">2026 (2 weeks)</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Project Type</span>
+                    <p class="sh-meta-value">
+                        <a class="sh-meta-link" href="https://reality-hack-at-awe-2026.devpost.com/" target="_blank" rel="noopener noreferrer">AWE Reality Hack2026 (Selected as Finalist) ↗</a>
+                    </p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Tech Stack</span>
+                    <ul class="sh-tech-list">
+                        <li>Engine : Lens Studio</li>
+                        <li>Platform : Snap Spectacles</li>
+                        <li>Language : TypeScript, React</li>
+                        <li>Gen AI : OpenAI, Gemini</li>
+                        <li>Backend : Snap Cloud(Supabase)</li>
+                        <li>Collaboration : GitHub</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">More Links</span>
+                    <ul class="sh-meta-links">
+                        <li><a class="sh-meta-link" href="https://devpost.com/software/matterly" target="_blank" rel="noopener noreferrer">DevPost Link ↗</a></li>
+                        <li><a class="sh-meta-link" href="https://harrietpark.github.io/FourSight-WebPortal/" target="_blank" rel="noopener noreferrer">Companion Web Link ↗</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sh-overview-content">
+                <p>
+                    Matterly helps people understand the material impact of everyday objects through an AR learning experience. A user scans an object through Spectacles, sees its lifecycle unfold in space, asks an AI guide follow-up questions, and saves the discovery to a companion web portal.
+                </p>
+                <p>
+                    The experience combines object recognition, material lifecycle data, spatial visual storytelling, and a lightweight object-dex system for retention.
+                </p>
+                <em>Challenge Context</em>
+                <p>
+                    Built for Reality Hack at AWE 2026, a Snap-sponsored hackathon exploring how Spatial AI and Spectacles can transform learning.
+                </p>
+                <p>
+                    Matterly responds to the prompt by turning everyday objects into spatial sustainability lessons — revealing where materials come from, what they cost, and where they really go after use.
+                </p>
+            </div>
+        </section>
+
+        <section class="sh-section">
+            <h2>Problem</h2>
+            <p>
+                Most sustainability education focuses on what happens after purchase, which bin to use, whether something is recyclable, or how to sort waste. But this often misses the bigger lesson: objects have a hidden material life before and after we use them.
+            </p>
+            <p>
+                A paper cup, water bottle, laptop, or can may feel disposable, but each object carries a story of extraction, manufacturing, water use, carbon impact, and end-of-life fate. Matterly was designed to make that invisible system visible in the moment, directly attached to the physical object.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>Concept</h2>
+            <p>
+                Matterly uses Spatial AI on Spectacles to make material systems visible in context.
+            </p>
+            <p>
+                Instead of acting as another recycling lookup tool, Matterly reveals the full lifecycle of an object: where it came from, how it was made, how long it may last, and where it commonly ends up. This story is anchored directly to the physical object through AR, helping users build material literacy through embodied, in-situ learning.
+            </p>
+            <p>
+                The goal is not to make people feel guilty.
+            </p>
+            <p>
+                The goal is to make invisible systems understandable, memorable, and actionable.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>Experience Flow</h2>
+
+            <div class="sh-steps">
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/matterly_scan.gif" alt="Scanning an object with Snap Spectacles" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>1. Scan an object</h3>
+                        <p>
+                            The user starts by looking at or holding an everyday object through Spectacles.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/matterly_material.gif" alt="Recognising object and material type" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>2. Recognise object and material</h3>
+                        <p>
+                            Matterly recognises the object and maps it to material data, such as plastic type, aluminium, paper, glass, or mixed materials.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/matterly_ar.gif" alt="Lifecycle revealed in AR" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>3. Reveal the lifecycle</h3>
+                        <p>
+                            The object's hidden lifecycle appears in AR, from extraction and processing to manufacturing, use, and disposal.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/matterly_ai.gif" alt="Asking the AI guide follow-up questions" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>4. Ask the AI guide</h3>
+                        <p>
+                            The user can ask the AI guide about recycling, material impact, better alternatives, or what happens after disposal.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/matterly_compare.gif" alt="Compare Mode between objects or materials" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>5. Compare Mode</h3>
+                        <p>
+                            Users can compare objects or materials to understand which option is more reusable, recyclable, or lower-impact.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/matterly_web.gif" alt="Saving the scan to the companion object-dex web portal" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>6. Save to object-dex</h3>
+                        <p>
+                            The scan is saved as a collectible card in the companion web portal, allowing users to revisit what they learned over time.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="sh-section">
+            <h2>What I Built</h2>
+            <p>
+                My main focus was connecting the Spectacles experience to a structured backend and companion web system.
+            </p>
+            <p>I worked on:</p>
+            <ul class="sh-bullet-list">
+                <li>Designing the backend architecture and material data schema</li>
+                <li>Building the first version of the companion web portal</li>
+                <li>Structuring and updating the material lifecycle database</li>
+                <li>Creating helper functions for client-server integration through Snap Cloud</li>
+                <li>Integrating cloud data into Lens Studio for the material detail panel</li>
+                <li>Supporting the object-dex flow where scanned objects could be saved and revisited</li>
+            </ul>
+            <p>
+                This role helped bridge the live AR experience and the longer-term learning layer: Spectacles create the moment of discovery, while the web portal makes that discovery persistent.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>System Design</h2>
+            <p>
+                Matterly uses a database-first architecture with AI as a flexible recognition layer.
+            </p>
+            <p>
+                Rather than asking AI to generate every sustainability explanation from scratch, the system stores trusted lifecycle stages, material information, and impact figures in a structured database. Gemini is used to recognise the object and fill a structured format, while the app assembles the visual experience from predefined blocks. This made the prototype more reliable for a live demo, reduced the risk of hallucinated sustainability claims, and allowed the AR visuals to stay consistent.
+            </p>
+            <h3>System Flow</h3>
+            <p>
+                <span class="sh-flow-highlight">Object Capture → Gemini Recognition → Snap Cloud Database → Lifecycle Assembly → AR Reveal → Web Object-dex</span>
+            </p>
+            <h3>Why this mattered</h3>
+            <p>
+                AI was useful for recognising objects, but the educational content needed to be grounded, repeatable, and trustworthy. This architecture let us combine AI flexibility with database reliability.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2><a href="https://harrietpark.github.io/FourSight-WebPortal/" target="_blank" rel="noopener noreferrer">Companion Web ↗</a></h2>
+            <p>
+                The companion web portal extends Matterly beyond the moment of scanning.
+            </p>
+            <p>
+                While Spectacles create an immediate learning experience, the portal helps users retain what they discovered. Each scanned object becomes a card in an object-dex, holding its material breakdown, lifecycle story, impact data, and end-of-life information.
+            </p>
+            <p>
+                The aim was to make sustainability learning feel collectible and encouraging rather than guilt-driven. The product brief describes the portal as an object-dex where each scanned object unlocks an illustrated card holding its story, impact, and fate.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>Key Design Decisions</h2>
+
+            <h3>Database-first, not AI-first</h3>
+            <p>
+                We chose to store lifecycle and impact data in a structured database, using AI mainly for recognition and structured interpretation. This reduced hallucination risk and made the experience more reliable.
+            </p>
+
+            <h3>Spatial learning, not flat instruction</h3>
+            <p>
+                Matterly is not just a recycling lookup app. The key value is that information appears in context, anchored to the real object, so the user learns through the thing they are already holding or seeing.
+            </p>
+
+            <h3>Gentle sustainability tone</h3>
+            <p>
+                The experience avoids guilt-based messaging. Instead of saying “you failed” or “you saved X litres,” Matterly focuses on curiosity, discovery, and better choices.
+            </p>
+
+            <h3>Companion portal for retention</h3>
+            <p>
+                The Spectacles experience creates the moment of surprise; the web portal helps users remember, compare, and build a collection over time.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>Next Steps</h2>
+            <p>Future development could include:</p>
+            <ol class="sh-numbered-list">
+                <li>Location-aware disposal guidance based on local recycling rules</li>
+                <li>Classroom mode with shared object-dex collections</li>
+                <li>Stronger retention systems such as badges, milestones, and seasonal challenges</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="sh-footer">
+        <span>Seonjeong Park © 2026</span>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/norangi__/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://harrietpark.github.io/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://29harriet.itch.io/" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/avatarHomeButton.js"></script>
+</body>
+</html>

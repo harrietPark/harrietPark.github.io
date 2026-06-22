@@ -1,3 +1,15 @@
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
 .site-header {
     display: flex;
     justify-content: space-between;

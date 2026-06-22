@@ -189,7 +189,7 @@ footer .social-icons a {
     margin-top: 20px;
     background-color: #FDFFE0; /* Yellow background */
     color: #333333; /* Change this to your desired text color */
-    font-family: "Ubuntu Mono", monospace;
+    font-family: 'Inter', sans-serif;
     padding: 60px; /* Adjust the padding if needed */
     border-radius: 10px; /* Adjust the border radius if needed */
     line-height: 1.2; /* Adjust line height for better readability */
@@ -199,7 +199,7 @@ footer .social-icons a {
 #personal {
     background-color: #FDFFE0; /* Change this to your desired background color */
     color: #333333; /* Change this to your desired text color */
-    font-family: "Ubuntu Mono", monospace;
+    font-family: 'Inter', sans-serif;
     padding: 60px; /* Adjust the padding if needed */
     border-radius: 10px; /* Adjust the border radius if needed */
     line-height: 1.2; /* Adjust line height for better readability */
@@ -529,7 +529,7 @@ footer .social-icons a {
 
 .selected-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 34px 30px;
 }
 
@@ -556,6 +556,22 @@ footer .social-icons a {
 .selected-card span {
     color: #666;
     font-size: 11px;
+}
+
+.home-view-all {
+    margin: 24px 0 0;
+    text-align: left;
+}
+
+.home-view-all a {
+    text-decoration: none;
+}
+
+.home-view-all .nav-button {
+    padding: 7px 18px;
+    font-size: 13px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.18);
 }
 
 .home-contact {
