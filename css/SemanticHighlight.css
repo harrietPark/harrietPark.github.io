@@ -29,6 +29,10 @@ body {
     margin-bottom: 64px;
 }
 
+.sh-hero-gifs--quad {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .sh-hero-gifs img {
     display: block;
     width: 100%;
@@ -107,6 +111,24 @@ body {
 }
 
 .sh-overview-content p:last-child {
+    margin-bottom: 0;
+}
+
+.sh-overview-content ul.sh-bullet-list {
+    list-style: disc;
+    margin: 0 0 20px;
+    padding-left: 20px;
+}
+
+.sh-overview-content ul.sh-bullet-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: #111;
+}
+
+.sh-overview-content ul.sh-bullet-list li:last-child {
     margin-bottom: 0;
 }
 
@@ -377,6 +399,10 @@ body {
     margin-right: auto;
 }
 
+.sh-related-grid--center .sh-related-card h3 {
+    text-align: center;
+}
+
 .sh-related-card {
     display: block;
     color: #111;
@@ -526,6 +552,62 @@ body {
     color: #111;
 }
 
+.sh-feature .sh-question-list {
+    margin-top: 16px;
+}
+
+.sh-feature .sh-question-text strong {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.sh-question-list {
+    list-style: none;
+    margin: 16px 0 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sh-question-item {
+    padding: 14px 16px;
+    background: #fafafa;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+}
+
+.sh-question-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.sh-question-text {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5;
+    color: #111;
+}
+
+.sh-question-note {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.55;
+    color: #555;
+}
+
 .sh-intent-list {
     list-style: none;
     margin: 16px 0 0;
@@ -636,6 +718,10 @@ body {
     margin-bottom: 64px;
 }
 
+.sh-main > .sh-video-figure {
+    margin: 0 0 64px;
+}
+
 .sh-video-figure {
     margin: 0 0 36px;
 }
@@ -741,6 +827,10 @@ body {
         padding: 32px 40px 72px;
     }
 
+    .sh-hero-gifs--quad {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .sh-overview {
         grid-template-columns: 1fr;
         gap: 36px;
@@ -772,6 +862,10 @@ body {
     .sh-hero-gifs {
         grid-template-columns: 1fr;
         gap: 12px;
+    }
+
+    .sh-hero-gifs--quad {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .sh-section h2 {

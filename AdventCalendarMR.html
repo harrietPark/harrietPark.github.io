@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Seonjeong Park</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advent Calendar MR | Seonjeong Park</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/BaobabDiary.css">
     <link rel="stylesheet" href="css/site-header.css">
+    <link rel="stylesheet" href="css/SemanticHighlight.css">
 
     <link rel="icon" href="img/profile.png" type="image/png">
 </head>
 <body>
- 
-<header class="site-header">
+
+    <header class="site-header">
         <div class="avatar-home-button">
             <a class="avatar-button" href="index.html" aria-label="Go to home" title="Seonjeong">
                 <img class="avatar-image avatar-image-default" src="img/SJDefault.png" alt="Seonjeong Park avatar">
@@ -34,174 +36,212 @@
             <button class="language-toggle" type="button" data-language="en" aria-label="Toggle language">EN</button>
         </nav>
     </header>
-<br>
-<section id="baobab-diary">
-    <div class="title">
-        <h2>Advent Calendar MR</h2>
-    </div>
 
-    <div class="hastag">
-        <span class="firsttext">C#</span>
-        <span class="secondtext">| Unity Engine</span>
-        <span class="thirdtext">| Mixed Reality</span>
-        <span class="fourthtext">| Gen AI</span>
-    </div>
+    <main class="sh-main">
+        <h1 class="sh-title">Advent Calendar MR</h1>
 
-    <!-- Video Walkthrough Section -->
-    <div class="video-section">
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6EuICTSZ_8E?si=qUEzvmIKEIiMeAJZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figure class="sh-video-figure">
+            <div class="sh-video-embed">
+                <iframe src="https://www.youtube.com/embed/6EuICTSZ_8E?si=qUEzvmIKEIiMeAJZ" title="Advent Calendar MR app trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <figcaption>App Trailer</figcaption>
+        </figure>
+
+        <div class="sh-hero-gifs sh-hero-gifs--quad" aria-label="Experience highlights">
+            <img src="img/chirstmasTree.gif" alt="Decorating a virtual Christmas tree in MR" decoding="async">
+            <img src="img/snow.gif" alt="Snowfall appearing from the ceiling" decoding="async">
+            <img src="img/candles.gif" alt="Lighting floating candles in the room" decoding="async">
+            <img src="img/mrAdventCalendar.gif" alt="Mixed Reality advent calendar in a living room" decoding="async">
         </div>
-        <div class="videotext">
-            App Trailer
-        </div>
-    </div>
 
-    <br><br><br>
-
-    <!-- GIF Row -->
-    <div class="container my-4">
-        <div class="row text-center">
-            <div class="col-md-3 mb-3">
-                <img src="img/chirstmasTree.gif" alt="GIF 1" class="img-fluid rounded">
-            </div>
-            <div class="col-md-3 mb-3">
-                <img src="img/snow.gif" alt="GIF 2" class="img-fluid rounded">
-            </div>
-            <div class="col-md-3 mb-3">
-                <img src="img/candles.gif" alt="GIF 3" class="img-fluid rounded">
-            </div>
-            <div class="col-md-3 mb-3">
-                <img src="img/mrAdventCalendar.gif" alt="GIF 4" class="img-fluid rounded">
-            </div>
-        </div>
-    </div>
-
-    <!-- Overview Section -->
-    <div class="concept">
-    <h4>Overview</h4>
-    <p>
-        A Mixed Reality Advent Calendar that transforms your own physical space into a living, evolving Christmas story.
-        <br>
-        <ul style="padding-left: 20px; list-style-type: disc;">
-        <li>You scan your room once — walls, tables, furniture, windows, and floors become the stage</li>
-        <li>Every day until Christmas, a new surprise appears somewhere in your real room: a glowing ornament under your desk, a fairy fluttering by the window, or a snowflake falling from your ceiling</li>
-        <li>These surprises include interactive activities (lighting candles, decorating a virtual tree) and story fragments that build toward a heartfelt finale on Christmas Day.</li>
-        </ul>
-        It’s a real-world narrative unfolding inside your personal environment.
-    </p>
-</div>
-
-    
-    <br>
-    <!-- Team Roles Section -->
-    <div class="concept">
-        <h4>Team Roles</h4>
-        <p>
-            <b>Seonjeong Park :</b> Ideation, app development using Unity, spatial interaction design, UI/UX design<br>
-            <b>Jiyeon Baek:</b> Ideation, 3D modeling, and animation using Blender.
-        </p>
-    </div>
-    <br>
-    <!-- Development Background and Purpose Section -->
-    <div class="concept">
-        <h4>Development Background and Purpose</h4>
-        <p>
-            For centuries, advent calendars have helped people slow down and savor each day before Christmas. But today, our lives are fast, digital, and flat - we scroll, we swipe, we forget. The MR Advent Calendar brings back that lost sense of presence. It invites you to pause, move, and discover. Not on a screen, but in your world. 
-            <br>It’s not about gifts. It’s about wonder. It’s not about the virtual. It’s about the feeling that magic is here, in your room.
-        </p>
-        <p>
-            <b>1. MR transforms passive anticipation into active anticipation </b>
-            <ul style="padding-left: 20px; list-style-type: disc;">
-            <li>Traditional advent calendars are passive. You open a door, take something out. MR makes anticipation embodied. You move, reach, bend, light, decorate, affect your own space.</li>
-            <li>The surprise isn’t delivered to you; it’s discovered by you. It’s about presence and participation, not consumption.</li>
+        <section class="sh-overview" aria-label="Project overview">
+            <ul class="sh-meta-list">
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Role</span>
+                    <ul class="sh-tech-list">
+                        <li>Ideation</li>
+                        <li>Lead Developer</li>
+                        <li>Spatial Interaction Design</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Team</span>
+                    <ul class="sh-tech-list">
+                        <li>Jiyeon Baek</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Year</span>
+                    <p class="sh-meta-value">2025</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Tech Stack</span>
+                    <ul class="sh-tech-list">
+                        <li>Engine : Unity (C#)</li>
+                        <li>Platform : Meta Quest</li>
+                        <li>Gen AI : Whisper API, OpenAI API, ElevenLabs</li>
+                        <li>Plugins : Meta SDK</li>
+                        <li>Collaboration : GitHub</li>
+                    </ul>
+                </li>
             </ul>
-            <b>2. MR makes your personal environment part of the story </b>
-            <ul style="padding-left: 20px; list-style-type: disc;">
-            <li>Each user’s space becomes the narrative setting - walls, tables, windows, furniture are mapped and used different for everyone. </li>
-            <li>Using MR, every person’s Christmas story feels unique and contextual. The magic happens in your home. MR makes your room part of the story - spatial, embodied, and emotionally real.</li>
+
+            <div class="sh-overview-content">
+                <p>
+                    A Mixed Reality Advent Calendar that transforms your own physical space into a living, evolving Christmas story.
+                </p>
+                <ul class="sh-bullet-list">
+                    <li>You scan your room once. Walls, tables, furniture, windows, and floors become the stage</li>
+                    <li>Every day until Christmas, a new surprise appears somewhere in your real room: a glowing ornament under your desk, a fairy fluttering by the window, or a snowflake falling from your ceiling</li>
+                    <li>These surprises include interactive activities (lighting candles, decorating a virtual tree) and story fragments that build toward a heartfelt finale on Christmas Day</li>
+                </ul>
+                <p>
+                    It's a real-world narrative unfolding inside your personal environment.
+                </p>
+            </div>
+        </section>
+
+        <section class="sh-section">
+            <h2>Why Mixed Reality</h2>
+            <p>
+                For centuries, advent calendars have helped people slow down and savor each day before Christmas. But today, our lives are fast, digital, and flat. We scroll, we swipe, we forget. The MR Advent Calendar brings back that lost sense of presence. It invites you to pause, move, and discover. Not on a screen, but in your world.
+            </p>
+            <p>
+                It's not about gifts. It's about wonder. It's not about the virtual. It's about the feeling that magic is here, in your room.
+            </p>
+
+            <h3>MR transforms passive anticipation into active anticipation</h3>
+            <ul class="sh-bullet-list">
+                <li>Traditional advent calendars are passive. You open a door, take something out. MR makes anticipation embodied. You move, reach, bend, light, decorate, affect your own space.</li>
+                <li>The surprise isn't delivered to you; it's discovered by you. It's about presence and participation, not consumption.</li>
             </ul>
-        </p>
-        A chocolate calendar gives you something to eat. A digital calendar gives you something to see. But a Mixed Reality calendar gives you something to live inside - it turns your room into the story itself. 
 
-    </div>
-    <br>
-    <!-- Development Environment and Tools Section -->
-    <div class="concept">
-        <h4>Development Environment and Tools</h4>
-        <p>
-            <b>Platform :</b> Meta Quest<br>
-            <b>Game Engine :</b> Unity3D<br>
-            <b>Programming Language :</b> C#<br>
-            <b>Gen AI : Whisper API, OpenAI API, ElevenLabs</b>
-            <b>Plugins :</b> Meta SDK<br>
-            <b>Collaboration Tool :</b> GitHub
-        </p>
-    </div>
-    <br>
-    <!-- System Architecture and Key Features Section -->
-    <div class="concept">
-        <h4>System Architecture and Key Features</h4>
-        <p class="core-features-text">
-        <b>1. Meta SDK Integration</b><br>
-        Utilises Meta SDK to to build an immersive MR environment with advanced hand-tracking for gestures, grabbing, snapping, and natural spatial interactions.
-        <br><br>
-
-        <b>2. MR Integration</b><br>
-        Objects dynamically spawn in the user’s real environment. On the floor, walls, ceiling, or furniture, creating a spatially grounded story that unfolds inside their room.
-        This includes environmental transformations such as revealing a night sky above the ceiling, placing fireplaces on walls, or summoning snowfall from overhead.
-        <br><br>
-
-        <b>3. Spatial Anchor</b><br>
-        All virtual objects remain exactly where the user places them. Trees, fireplaces, ornaments, and surprises persist across sessions, allowing the MR world to grow and evolve each day.
-        <br><br>
-
-        <b>4. AI Integration</b><br>
-        Combines several AI tools to deliver a personalized narrative experience:
-        <ul style="padding-left: 30px; list-style-type: disc;">
-            <li>Whisper API for hands-free, natural voice input</li>
-            <li>GPT for generating daily narrative responses, wish interpretation, and custom image generation</li>
-            <li>ElevenLabs for generating Santa’s voice that reads the user’s Christmas wish on Day 25</li>
+            <h3>MR makes your personal environment part of the story</h3>
+            <ul class="sh-bullet-list">
+                <li>Each user's space becomes the narrative setting. Walls, tables, windows, and furniture are mapped and used differently for everyone.</li>
+                <li>Using MR, every person's Christmas story feels unique and contextual. The magic happens in your home. MR makes your room part of the story: spatial, embodied, and emotionally real.</li>
             </ul>
-        Together, these systems create a deeply personal and emotionally resonant AI finale.
-         <br><br>
-        <b>5. Save System</b><br>
-       Progress is automatically saved each day, unlocked surprises, placed objects, user interactions, and the Christmas wish are all preserved, ensuring continuity and a cohesive 25-day experience.
-    </div>
-    <br>
-    <!-- Core Features Section -->
-    <div class="concept">
-    <h4>Core Features</h4>
-    <p class="core-features-text">
-        <b>1. Daily MR Surprises</b><br>
-        Each day reveals a new interactive moment in your real room—trees growing, snow falling from the ceiling, a fireplace on your wall, candles floating above you, and more.
-        <br><br>
 
-        <b>2. Personalized AI Finale</b><br>
-        On Day 1, you whisper your Christmas wish. On Christmas Day, AI transforms it into a personalized “gift,” spoken by Santa and visualized as a custom illustration or scene.
-        <br><br>
+            <blockquote class="sh-pullquote">
+                <p>
+                    <span class="sh-pullquote-mark">“</span>
+                    A chocolate calendar gives you something to eat. A digital calendar gives you something to see. But a Mixed Reality calendar gives you something to live inside. It turns your room into the story itself.
+                    <span class="sh-pullquote-mark">”</span>
+                </p>
+            </blockquote>
+        </section>
 
-        <b>3. 25 Micro-Activities</b><br>
-        Light candles, decorate a tree, trigger snowfall with gestures, snap socks onto a fireplace—each day encourages movement and play.
-        <br><br>
+        <section class="sh-section">
+            <h2>System Design</h2>
+            <p>
+                The experience combines Meta SDK spatial mapping, persistent anchors, and AI-driven narrative tools into a 25-day progression that grows inside the user's real room.
+            </p>
+            <h3>Experience pipeline</h3>
+            <div class="sh-flow" aria-label="Experience pipeline">
+                <span class="sh-flow-step">Room Scan</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Spatial Anchor</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Daily MR Surprise</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Interactive Activity</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Progress Saved</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">AI Finale (Day 25)</span>
+            </div>
 
-        <b>4. Persistence with Spatial Anchors</b><br>
-        All objects stay where you placed them. Your wish, progress, and unlocked days are saved so the world grows with you.
-    </p>
-</div>
+            <div class="sh-features">
+                <article class="sh-feature">
+                    <h3>1. Meta SDK Integration</h3>
+                    <p>
+                        Utilises Meta SDK to build an immersive MR environment with advanced hand-tracking for gestures, grabbing, snapping, and natural spatial interactions.
+                    </p>
+                </article>
+                <article class="sh-feature">
+                    <h3>2. MR Integration</h3>
+                    <p>
+                        Objects dynamically spawn in the user's real environment: on the floor, walls, ceiling, or furniture. This creates a spatially grounded story that unfolds inside their room. Environmental transformations include revealing a night sky above the ceiling, placing fireplaces on walls, or summoning snowfall from overhead.
+                    </p>
+                </article>
+                <article class="sh-feature">
+                    <h3>3. Spatial Anchor</h3>
+                    <p>
+                        All virtual objects remain exactly where the user places them. Trees, fireplaces, ornaments, and surprises persist across sessions, allowing the MR world to grow and evolve each day.
+                    </p>
+                </article>
+                <article class="sh-feature">
+                    <h3>4. AI Integration</h3>
+                    <p>Combines several AI tools to deliver a personalized narrative experience:</p>
+                    <ul class="sh-question-list">
+                        <li class="sh-question-item">
+                            <span class="sh-question-label">Voice Input</span>
+                            <p class="sh-question-text"><strong>Whisper API</strong></p>
+                            <span class="sh-question-note">Hands-free, natural voice input</span>
+                        </li>
+                        <li class="sh-question-item">
+                            <span class="sh-question-label">Narrative &amp; Image</span>
+                            <p class="sh-question-text"><strong>GPT</strong></p>
+                            <span class="sh-question-note">Daily narrative responses, wish interpretation, and custom image generation</span>
+                        </li>
+                        <li class="sh-question-item">
+                            <span class="sh-question-label">Voice Synthesis</span>
+                            <p class="sh-question-text"><strong>ElevenLabs</strong></p>
+                            <span class="sh-question-note">Santa's voice that reads the user's Christmas wish on Day 25</span>
+                        </li>
+                    </ul>
+                    <p>Together, these systems create a deeply personal and emotionally resonant AI finale.</p>
+                </article>
+                <article class="sh-feature">
+                    <h3>5. Save System</h3>
+                    <p>
+                        Progress is automatically saved each day. Unlocked surprises, placed objects, user interactions, and the Christmas wish are all preserved, ensuring continuity and a cohesive 25-day experience.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-    <br><br>
-    <!-- Footer Section -->
-    <footer class="footer">
+        <section class="sh-section">
+            <h2>Core Features</h2>
+            <div class="sh-features">
+                <article class="sh-feature">
+                    <h3>1. Daily MR Surprises</h3>
+                    <p>
+                        Each day reveals a new interactive moment in your real room: trees growing, snow falling from the ceiling, a fireplace on your wall, candles floating above you, and more.
+                    </p>
+                </article>
+                <article class="sh-feature">
+                    <h3>2. Personalized AI Finale</h3>
+                    <p>
+                        On Day 1, you whisper your Christmas wish. On Christmas Day, AI transforms it into a personalized "gift," spoken by Santa and visualized as a custom illustration or scene.
+                    </p>
+                </article>
+                <article class="sh-feature">
+                    <h3>3. 25 Micro-Activities</h3>
+                    <p>
+                        Light candles, decorate a tree, trigger snowfall with gestures, snap socks onto a fireplace. Each day encourages movement and play.
+                    </p>
+                </article>
+                <article class="sh-feature">
+                    <h3>4. Persistence with Spatial Anchors</h3>
+                    <p>
+                        All objects stay where you placed them. Your wish, progress, and unlocked days are saved so the world grows with you.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="sh-footer">
         <span>Seonjeong Park © 2026</span>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://harrietpark.github.io/" style="margin-right: 10px;"><i class="fa-brands fa-github"></i></a>
-            <a href="https://29harriet.itch.io/" style="margin-right: 10px;"><i class="fa-brands fa-itch-io"></i></a>
+            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/norangi__/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://harrietpark.github.io/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://29harriet.itch.io/" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
         </div>
     </footer>
-</section>
 
     <script src="js/avatarHomeButton.js"></script>
 </body>
