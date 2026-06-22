@@ -186,9 +186,24 @@ function ListSection(titleText, items) {
 
         const text = document.createElement("div");
 
-        const itemTitle = document.createElement("h3");
-        itemTitle.textContent = item.title;
-        text.appendChild(itemTitle);
+        if (item.links) {
+            const linksWrap = document.createElement("div");
+            linksWrap.className = "list-item-links";
+
+            item.links.forEach((link) => {
+                linksWrap.appendChild(createLink({
+                    label: link.label,
+                    url: link.url,
+                    className: "list-item-link"
+                }));
+            });
+
+            text.appendChild(linksWrap);
+        } else {
+            const itemTitle = document.createElement("h3");
+            itemTitle.textContent = item.title;
+            text.appendChild(itemTitle);
+        }
 
         if (item.detail) {
             const detail = document.createElement("p");

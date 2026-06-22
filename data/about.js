@@ -123,10 +123,23 @@ const ABOUT_DATA = {
     ],
     awards: [
         {
-            title: "Venice Immersive & BFI London Film Festival Expanded Official Selection",
-            year: "2025",
+            year: "2025-2026",
             detail: "8pm and the Cat",
-            detailUrl: "8pmAndCat.html"
+            detailUrl: "8pmAndCat.html",
+            links: [
+                {
+                    label: "Venice Immersive Film Festival 2025 ↗",
+                    url: "https://www.labiennale.org/en/cinema/2025/venice-immersive/jeonyeok-8si-wa-goyangi-8-pm-and-cat"
+                },
+                {
+                    label: "London BFI Expanded 2025 ↗",
+                    url: "https://whatson.bfi.org.uk/lff/Online/default.asp?BOparam::WScontent::loadArticle::permalink=vr-lounge-lff25&BOparam::WScontent::loadArticle::context_id="
+                },
+                {
+                    label: "BIFAN 2026 ↗",
+                    url: "https://plus.bifan.kr/program/xr_selections_view.asp?pk_seq=9528&sc_category_seq=0&sc_num=1&actEvent=view"
+                }
+            ]
         },
         {
             title: "Guest Lecture on Game Design (Catholic University of Korea)",

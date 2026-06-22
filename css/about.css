@@ -266,6 +266,31 @@ main {
     line-height: 1.25;
 }
 
+.list-item-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.list-item-link {
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.list-item-link:hover,
+.list-item-link:focus,
+.list-item-link:active {
+    color: inherit;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
 .list-item p {
     margin-top: 6px;
     max-width: 740px;
