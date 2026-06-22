@@ -2,23 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Seonjeong Park</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Attack | Seonjeong Park</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="css/VirusAttack.css">
     <link rel="stylesheet" href="css/site-header.css">
+    <link rel="stylesheet" href="css/SemanticHighlight.css">
 
     <link rel="icon" href="img/profile.png" type="image/png">
 </head>
 <body>
- 
+
     <header class="site-header">
         <div class="avatar-home-button">
             <a class="avatar-button" href="index.html" aria-label="Go to home" title="Seonjeong">
@@ -38,156 +36,165 @@
             <button class="language-toggle" type="button" data-language="en" aria-label="Toggle language">EN</button>
         </nav>
     </header>
- 
-<section id="vrplanet">
-    <div class="title">
-        <br><br><h2>Virus Attack : 2D Game</h2>
-    </div>
 
-   <div class="hastag">
-       <span class="firsttext">
-           C# 
-       </span>
-      <span class="secondtext">
-          | Unity Engine 
-       </span>
-       <span class="thridtext">
-          | 2D
-       </span>
-       <span class="fourtext">
-          | Game
-       </span>
-   </div>
-   
-   <br><br><br>
-    <div class="video-container">
-      
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/ZsP54_AUQfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   </div>
-   <div class="videotext">
-       Walkthrough Video
-   </div>
-   
-   <div class="concept">
-       <br><p>
-           
-       <br><b>Virus Attack</b> was individual coursework for the Introduction to Programming for Games module. This is a simple 2D game inspired by the Disney movie 'Ralph Breaks the Internet'. I found it interesting to delve into the Internet world and have some adventure. The game consists of 8 stages.<br><br>
-       </p>
-   </div>
-   <div class="concept">
-       <h3>Concept</h3>
-   </div>
-   <div class="conceptText">
-       <p>
-           "The virus has attacked your computer and hidden the most important file. Your goal is to search through the computer and get some clues for the final location of the hidden folder." <br><br><br>
-       </p>
-   </div>
-   <div>
-       <h3>Technical Implementation</h3>
-   </div>
-   <div class="tech">
-       <br><p>1. Main Scene</p>
-   </div>
-   <div class="img">
-       <img src="img/first.png" alt="">
-   </div>
-   <div>
-       <p>
-           <br>The Main Scene is where a player can always come back and go to another app, just like the main screen on the computer. I used the UI button features to make it look like a real app. There is a total of 7 buttons that players can interact with : Apple, Folder, Key, Mail, Goggle, Instegrem, and Bin.<br>
-       </p>
-   </div>
-   <div class="tech">
-       <br><p>2.Mail</p>
-   </div>
-   <div class="img">
-       <img src="img/second.png" alt="">
-   </div>
-   <div>
-       <p>
-           <br>When the game starts, the player gets a mail alert, and when clicked, virus-infected pop-up windows and game instruction shows up. I used the Coroutine function to give short breaks for each action, and Unity Animator to make things animate.<br>
-       </p>
-   </div>
-   <div class="tech">
-       <br><p>3.Instegrem</p>
-   </div>
-   <div class="img">
-       <img src="img/seven.png" alt="">
-       <img src="img/eight.png" alt="">
-   </div>
-   <div>
-       <p>
-           <br>No matter how many Instagram followers you have, you don't know who they are. I made this mini-game to point out this. The main mechanism is that your IG friends are kidnapped by the virus, and to rescue them, you have to drag and drop your IG friend's interests to the chatbox. If you click the little IG ID button, you can pick their Instagram account to get a hint.<br>
-       </p>
-   </div>
-   <div class="tech">
-       <br><p>4.Goggle</p>
-   </div>
-   <div class="img">
-       <img src="img/four.png" alt="">
-       
-   </div>
-   <div>
-       <p>
-           <br>To access Goggle main page, the player has to play a simple mini-game. I've got inspired by Google chrome's "No Internet Game". I tried to mimic it but also changed a bit. I used a different character, and instead of just avoiding obstacles, I added a wifi element that when the character eats five wifi in total, the player can access the internet and use the Goggle website. To implement this mini- pixel game, I made a looping background, 2D colliders to detect the wifi or obstacles. I also used the UI Slider element to visualize the wifi score condition. As the character eats the wifi, the wifi slider is filled with black colour.<br><br>
-       </p>
-   </div>
-      <div class="img">
-       <img src="img/six.png" alt="">
-       
-   </div>
-   <div>
-       <p>
-           <br>After the player wins the mini-game, they can access the Goggle website. I used UI - dropdown feature to implement the googling effect. As the player clicks each dropdown element, it moves to another scene. This googling part is also an important hint that the player needs for the last stage. Timer element is also used.<br>
-       </p>
-   </div>
-   <div class="tech">
-       <br><p>5.Bin</p>
-   </div>
-   <div class="img">
-       <img src="img/nine.png" alt="">
-   </div>
-   <div>
-       <p>
-           <br>In the Bin scene, the main mechanism is to find two identical files and delete them. When the player selects two same files, the pop-up window of confirmation. If it is an identical file, two files disappear. But if not, a retry pop-up window appears and the player can redo. After deleting all the same looking files, one different file will be left, and by clicking it the player can get a hint. I made the one different file not function until every other file is gone. These files are made by Unity's Toggle button that toggles the selection. <br>
-       </p>
-   </div>
-   
-   <div class="tech">
-       <br><p>6.Folders</p>
-   </div>
-   <div class="img">
-       <img src="img/eleven.png" alt="">
-   </div>
-   <div>
-       <p>
-           <br>When clicking the folder button on the main screen, the pop-up window asking for the password appears. Unity UI's Input field is used to implement this. "angel", "Angel", or "ANGEL" are all accepted for the password. If the password is correct, it goes to the folder scene. I made a simple folder maze that there are many folders and the player has to find the right folder that will lead to the next scene. When clicking the wrong folder, it plays a weird sound and 'X' sign which means it's wrong. Or else, the folder colour changes to pink and move to the next scene. The next scene is the emoji quiz which has the same mechanic as the Instagram drag and drop element. It would be easy to solve if the player got the clue from the IG stage.<br>
-       </p>
-   </div>
-      <div class="img">
-       <img src="img/ten.png" alt="">
-   </div>
-   <div>
-       <p>
-           <br>The last stage is answering simple quizzes based on the Goggle stage's hint. I made a quiz using the dialogue system. To make a dialogue system work, I used the Queue data structure. After that, the player can finally access the hidden file. The lost file was the "IPG_final Project". Then, the success scene loads. I made an animation of little viruses putting the stolen file back on the main screen. Unity Animator is used to implementing this.<br>
-       </p>
-   </div>
+    <main class="sh-main">
+        <h1 class="sh-title">Virus Attack</h1>
 
-   <footer class="footer">
-    <span>Seonjeong Park © 2026</span>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://harrietpark.github.io/" style="margin-right: 10px;"><i class="fa-brands fa-github"></i></a>
-        <a href="https://29harriet.itch.io/" style="margin-right: 10px;"><i class="fa-brands fa-itch-io"></i></a>
-    </div>
-</footer>
-</section>
-   <br><br><br>
+        <figure class="sh-video-figure">
+            <div class="sh-video-embed">
+                <iframe src="https://www.youtube.com/embed/ZsP54_AUQfM" title="Virus Attack walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <figcaption>Walkthrough Video</figcaption>
+        </figure>
 
-   
-     
+        <section class="sh-overview" aria-label="Project overview">
+            <ul class="sh-meta-list">
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Role</span>
+                    <ul class="sh-tech-list">
+                        <li>Solo Developer</li>
+                        <li>Game Design</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Year</span>
+                    <p class="sh-meta-value">2021</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Project Type</span>
+                    <p class="sh-meta-value">Introduction to Programming for <br>Games module coursework</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Tech Stack</span>
+                    <ul class="sh-tech-list">
+                        <li>Engine : Unity (C#)</li>
+                        <li>Format : 2D game</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sh-overview-content">
+                <p>
+                    <strong>Virus Attack</strong> is a simple 2D adventure game inspired by <a href="https://en.wikipedia.org/wiki/Ralph_Breaks_the_Internet" target="_blank" rel="noopener noreferrer">Disney's <em>Ralph Breaks the Internet</em></a>. Individual coursework for the Introduction to Programming for Games module.
+                </p>
+                <p>
+                    The player explores a virus-infected computer desktop, solving mini-games and collecting clues across 8 stages to recover a hidden file.
+                </p>
+            </div>
+        </section>
+
+        <section class="sh-section">
+            <h2>Concept</h2>
+            <blockquote class="sh-pullquote">
+                <p>
+                    <span class="sh-pullquote-mark">“</span>
+                    The virus has attacked your computer and hidden the most important file. Your goal is to search through the computer and get some clues for the final location of the hidden folder.
+                    <span class="sh-pullquote-mark">”</span>
+                </p>
+            </blockquote>
+        </section>
+
+        <section class="sh-section">
+            <h2>Technical Implementation</h2>
+
+            <div class="sh-steps">
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/first.png" alt="Main Scene desktop with app icons" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>1. Main Scene</h3>
+                        <p>
+                            The Main Scene works like a computer home screen. Players can return here at any time and open other apps. UI buttons mimic real desktop apps: Apple, Folder, Key, Mail, Goggle, Instegrem, and Bin.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/second.png" alt="Mail app with virus pop-up windows" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>2. Mail</h3>
+                        <p>
+                            When the game starts, the player gets a mail alert. Clicking it triggers virus-infected pop-up windows and game instructions. Coroutines add short pauses between actions, and Unity Animator brings the sequence to life.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media sh-step-media--stack">
+                        <img src="img/seven.png" alt="Instegrem friends kidnapped by virus" decoding="async">
+                        <img src="img/eight.png" alt="Drag and drop interests to rescue friends" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>3. Instegrem</h3>
+                        <p>
+                            No matter how many Instagram followers you have, you don't really know who they are. In this mini-game, IG friends are kidnapped by the virus. To rescue them, the player drags each friend's interests into the chatbox. Tapping the IG ID button opens their account for hints.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media sh-step-media--stack">
+                        <img src="img/four.png" alt="Goggle offline mini-game inspired by Chrome dinosaur" decoding="async">
+                        <img src="img/six.png" alt="Goggle search with dropdown hints" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>4. Goggle</h3>
+                        <p>
+                            To access the Goggle homepage, the player must first beat a pixel mini-game inspired by Google Chrome's offline dinosaur game. I changed the character and added a wifi mechanic: collect five wifi icons to get online. A looping background, 2D colliders, and a UI Slider track wifi progress as the bar fills.
+                        </p>
+                        <p>
+                            After winning, the player can use the Goggle website. UI dropdowns simulate search results, each selection leading to a new scene. This stage also hides an important clue for the final puzzle. A timer adds pressure throughout.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/nine.png" alt="Bin file-matching puzzle" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>5. Bin</h3>
+                        <p>
+                            The player finds and deletes pairs of identical files. Matching two files triggers a confirmation pop-up; correct pairs disappear, wrong pairs show a retry window. Once all duplicates are gone, one unique file remains. It stays inactive until everything else is cleared, then reveals a hint. File selection uses Unity Toggle buttons.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media sh-step-media--stack">
+                        <img src="img/eleven.png" alt="Password-protected folder maze" decoding="async">
+                        <img src="img/ten.png" alt="Final quiz dialogue and success scene" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>6. Folders</h3>
+                        <p>
+                            Clicking the folder icon on the main screen opens a password prompt (Unity UI Input Field). "angel", "Angel", or "ANGEL" all work. Inside, a folder maze leads the player to the right path: wrong folders play a sound and show an X; correct ones turn pink and advance.
+                        </p>
+                        <p>
+                            The next scene is an emoji quiz using the same drag-and-drop mechanic as Instegrem. Clues from the IG stage make it easier to solve. The final stage is a short quiz built with a dialogue system powered by a Queue data structure, using hints from the Goggle stage.
+                        </p>
+                        <p>
+                            After solving it, the player recovers the hidden file: "IPG_final Project". A success scene plays an animation of little viruses returning the stolen file to the desktop, implemented with Unity Animator.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="sh-footer">
+        <span>Seonjeong Park © 2026</span>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/norangi__/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://harrietpark.github.io/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://29harriet.itch.io/" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
+        </div>
+    </footer>
+
     <script src="js/avatarHomeButton.js"></script>
 </body>
-
-
 </html>

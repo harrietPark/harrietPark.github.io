@@ -492,6 +492,14 @@ body {
     align-items: start;
 }
 
+.sh-step--full {
+    grid-template-columns: 1fr;
+}
+
+.sh-step--media-right {
+    grid-template-columns: 1fr 260px;
+}
+
 .sh-image-placeholder--step {
     aspect-ratio: 4 / 3;
 }
@@ -510,6 +518,20 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 2px;
+}
+
+.sh-step-media--stack {
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: visible;
+    background-color: transparent;
+}
+
+.sh-step-media--stack img {
+    aspect-ratio: 4 / 3;
+    height: auto;
 }
 
 .sh-step-content h3 {

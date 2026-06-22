@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Seonjeong Park</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Journey | Seonjeong Park</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/MemoryJourney.css">
     <link rel="stylesheet" href="css/site-header.css">
+    <link rel="stylesheet" href="css/SemanticHighlight.css">
 
     <link rel="icon" href="img/profile.png" type="image/png">
 </head>
 <body>
- 
-<header class="site-header">
+
+    <header class="site-header">
         <div class="avatar-home-button">
             <a class="avatar-button" href="index.html" aria-label="Go to home" title="Seonjeong">
                 <img class="avatar-image avatar-image-default" src="img/SJDefault.png" alt="Seonjeong Park avatar">
@@ -34,125 +36,211 @@
             <button class="language-toggle" type="button" data-language="en" aria-label="Toggle language">EN</button>
         </nav>
     </header>
-<br>
-<section id="baobab-diary">
-    <div class="title">
-        <h2>Memory Journey : Generative Art Installation </h2>
-    </div>
 
-    <div class="hastag">
-        <span class="firsttext">Processing</span>
-        <span class="secondtext">| Generative Art</span>
-        <span class="fourthtext">| Gen AI</span>
-    </div>
+    <main class="sh-main">
+        <h1 class="sh-title">Memory Journey</h1>
 
-    <!-- Video Walkthrough Section -->
-    <div class="video-section">
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gkoUwIk0F3I?si=Ok9JyU_EM_wARuHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="sh-video-embed">
+            <iframe src="https://www.youtube.com/embed/gkoUwIk0F3I?si=Ok9JyU_EM_wARuHY" title="Memory Journey playthrough video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="videotext">
-            Playthrough Video
-        </div>
-    </div>
 
-    <div class="concept">
-        <h4>Overview</h4>
-        <p>
-            <b>Developed for:</b> 2023 Art and Technology Convergence Program (Korea)<br>
-            <b>Presented at:</b> Musinsa Studio Hannam (1st Branch), Dec 1–2, 2023
-        </p>
-        <p>
-            <em>The Memory Journey Project</em> is a prototype for an immersive art installation that transforms personal memories into generative visuals. Created as part of a government-funded initiative in South Korea, the piece explores the emotional resonance of memory through real-time voice input, AI analysis, and projection-mapped imagery.
-        </p>
-        <p>
-            Though not a full-scale installation, the prototype laid the technical and conceptual groundwork for a future interactive space—where light, movement, and personal reflection converge in a meditative environment.
-        </p>
-        <p>
-            <b>🌐 Project Website:</b>
-            <a href="https://memory-journey-fe.vercel.app/" target="_blank" 
-               style="text-decoration: none; font-weight: 500; color: #444; border-bottom: 1px solid #ccc;">
-               https://memory-journey-fe.vercel.app/
-            </a>
-        </p>
-    </div>
-
-    <div class="concept">
-        <h4>My Role</h4>
-        <div style="line-height: 1.8; font-size: 13px;">
-            <p><b>Creative Technologist</b><br>
-            &nbsp;&nbsp;• Designed real-time generative visuals using <b>Processing</b><br>
-            &nbsp;&nbsp;• Integrated <b>OpenAI Whisper & GPT APIs</b> to receive and process voice input from the web client</p>
-            <p><b>Design & Prototyping</b><br>
-            &nbsp;&nbsp;• Contributed to the interactive flow and implementation from user input to visual feedback</p>
-        </div>
-    </div>
-
-    <div class="concept">
-        <h4 style="margin-bottom: 28px;">Prototype Interaction Flow</h4>
-    
-        <div style="margin-bottom: 36px;">
-            <p style="font-weight: 600; font-size: 15px; margin-bottom: 6px;">1. Memory Input via Web Interface</p>
-            <p>Users began by visiting a custom website to record a personal memory. Before speaking, they selected three emotional filters:</p>
-            <ul style="padding-left: 24px; line-height: 1.8;">
-                <li><b>🕰️ Time</b> — Recent or distant memory</li>
-                <li><b>❤️ Feeling</b> — Positive or negative emotion</li>
-                <li><b>👁️ Consciousness</b> — Vivid or faint recollection</li>
+        <section class="sh-overview" aria-label="Project overview">
+            <ul class="sh-meta-list">
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Role</span>
+                    <ul class="sh-tech-list">
+                        <li>Creative Technologist</li>
+                        <li>Design &amp; Prototyping</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Team</span>
+                    <ul class="sh-tech-list">
+                        <li>Bongsu Park</li>
+                        <li>Seungmin Kim</li>
+                        <li>Jihyo Jeon</li>
+                        <li>Chaeyeon Hong</li>
+                        <li>Kristin Winters</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Year</span>
+                    <p class="sh-meta-value">2023</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Developed for</span>
+                    <p class="sh-meta-value">2023 Art and Technology Convergence Program (Korea)</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Presented at</span>
+                    <p class="sh-meta-value">Musinsa Studio Hannam (1st Branch)</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Tech Stack</span>
+                    <ul class="sh-tech-list">
+                        <li>Creative Coding : Processing</li>
+                        <li>Gen AI : Whisper API, GPT</li>
+                        <li>Input : Web-based multilingual voice</li>
+                        <li>Output : Projection mapping</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">More Links</span>
+                    <ul class="sh-meta-links">
+                        <li><a class="sh-meta-link" href="https://memory-journey-fe.vercel.app/" target="_blank" rel="noopener noreferrer">Project Website ↗</a></li>
+                    </ul>
+                </li>
             </ul>
-        </div>
-    
-        <div style="margin-bottom: 36px;">
-            <p style="font-weight: 600; font-size: 15px; margin-bottom: 6px;">2. AI Processing & Emotional Analysis</p>
-            <ul style="padding-left: 24px; line-height: 1.8;">
-                <li>📝 Voice input transcribed using <b>OpenAI Whisper</b></li>
-                <li>🧠 Emotional content analyzed by <b>GPT</b> to extract tone and key concepts</li>
-            </ul>
-        </div>
-    
-        <div style="margin-bottom: 36px;">
-            <p style="font-weight: 600; font-size: 15px; margin-bottom: 6px;">3. Generative Visual Creation in Processing</p>
-            <p>Insights from the analysis were sent to <b>Processing</b>, where generative visuals were created in response to the emotional filters:</p>
-        </div>
-    
-        <div>
-            <p style="font-weight: 600; font-size: 15px; margin-bottom: 6px;">4. Real-Time Projection Mapping</p>
-            <p>The visuals were projection-mapped onto layered fabrics, creating a soft, immersive environment where memories came to life in real time.</p>
-        </div>
-    </div>
-    
 
-    <div class="concept">
-        <h4>Presentation</h4>
-        <p>
-            The prototype was developed and tested at <b>The Coronet Theatre: Home</b> in London, where initial interaction and visual flow were explored in a physical context.
-        </p>
-        <p>
-            A documentary video of the project was later showcased at <b>Musinsa Studio Hannam (1st Branch)</b> in Seoul during a curated concept screening event held on <b>December 1–2, 2023</b>.
-        </p>
-    </div>
-    
+            <div class="sh-overview-content">
+                <p><strong>Memory Journey is a prototype for an immersive art installation that transforms personal memories into generative visuals through real-time voice input, AI processing, and projection-mapped imagery.</strong></p>
+                <p>
+                    Created as part of a government-funded initiative in South Korea, the piece explores how memory can be felt as light, movement, and colour. Though not a full-scale installation, the prototype laid the technical and conceptual groundwork for a future interactive space where personal reflection and generative art converge.
+                </p>
+            </div>
+        </section>
 
-    <div class="concept">
-        <h4>Technologies Used</h4>
-        <p>
-            <b>Tools:</b> Processing, OpenAI Whisper API, GPT<br>
-            <b>Interaction Method:</b> Web-based multilingual voice input<br>
-            <b>Focus Areas:</b> Generative Art, Projection Mapping, Emotionally Driven Visuals
-        </p>
-    </div>
+        <section class="sh-section">
+            <h2>Problem</h2>
+            <p>
+                Personal memories are often difficult to externalise. They live as fragments of voice, feeling, and image, but rarely find a form others can see or share. Traditional journaling captures words, yet misses the sensory and emotional texture of how a memory actually feels.
+            </p>
+            <p>
+                We wanted to explore whether technology could bridge that gap: not to analyse or fix memories, but to give them a visible, spatial presence that invites quiet reflection.
+            </p>
+        </section>
 
-    <br><br>
-    <!-- Footer Section -->
-    <footer class="footer">
+        <section class="sh-section">
+            <h2>Concept</h2>
+            <p>
+                Memory Journey turns a spoken memory into a living visual field. A visitor records a story through a web interface, selects emotional filters that shape the mood of the piece, and watches as AI-processed input drives generative visuals in Processing, projected onto layered fabrics in a dark, meditative room.
+            </p>
+            <p>
+                The installation treats memory as something to witness rather than interpret. Light passes through translucent surfaces, patterns shift in response to tone and chosen filters, and the physical space becomes a canvas for something deeply personal yet shared.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>Experience Flow</h2>
+
+            <div class="sh-steps">
+                <article class="sh-step sh-step--full">
+                    <div class="sh-step-content">
+                        <h3>1. Memory input via web interface</h3>
+                        <p>
+                            Users visit a custom website to record a personal memory in their own language. Before speaking, they choose three emotional filters that shape how the visual system responds:
+                        </p>
+                        <ol class="sh-question-list">
+                            <li class="sh-question-item">
+                                <span class="sh-question-label">Time</span>
+                                <p class="sh-question-text">Recent or distant memory</p>
+                            </li>
+                            <li class="sh-question-item">
+                                <span class="sh-question-label">Feeling</span>
+                                <p class="sh-question-text">Positive or negative emotion</p>
+                            </li>
+                            <li class="sh-question-item">
+                                <span class="sh-question-label">Consciousness</span>
+                                <p class="sh-question-text">Vivid or faint recollection</p>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="sh-step sh-step--full">
+                    <div class="sh-step-content">
+                        <h3>2. AI processing</h3>
+                        <p>
+                            Voice input is transcribed using OpenAI Whisper. GPT then reads the text to extract tone and key concepts from what the user shared. These outputs, together with the three filters, are passed forward as parameters for the visual system.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step sh-step--full">
+                    <div class="sh-step-content">
+                        <h3>3. Generative visuals in Processing</h3>
+                        <p>
+                            Insights from the analysis are sent to Processing, where generative visuals are built in real time. Colour, motion, and density respond to the emotional filters and the character of the spoken memory, so each projection is unique to the person who recorded it.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step sh-step--media-right">
+                    <div class="sh-step-content">
+                        <h3>4. Real-time projection mapping</h3>
+                        <p>
+                            The visuals are projection-mapped onto layered fabrics, creating a soft, immersive environment where memories appear as shifting light. The physical installation wraps the viewer in a meditative space shaped by their own words.
+                        </p>
+                    </div>
+                    <div class="sh-step-media">
+                        <img src="img/memory.png" alt="Projection-mapped generative visuals on layered fabric" decoding="async">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="sh-section">
+            <h2>System Design</h2>
+            <p>
+                The prototype connects a lightweight web client, cloud AI APIs, and a local generative art pipeline into one continuous flow from voice to projected image.
+            </p>
+            <div class="sh-flow" aria-label="Memory Journey pipeline">
+                <span class="sh-flow-step">Web Voice Input</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Emotional Filters</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Whisper Transcription</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">GPT Tone &amp; Concepts</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Processing Visuals</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Projection Mapping</span>
+            </div>
+        </section>
+
+        <section class="sh-section">
+            <h2>Core Features</h2>
+            <div class="sh-features">
+                <article class="sh-feature">
+                    <h3>1. Multilingual Web Input</h3>
+                    <p>Visitors record memories through a custom web interface, with three emotional filters applied before speech to shape the visual response.</p>
+                </article>
+                <article class="sh-feature">
+                    <h3>2. AI-Assisted Memory Processing</h3>
+                    <p>Whisper transcribes voice input and GPT extracts tone and key concepts, feeding structured parameters into the generative system.</p>
+                </article>
+                <article class="sh-feature">
+                    <h3>3. Real-Time Generative Art</h3>
+                    <p>Processing builds unique visuals on the fly, driven by emotional filters and the content of each recorded memory.</p>
+                </article>
+                <article class="sh-feature">
+                    <h3>4. Fabric Projection Mapping</h3>
+                    <p>Layered textiles in a dark room become the surface for projection, turning digital patterns into a tactile, immersive atmosphere.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sh-section">
+            <h2>Recognition</h2>
+            <p>
+                The prototype was developed and tested at <strong><a href="https://www.thecoronettheatre.com/" target="_blank" rel="noopener noreferrer">The Coronet Theatre</a></strong> in London, where initial interaction and visual flow were explored in a physical context.
+            </p>
+            <p>
+                A documentary video of the project was later showcased at <strong>Musinsa Studio Hannam (1st Branch)</strong> in Seoul during a curated concept screening on December 1–2, 2023.
+            </p>
+        </section>
+    </main>
+
+    <footer class="sh-footer">
         <span>Seonjeong Park © 2026</span>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://harrietpark.github.io/" style="margin-right: 10px;"><i class="fa-brands fa-github"></i></a>
-            <a href="https://29harriet.itch.io/" style="margin-right: 10px;"><i class="fa-brands fa-itch-io"></i></a>
+            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/norangi__/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://harrietpark.github.io/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://29harriet.itch.io/" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
         </div>
     </footer>
-</section>
 
     <script src="js/avatarHomeButton.js"></script>
 </body>
