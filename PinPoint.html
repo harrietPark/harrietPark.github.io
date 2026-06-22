@@ -3,117 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seonjeong Park</title>
+    <title>PinPoint — Seonjeong Park</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/BaobabDiary.css">
     <link rel="stylesheet" href="css/site-header.css">
-
-    <style>
-        .architecture-diagram-wrap {
-            margin-top: 14px;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        .architecture-diagram-wrap pre {
-            width: max-content;
-            max-width: 100%;
-            margin: 0;
-            box-sizing: border-box;
-            overflow-x: auto;
-            background: #fff;
-            border: 1px solid #e5e5e5;
-            border-radius: 8px;
-            padding: 16px;
-            font-size: 12px;
-            line-height: 1.45;
-            text-align: left;
-        }
-        .business-value-concept {
-            background-color: #f5f5f7;
-            border: none;
-            box-shadow: none;
-        }
-        .business-value-concept h4 {
-            margin-bottom: 6px;
-            font-weight: 600;
-            letter-spacing: -0.03em;
-            color: #1d1d1f;
-        }
-        .business-value-lede {
-            color: #86868b;
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 1.47;
-            margin: 0 0 14px;
-            max-width: 36rem;
-            letter-spacing: -0.01em;
-            text-align: left;
-        }
-        .business-value-panel {
-            background: #fff;
-            border-radius: 12px;
-            border: 1px solid rgba(0, 0, 0, 0.08);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-            overflow: hidden;
-            max-width: 40rem;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: left;
-        }
-        .business-value-list-apple {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .business-value-list-apple li {
-            padding: 13px 20px;
-            font-size: 15px;
-            line-height: 1.35;
-            font-weight: 500;
-            color: #1d1d1f;
-            letter-spacing: -0.022em;
-            border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
-        }
-        .business-value-list-apple li:last-child {
-            border-bottom: none;
-        }
-        @media (hover: hover) {
-            .business-value-list-apple li:hover {
-                background-color: rgba(0, 0, 0, 0.02);
-            }
-        }
-        /* Inline links in project sections — refined, not default browser blue */
-        #baobab-diary .concept a:link,
-        #baobab-diary .concept a:visited {
-            color: #1d1d1f;
-            text-decoration: none;
-            box-shadow: inset 0 -0.08em 0 0 rgba(29, 29, 31, 0.32);
-            transition: color 0.2s ease, box-shadow 0.2s ease;
-        }
-        @media (hover: hover) {
-            #baobab-diary .concept a:hover {
-                color: #000;
-                box-shadow: inset 0 -0.14em 0 0 rgba(29, 29, 31, 0.72);
-            }
-        }
-        #baobab-diary .concept a:focus-visible {
-            outline: 2px solid #0071e3;
-            outline-offset: 3px;
-            border-radius: 3px;
-            box-shadow: none;
-        }
-    </style>
+    <link rel="stylesheet" href="css/SemanticHighlight.css">
 
     <link rel="icon" href="img/profile.png" type="image/png">
 </head>
 <body>
 
-<header class="site-header">
+    <header class="site-header">
         <div class="avatar-home-button">
             <a class="avatar-button" href="index.html" aria-label="Go to home" title="Seonjeong">
                 <img class="avatar-image avatar-image-default" src="img/SJDefault.png" alt="Seonjeong Park avatar">
@@ -132,195 +36,219 @@
             <button class="language-toggle" type="button" data-language="en" aria-label="Toggle language">EN</button>
         </nav>
     </header>
-<br>
-<section id="baobab-diary">
-    <div class="title">
-        <h2>PinPoint</h2>
-    </div>
 
-    <div class="hastag">
-        <span class="firsttext">Snap Spectacles</span>
-        <span class="secondtext">| Lens Studio</span>
-        <span class="thirdtext">| Snap Cloud (Supabase)</span>
-        <span class="secondtext">| TypeScript</span>
-        <span class="fourthtext">| AI</span>
-    </div>
+    <main class="sh-main">
+        <h1 class="sh-title">PinPoint</h1>
 
-    <!-- Video Walkthrough Section -->
-    <div class="video-section">
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uAtx5mZSisw?si=zHDOIK1s2GB7VyhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="sh-video-embed">
+            <iframe src="https://www.youtube.com/embed/uAtx5mZSisw?si=zHDOIK1s2GB7VyhM" title="PinPoint — YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="videotext">
-            App Trailer
-        </div>
-    </div>
 
-    <br><br>
-
-    <!-- Overview -->
-    <div class="concept">
-        <h4>Overview</h4>
-        <p><b style="font-size: 1.2em;">Pin it. Say it. Sell it.</b></p>
-        <p>
-            PinPoint is a multi-platform spatial briefing system for showroom retail, built on Snap Spectacles, Snap Cloud, and a companion web portal. <br>
-            It captures what customers see and say, anchors those reactions to the exact products that triggered them, and delivers a structured, retrievable preference profile that turns cold introductions into informed consultations. In other words, the showroom stops being a place customers forget and starts being one that remembers them.
-        </p>
-        <p style="margin-top: 12px;">
-            A companion web dashboard (<a href="https://sylvanerd.github.io/PinPoint_Web/" target="_blank" rel="noopener noreferrer"><b>PinPoint Web</b></a>) lets salespeople watch pins arrive in near real time, push suggestions back into AR, and rely on persisted profiles when customers return.
-        </p>
-    </div>
-
-    <br>
-
-    <!-- Team / Role -->
-    <div class="concept">
-        <h4>Team Roles</h4>
-        <p>
-            This project was submitted with a team of five to <a href="https://www.xrcc.events/xrcc-2026" target="_blank" rel="noopener noreferrer"><b>XRCC 2026</b></a>, the world's largest independent XR & AI hackathon.
-            <br>My Role: Ideation, Snap Cloud data design, Edge Functions, AI integration, Lens-to-backend integration, companion web development with realtime backend wiring
-        </p>
-    </div>
-
-    <br>
-
-    <!-- Development Environment and Tools -->
-    <div class="concept">
-        <h4>Development Environment and Tools</h4>
-        <p>
-            <b>Platform:</b> Snap Spectacles<br>
-            <b>Engine:</b> Lens Studio<br>
-            <b>Lens languages:</b> TypeScript<br>
-            <b>Backend:</b> Snap Cloud (Data tables, Edge Functions, Realtime sync)<br>
-            <b>AI :</b> OpenAI for transcription pipeline and recommendation system, Google Gemini for Object Detction<br>
-            <b>Companion web:</b> HTML / CSS / JavaScript<br>
-            <b>Collaboration:</b> GitHub<br>
-        </p>
-    </div>
-
-    <br>
-
-    <!-- Development Background and Purpose -->
-    <div class="concept">
-        <h4>Development Background and Purpose</h4>
-        <p>
-            <b style="font-size: 1.2em;">Problem</b><br>
-            Showroom customers form rich, spatially grounded preferences while browsing, but most of that context is lost the moment it has to become a conversation. Intent is spatial; communication is verbal. Only a fraction of what they actually felt survives the translation. Worse, if a salesperson engages mid-browse, the customer has to start over from scratch, and the salesperson has to hold every detail in their head. The result is cognitive overload and indecision. 40 to 60% of qualified opportunities end in "no decision" . Salespeople spend 15+ minutes reconstructing the context the customer already formed, dig through catalogs to find the right fit, and when staff turn over or the customer returns later, all of it is gone.
-        </p>
-        <p style="margin-top: 14px;">
-            <b style="font-size: 1.2em;">Solution</b><br>
-            PinPoint closes that gap by capturing customer intent directly in the showroom experience. Customers pin their reactions to real products as they browse, AI organizes those moments into a clear preference profile, and salespeople walk in already knowing what to show, what to skip, and what the customer actually cares about. 
-        </p>
-    </div>
-
-    <br>
-
-    <!-- Business Value -->
-    <div class="concept business-value-concept">
-        <h4>Business Value</h4>
-        <p class="business-value-lede">
-            Clearer intent on the floor, quieter tooling—so retailers can focus on outcomes.
-        </p>
-        <div class="business-value-panel">
-            <ul class="business-value-list-apple">
-                <li>1. Reduces customer overwhelm and decision fatigue</li>
-                <li>2. Lowers abandonment rates</li>
-                <li>3. Increases sales velocity</li>
-                <li>4. Improves conversion rates</li>
-                <li>5. Enhances the overall customer experience</li>
+        <section class="sh-overview" aria-label="Project overview">
+            <ul class="sh-meta-list">
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Role</span>
+                    <ul class="sh-tech-list">
+                        <li>Ideation</li>
+                        <li>Backend Development &amp; Integration</li>
+                        <li>Companion Web Development</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Team</span>
+                    <ul class="sh-tech-list">
+                        <li>Anna Laura Zielinska</li>
+                        <li>Sylvan (Xiaofan) Shen</li>
+                        <li>Jiayao Yu</li>
+                        <li>Felicity Chen</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Year</span>
+                    <p class="sh-meta-value">2026</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Project Type</span>
+                    <p class="sh-meta-value">
+                        <a class="sh-meta-link" href="https://www.xrcc.events/xrcc-2026" target="_blank" rel="noopener noreferrer">XRCC 2026 (Finalist) ↗</a>
+                    </p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Tech Stack</span>
+                    <ul class="sh-tech-list">
+                        <li>Engine : Lens Studio</li>
+                        <li>Platform : Snap Spectacles</li>
+                        <li>Language : TypeScript, JavaScript</li>
+                        <li>Gen AI : OpenAI, Gemini</li>
+                        <li>Backend : Snap Cloud (Supabase)</li>
+                        <li>Collaboration : GitHub</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">More Links</span>
+                    <ul class="sh-meta-links">
+                        <li><a class="sh-meta-link" href="https://sylvanerd.github.io/PinPoint_Web/" target="_blank" rel="noopener noreferrer">Companion Web Link ↗</a></li>
+                    </ul>
+                </li>
             </ul>
-        </div>
-    </div>
 
-    <br>
-
-    <!-- Core Features -->
-    <div class="concept">
-        <h4>Core Features</h4>
-        <p class="core-features-text">
-            <b style="font-size: 1.2em;">1. Pin, speak, and crop on Spectacles</b><br>
-            Customers look at a product through Spectacles, spawn a spatial note by touching or pointing at it, and speak their reaction: "I love this handle but the color is too cold." The system bundles a quiet image capture, voice recording, real-time transcript, and world-locked anchor into one retrievable brief pinned to the exact product. Customers can also crop visual references and attach voice notes the same way.
-            <div class="container my-2">
-                <div class="row text-center justify-content-center">
-                    <div class="col-md-4 mb-3">
-                        <img src="img/gif1.gif" alt="GIF 1" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <img src="img/gif2.gif" alt="GIF 2" class="img-fluid rounded">
-                    </div>
-                </div>
+            <div class="sh-overview-content">
+                <p><strong>Pin it. Say it. Sell it.</strong></p>
+                <p>
+                    PinPoint is a multi-platform spatial briefing system for showroom retail, built on Snap Spectacles, Snap Cloud, and a companion web portal. It captures what customers see and say, anchors those reactions to the exact products that triggered them, and delivers a structured, retrievable preference profile that turns cold introductions into informed consultations.
+                </p>
+                <p>
+                    In other words, the showroom stops being a place customers forget and starts being one that remembers them.
+                </p>
+                <em>Challenge Context</em>
+                <p>
+                    Built for XRCC 2026, the world's largest independent XR &amp; AI hackathon. The brief asked how Spatial AI on Spectacles could solve real problems in physical retail — where intent is spatial, but communication is verbal.
+                </p>
             </div>
-            <br><br>
+        </section>
 
-            <b style="font-size: 1.2em;">2. AI preference extraction and catalog matching</b><br>
-            Each brief is processed in realtime by Snap Cloud edge functions. Voice notes are transcribed, the target product is detected via Gemini-based object detection, and intent is extracted: style, color, material, function, budget. Results are matched against the company's product catalog (temporarily using IKEA's API) to surface alternatives. The aggregated profile builds as the customer browses.
-             <!-- GIF Row -->
-            <div class="container my-2">
-                <div class="row text-center justify-content-center">
-                    <div class="col-md-4 mb-3">
-                        <img src="img/gif7.gif" alt="GIF 1" class="img-fluid rounded">
+        <section class="sh-section">
+            <h2>Problem</h2>
+            <p>
+                Showroom customers form rich, spatially grounded preferences while browsing, but most of that context is lost the moment it has to become a conversation. Intent is spatial; communication is verbal. Only a fraction of what they actually felt survives the translation.
+            </p>
+            <p>
+                Worse, if a salesperson engages mid-browse, the customer has to start over from scratch, and the salesperson has to hold every detail in their head. The result is cognitive overload and indecision — 40 to 60% of qualified opportunities end in "no decision." Salespeople spend 15+ minutes reconstructing context the customer already formed, and when staff turn over or the customer returns later, all of it is gone.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>Concept</h2>
+            <p>
+                PinPoint closes that gap by capturing customer intent directly in the showroom experience.
+            </p>
+            <p>
+                Customers pin their reactions to real products as they browse, AI organizes those moments into a clear preference profile, and salespeople walk in already knowing what to show, what to skip, and what the customer actually cares about.
+            </p>
+            <p>
+                A companion web dashboard lets salespeople watch pins arrive in near real time, push suggestions back into AR, and rely on persisted profiles when customers return.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>Experience Flow</h2>
+
+            <div class="sh-steps">
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/gif1.gif" alt="Pinning a spatial note on a product through Spectacles" decoding="async">
                     </div>
-                </div>
+                    <div class="sh-step-content">
+                        <h3>1. Pin, speak, and crop</h3>
+                        <p>
+                            Customers look at a product through Spectacles, spawn a spatial note, and speak their reaction. The system bundles image capture, voice recording, transcript, and a world-locked anchor into one brief pinned to the exact product.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/gif7.gif" alt="AI extracting preferences and matching catalog products" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>2. AI preference extraction</h3>
+                        <p>
+                            Each brief is processed in realtime by Snap Cloud edge functions. Voice notes are transcribed, the target product is detected via Gemini, and intent is extracted — style, color, material, function, budget — then matched against the product catalog.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/gif8.gif" alt="Live salesperson dashboard with pin cards" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>3. Live salesperson dashboard</h3>
+                        <p>
+                            A live web dashboard renders each pin as a card with image thumbnail, transcript, AI tags, summary, and pre-matched product recommendations as they arrive.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/gif9.gif" alt="Two-way AR recommendations pushed to Spectacles" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>4. Two-way AR recommendations</h3>
+                        <p>
+                            Salespeople push product suggestions from the dashboard directly into the customer's Spectacles view in real time. The dashboard becomes a two-way channel, not a passive feed.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/gif3.gif" alt="Cross-session memory with persisted spatial profiles" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>5. Cross-session memory</h3>
+                        <p>
+                            Profiles persist across visits and staff turnover via Snap Cloud. Returning customers' full spatial history loads instantly, with notes pinned exactly where they left them.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/gif10.gif" alt="Session recap with stats and catalog intelligence" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>6. Session recap</h3>
+                        <p>
+                            Every visit ends with a full recap: stats, saved images, AI summary, and one-tap email to the customer. For the business, every session feeds catalog intelligence and intent data for smarter product decisions.
+                        </p>
+                    </div>
+                </article>
             </div>
-            <br><br>
+        </section>
 
-            <b style="font-size: 1.2em;">3. Live salesperson dashboard</b><br>
-            A live web dashboard renders each pin as a card with image thumbnail, transcript, AI tags, summary, and pre-matched product recommendations.
-            <div class="container my-2">
-                <div class="row text-center justify-content-center">
-                    <div class="col-md-4 mb-3">
-                        <img src="img/gif7.gif" alt="GIF 1" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <img src="img/gif8.gif" alt="GIF 2" class="img-fluid rounded">
-                    </div>
-                </div>
-            </div>
-            <br><br>
+        <section class="sh-section">
+            <h2>Business Value</h2>
+            <p>Clearer intent on the floor, quieter tooling — so retailers can focus on outcomes.</p>
+            <ul class="sh-bullet-list">
+                <li>Reduces customer overwhelm and decision fatigue</li>
+                <li>Lowers abandonment rates</li>
+                <li>Increases sales velocity</li>
+                <li>Improves conversion rates</li>
+                <li>Enhances the overall customer experience</li>
+            </ul>
+        </section>
 
-            <b style="font-size: 1.2em;">4. Two-way AR recommendations</b><br>
-            Salespeople can push product suggestions from the dashboard directly into the customer's Spectacles view in real time. The dashboard becomes a two-way channel, not a passive feed.
-            <div class="container my-2">
-                <div class="row text-center justify-content-center">
-                    <div class="col-md-4 mb-3">
-                        <img src="img/gif9.gif" alt="GIF 1" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <img src="img/gif5.gif" alt="GIF 2" class="img-fluid rounded">
-                    </div>
-                </div>
-            </div>
-            <br><br>
+        <section class="sh-section">
+            <h2>What I Built</h2>
+            <p>
+                My main focus was connecting the Spectacles experience to a structured backend and companion web system.
+            </p>
+            <p>I worked on:</p>
+            <ul class="sh-bullet-list">
+                <li>Early concept and product direction for the three-surface system</li>
+                <li>Designing Snap Cloud data schema and edge function architecture</li>
+                <li>AI and service integration for transcription, detection, and preference extraction</li>
+                <li>Lens-to-backend integration through Snap Cloud and Remote Service Gateway</li>
+                <li>Building the companion web dashboard with realtime backend wiring</li>
+            </ul>
+            <p>
+                This role helped bridge the live AR capture moment and the salesperson-facing intelligence layer: Spectacles create the spatial note, while the web portal makes that intent actionable and persistent.
+            </p>
+        </section>
 
-            <b style="font-size: 1.2em;">5. Cross-session memory</b><br>
-            Profiles persist across visits and staff turnover via Snap Cloud. Returning customers' full spatial history loads instantly, and salespeople wearing Spectacles can walk the floor to see notes pinned exactly where the customer left them.
-            <div class="container my-2">
-                <div class="row text-center justify-content-center">
-                    <div class="col-md-4 mb-3">
-                        <img src="img/gif3.gif" alt="GIF 1" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <img src="img/gif4.gif" alt="GIF 2" class="img-fluid rounded">
-                    </div>
-                </div>
-            </div>
-            <br><br>
-
-            <b style="font-size: 1.2em;">6. Session recap and catalog intelligence</b><br>
-            Every visit ends with a full recap: stats, saved images, AI summary, and one-tap email to the customer. For the business, every session feeds catalog intelligence and intent data for smarter product decisions. 
-        </p>
-    </div>
-
-    <br>
-
-    <!-- System architecture -->
-    <div class="concept">
-        <h4>System Architecture</h4>
-        <p>
-            PinPoint is a three-surface system with one backend connecting two frontends:
-        </p>
-        <div class="architecture-diagram-wrap">
-        <pre>┌────────────────────┐       ┌──────────────────┐       ┌────────────────────┐
+        <section class="sh-section">
+            <h2>System Design</h2>
+            <p>
+                PinPoint is a three-surface system with one backend connecting two frontends — designed so AR processing stays on Spectacles and everything else runs in the cloud, keeping the glasses responsive.
+            </p>
+            <h3>System Flow</h3>
+            <p>
+                <span class="sh-flow-highlight">Pin Creation → Voice Capture → Snap Cloud Processing → AI Preference Extraction → Dashboard Sync → AR Recommendations</span>
+            </p>
+            <div class="sh-architecture-diagram">
+                <pre>┌────────────────────┐       ┌──────────────────┐       ┌────────────────────┐
 │  Snap Spectacles   │◄─────►│   Snap Cloud     │◄─────►│   Web portal       │
 │  (Customer AR app) │       │   (Backend)      │       │   (Sales staff)    │
 └────────────────────┘       └──────────────────┘       └────────────────────┘
@@ -329,37 +257,51 @@
    spatial anchors              product detection AI       AR recommendations
    AR recommendations           catalog matching           session recap
    crop                         realtime sync              profiles &amp; insights</pre>
-        </div>
-        <p style="margin-top: 14px;"><b>Spectacles (Lens Studio)</b><br>
-        Built in Lens Studio. Handles image capture via the Camera Module, voice recording and transcription via the Remote Service Gateway, and pin creation as world-anchored placements via the Spatial Anchors API. The Spectacles Interaction Kit provides hand interactors and the cursor for targeting products.</p>
-        <p style="margin-top: 12px;"><b>Snap Cloud</b><br>
-        The intelligence layer. Designed so AR processing stays on Spectacles and everything else runs in the cloud, keeping the glasses responsive and avoiding thermal throttling.<br>It uses 8 data tables to manage sessions, pins, products, visit summaries, and recommendations, with 5 edge functions powering object detection, AI summaries, preference extraction, catalog matching, and AR product recommendations.</p>
-        <p style="margin-top: 12px;"><b>Web portal</b><br>
-        Built in HTML, connected to Snap Cloud Realtime. Renders each spatial note as a card with image thumbnail, transcript, AI summary, intent tags, and recommended products as they arrive. Surfaces a customer profile view aggregating preferences across sessions, and a product insight view showing how items are reacted to across the catalog. Salespeople can trigger pushes back to the Spectacles view from this surface.</p>
-    </div>
+            </div>
+            <h3>Spectacles (Lens Studio)</h3>
+            <p>
+                Built in Lens Studio. Handles image capture via the Camera Module, voice recording and transcription via the Remote Service Gateway, and pin creation as world-anchored placements via the Spatial Anchors API. The Spectacles Interaction Kit provides hand interactors and the cursor for targeting products.
+            </p>
+            <h3>Snap Cloud</h3>
+            <p>
+                The intelligence layer. It uses 8 data tables to manage sessions, pins, products, visit summaries, and recommendations, with 5 edge functions powering object detection, AI summaries, preference extraction, catalog matching, and AR product recommendations.
+            </p>
+            <h3>Web portal</h3>
+            <p>
+                Built in HTML, connected to Snap Cloud Realtime. Renders each spatial note as a card with image thumbnail, transcript, AI summary, intent tags, and recommended products as they arrive. Salespeople can trigger pushes back to the Spectacles view from this surface.
+            </p>
+        </section>
 
-    <br>
+        <section class="sh-section">
+            <h2><a href="https://sylvanerd.github.io/PinPoint_Web/" target="_blank" rel="noopener noreferrer">Companion Web ↗</a></h2>
+            <p>
+                The companion web portal extends PinPoint beyond the moment of pinning.
+            </p>
+            <p>
+                While Spectacles capture spatial reactions in the showroom, the portal gives salespeople a live view of customer intent — each pin arrives as a card with transcript, AI tags, and matched products. Profiles aggregate across sessions so returning customers are remembered even when staff change.
+            </p>
+            <p>
+                The dashboard is also a two-way channel: salespeople can push product suggestions directly back into the customer's AR view, turning a passive feed into an active consultation tool.
+            </p>
+        </section>
 
-    <!-- User Flow -->
-    <div class="concept">
-        <h4>User Flow</h4>
-        <div class="mt-2">
-            <img src="img/UserJourney.png" alt="PinPoint user journey diagram" class="img-fluid rounded w-100 d-block">
-        </div>
-    </div>
+        <section class="sh-section">
+            <h2>User Journey</h2>
+            <figure class="sh-context-figure sh-context-figure--wide">
+                <img src="img/UserJourney.png" alt="PinPoint user journey diagram">
+            </figure>
+        </section>
+    </main>
 
-    <br><br>
-    <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="sh-footer">
         <span>Seonjeong Park © 2026</span>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://harrietpark.github.io/" style="margin-right: 10px;"><i class="fa-brands fa-github"></i></a>
-            <a href="https://29harriet.itch.io/" style="margin-right: 10px;"><i class="fa-brands fa-itch-io"></i></a>
+            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/norangi__/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://harrietpark.github.io/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://29harriet.itch.io/" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
         </div>
     </footer>
-</section>
 
     <script src="js/avatarHomeButton.js"></script>
 </body>

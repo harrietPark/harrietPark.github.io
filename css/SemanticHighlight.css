@@ -241,15 +241,19 @@ body {
 }
 
 .sh-flow-highlight {
-    display: inline;
-    padding: 2px 4px;
-    background-color: #fff279;
-    font-size: 14px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 16px 20px;
+    background: rgba(255, 242, 121, 0.28);
+    border: 1px solid rgba(255, 242, 121, 0.45);
+    border-radius: 3px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 1.65;
-    color: #111;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
+    line-height: 1.75;
+    letter-spacing: -0.015em;
+    color: #222;
 }
 
 .sh-section h2 a {
@@ -259,6 +263,30 @@ body {
 
 .sh-section h2 a:hover {
     text-decoration: underline;
+}
+
+.sh-architecture-diagram {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sh-architecture-diagram pre {
+    width: max-content;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    padding: 16px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11px;
+    line-height: 1.45;
+    text-align: left;
+    color: #111;
 }
 
 .sh-context-figure {
@@ -282,6 +310,11 @@ body {
     line-height: 1.4;
     color: #666;
     text-align: center;
+}
+
+.sh-context-figure--wide {
+    max-width: 100%;
+    margin: 28px 0 32px;
 }
 
 .sh-image-placeholder {
