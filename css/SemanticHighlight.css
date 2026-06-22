@@ -41,8 +41,8 @@ body {
 
 .sh-overview {
     display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 56px;
+    grid-template-columns: 300px 1fr;
+    gap: 48px;
     margin-bottom: 64px;
 }
 
@@ -162,8 +162,9 @@ body {
     margin-bottom: 4px;
 }
 
-.sh-meta-links li:last-child {
-    margin-bottom: 0;
+.sh-meta-links .sh-meta-link {
+    display: block;
+    max-width: 100%;
 }
 
 .sh-section {
@@ -502,6 +503,29 @@ body {
     color: #111;
 }
 
+.sh-features {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.sh-feature h3 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.4;
+    color: #111;
+}
+
+.sh-feature p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: #111;
+}
+
 .sh-intent-list {
     list-style: none;
     margin: 16px 0 0;
@@ -606,6 +630,80 @@ body {
     font-weight: 400;
     line-height: 1.65;
     color: #111;
+}
+
+.sh-video-stack {
+    margin-bottom: 64px;
+}
+
+.sh-video-figure {
+    margin: 0 0 36px;
+}
+
+.sh-video-figure:last-child {
+    margin-bottom: 0;
+}
+
+.sh-video-figure .sh-video-embed {
+    margin-bottom: 10px;
+}
+
+.sh-video-figure figcaption {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #666;
+}
+
+.sh-pub-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sh-pub-item {
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #eee;
+}
+
+.sh-pub-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.sh-pub-meta {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #111;
+}
+
+.sh-pub-title {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.55;
+    color: #333a87;
+    text-decoration: none;
+}
+
+.sh-pub-title:hover {
+    text-decoration: underline;
+}
+
+.sh-pub-authors,
+.sh-pub-detail {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #777;
 }
 
 .sh-footer {
