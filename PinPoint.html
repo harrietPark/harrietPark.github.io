@@ -244,9 +244,19 @@
                 PinPoint is a three-surface system with one backend connecting two frontends — designed so AR processing stays on Spectacles and everything else runs in the cloud, keeping the glasses responsive.
             </p>
             <h3>System Flow</h3>
-            <p>
-                <span class="sh-flow-highlight">Pin Creation → Voice Capture → Snap Cloud Processing → AI Preference Extraction → Dashboard Sync → AR Recommendations</span>
-            </p>
+            <div class="sh-flow" aria-label="System flow">
+                <span class="sh-flow-step">Pin Creation</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Voice Capture</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Snap Cloud Processing</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">AI Preference Extraction</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Dashboard Sync</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">AR Recommendations</span>
+            </div>
             <div class="sh-architecture-diagram">
                 <pre>┌────────────────────┐       ┌──────────────────┐       ┌────────────────────┐
 │  Snap Spectacles   │◄─────►│   Snap Cloud     │◄─────►│   Web portal       │

@@ -241,9 +241,19 @@
                 Rather than asking AI to generate every sustainability explanation from scratch, the system stores trusted lifecycle stages, material information, and impact figures in a structured database. Gemini is used to recognise the object and fill a structured format, while the app assembles the visual experience from predefined blocks. This made the prototype more reliable for a live demo, reduced the risk of hallucinated sustainability claims, and allowed the AR visuals to stay consistent.
             </p>
             <h3>System Flow</h3>
-            <p>
-                <span class="sh-flow-highlight">Object Capture → Gemini Recognition → Snap Cloud Database → Lifecycle Assembly → AR Reveal → Web Object-dex</span>
-            </p>
+            <div class="sh-flow" aria-label="System flow">
+                <span class="sh-flow-step">Object Capture</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Gemini Recognition</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Snap Cloud Database</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Lifecycle Assembly</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">AR Reveal</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Web Object-dex</span>
+            </div>
             <h3>Why this mattered</h3>
             <p>
                 AI was useful for recognising objects, but the educational content needed to be grounded, repeatable, and trustworthy. This architecture let us combine AI flexibility with database reliability.

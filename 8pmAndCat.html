@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Seonjeong Park</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8pm and the Cat — Seonjeong Park</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/8pmAndCat.css">
     <link rel="stylesheet" href="css/site-header.css">
+    <link rel="stylesheet" href="css/SemanticHighlight.css">
 
     <link rel="icon" href="img/profile.png" type="image/png">
 </head>
 <body>
- 
-<header class="site-header">
+
+    <header class="site-header">
         <div class="avatar-home-button">
             <a class="avatar-button" href="index.html" aria-label="Go to home" title="Seonjeong">
                 <img class="avatar-image avatar-image-default" src="img/SJDefault.png" alt="Seonjeong Park avatar">
@@ -34,203 +36,220 @@
             <button class="language-toggle" type="button" data-language="en" aria-label="Toggle language">EN</button>
         </nav>
     </header>
-<br>
-<section id="baobab-diary">
-    <div class="title">
-        <h2>8PM and the Cat: AI-driven VR film </h2>
-    </div>
 
-    <div class="hastag">
-        <span class="firsttext">C#</span>
-        <span class="secondtext">| Unity Engine</span>
-        <span class="fourthtext">| Gen AI</span>
-    </div>
+    <main class="sh-main">
+        <h1 class="sh-title">8pm and the Cat</h1>
 
-    <!-- Video Walkthrough Section -->
-    <div class="video-section">
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ok5u5dXc01I?si=tDNoNQsOddAS7vEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="sh-video-embed">
+            <iframe src="https://www.youtube.com/embed/Ok5u5dXc01I?si=tDNoNQsOddAS7vEU" title="8pm and the Cat — YouTube trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="videotext">
-            Trailer Video
-        </div>
-    </div>
 
-    <!-- GIF Row -->
-    <div class="container my-4">
-        <div class="row text-center">
-            <div class="col-md-4 mb-3">
-                <img src="img/8pm.gif" alt="GIF 1" class="img-fluid rounded">
+        <section class="sh-overview" aria-label="Project overview">
+            <ul class="sh-meta-list">
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Role</span>
+                    <ul class="sh-tech-list">
+                        <li>Lead Developer</li>
+                        <li>Prototyper</li>
+                        <li>Interaction Designer</li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Year</span>
+                    <p class="sh-meta-value">2025 (11 months)</p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Funded by</span>
+                    <p class="sh-meta-value">
+                        <a class="sh-meta-link" href="http://kartsat.com/en/" target="_blank" rel="noopener noreferrer">AT Lab @ Korea National University of Arts ↗</a>
+                    </p>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Official Selection</span>
+                    <ul class="sh-meta-links">
+                        <li><a class="sh-meta-link" href="https://www.labiennale.org/en/cinema/2025/venice-immersive/jeonyeok-8si-wa-goyangi-8-pm-and-cat" target="_blank" rel="noopener noreferrer">Venice Immersive Film Festival 2025 ↗</a></li>
+                        <li><a class="sh-meta-link" href="https://whatson.bfi.org.uk/lff/Online/default.asp?BOparam::WScontent::loadArticle::permalink=vr-lounge-lff25&BOparam::WScontent::loadArticle::context_id=" target="_blank" rel="noopener noreferrer">London BFI Expanded 2025 ↗</a></li>
+                        <li><a class="sh-meta-link" href="https://plus.bifan.kr/program/xr_selections_view.asp?pk_seq=9528&amp;sc_category_seq=0&amp;sc_num=1&amp;actEvent=view" target="_blank" rel="noopener noreferrer">BIFAN 2026 ↗</a></li>
+                    </ul>
+                </li>
+                <li class="sh-meta-item">
+                    <span class="sh-meta-label">Tech Stack</span>
+                    <ul class="sh-tech-list">
+                        <li>Engine : Unity</li>
+                        <li>Platform : Meta Quest</li>
+                        <li>Collaboration : Plastic SCM</li>
+                        <li>Gen AI : OpenAI, ElevenLabs</li>
+                        <li>Plugins : Meta SDK</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sh-overview-content">
+                <p><strong>8pm and the Cat is a 13-minute, AI-driven VR narrative offering a personalised and emotionally adaptive experience.</strong></p>
+                <p>
+                    Through the interwoven perspectives of Haru and Mina, users navigate the tender space between longing and healing, where time stands still, but memories continue to breathe.
+                </p>
+                <p>
+                    After losing his partner Mina in the <a href="https://en.wikipedia.org/wiki/Seoul_Halloween_crowd_crush" target="_blank" rel="noopener noreferrer">Itaewon crowd crush</a>, cartoonist Haru's world freezes at 8PM. He drifts between two realities, one where she still arrives home, and one where she never will. In this generative VR experience, monologues and visuals emerge in real time, each moment fleeting, each encounter singular. The audience steps into Haru's stillness, gently bearing witness to the enduring weight of her absence.
+                </p>
             </div>
-            <div class="col-md-4 mb-3">
-                <img src="img/eraser.gif" alt="GIF 2" class="img-fluid rounded">
+        </section>
+
+        <section class="sh-section">
+            <h2>Inspiration</h2>
+            <p>
+                The story was inspired by the idea that just as ants live in a two-dimensional world, unaware of the third, we humans may not fully perceive the fourth dimension—time. In this view, past, present, and future may coexist, and those we've lost might still be with us in ways we can't yet perceive. We wanted this narrative to go beyond one man's grief and speak to a collective human experience of loss, memory, and connection. To bring this idea to life in an immersive and deeply personal way, we turned to AI.
+            </p>
+            <p>
+                Personally, this project means a lot to me because my grandmother passed away while I was in the UK. Unfortunately, due to time zone difference and flight hours, I couldn't go to her funeral, and this loss lingered with me for a long time. But my friend told me that she is always with you in a fourth dimension that we can't see, but she is still with you. While making this VR film, I thought about my grandmother a lot. Hoping that for someone who has lost someone, this film can help them relive.
+            </p>
+        </section>
+
+        <section class="sh-section">
+            <h2>Exploration</h2>
+            <div class="sh-explore">
+                <p class="sh-sticky-note">Q. How can AI shape interactive storytelling in XR?</p>
+                <div class="sh-explore-content">
+                    <p>
+                        As both prototyper and developer, I spent several months experimenting with how generative AI could help bring this vision to life, crafting a story that responds and adapts to each user. I explored ways to generate voice narration, images, and room textures in real time, and tested how the story could change depending on what the user types or chooses.
+                    </p>
+                    <p>
+                        Two key prototypes emerged from this phase: <strong>Gaze to Voice</strong> and <strong>StyleShift</strong>. Each explored a different technique for real-time AI storytelling. Together, they not only helped refine the final system used in <em>8pm and the Cat</em>, but also revealed how AI can unlock new emotional and spatial dimensions in XR narrative design.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <img src="img/8pmCat.gif" alt="GIF 3" class="img-fluid rounded">
+            <div class="sh-related-grid sh-related-grid--center">
+                <a class="sh-related-card" href="gazeToVoice.html">
+                    <img src="img/voiceToText.gif" alt="Gaze to Voice prototype">
+                    <h3>Gaze to Voice ↗</h3>
+                </a>
+                <a class="sh-related-card" href="StyleShift.html">
+                    <img src="img/realTimeTexture.gif" alt="StyleShift prototype">
+                    <h3>Real-time Style Shift ↗</h3>
+                </a>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="concept">
-        <h4 style="margin-bottom: 0.5em;">Overview</h4>
-    <div style="border: 1px solid #e0e0e0; border-radius: 12px; padding: 1em 1.2em; background: #fdfdfd; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
-    <p style="margin: 0 0 0.8em 0;">
-        <strong>Funded by:</strong> AT Lab at KArts
-    </p>
-    <p style="margin: 0 0 0.4em 0; font-weight: bold;">Official Selection</p>
-    <div style="margin-left: 1em;">
-        <p style="margin: 0.2em 0;">
-        🏆 
-        <a href="https://www.labiennale.org/en/cinema/2025/venice-immersive/jeonyeok-8si-wa-goyangi-8-pm-and-cat" 
-            target="_blank" rel="noopener noreferrer" 
-            style="text-decoration: none; color: #0077cc; font-weight: 500;">
-            <strong>Venice Immersive Film Festival 2025</strong>
-        </a>
-        </p>
-        <p style="margin: 0.2em 0;">
-        🏆  
-        <a href="https://whatson.bfi.org.uk/lff/Online/default.asp?BOparam::WScontent::loadArticle::permalink=vr-lounge-lff25&BOparam::WScontent::loadArticle::context_id=" 
-            target="_blank" rel="noopener noreferrer" 
-            style="text-decoration: none; color: #0077cc; font-weight: 500;">
-            <strong> London BFI Expanded 2025</strong>
-        </a>
-        </p>
-    </div>
-    </div>
+        <section class="sh-section">
+            <h2>Experience Flow</h2>
 
-    
-        <hr style="margin: 1.5em 0; border: none; border-top: 1px solid #ccc;" />
-    
-        <h5 style="margin-bottom: 0.5em;">Synopsis</h5>
-        <p style="font-style: italic; margin-bottom: 1em;">
-            At 8PM, when time halts after the loss of a loved one, a quiet room, a sleeping cat, and lingering memories unfold like panels in a dreamlike comic.
-        </p>
-        <p>
-            After losing his partner Mina in the <a href="https://en.wikipedia.org/wiki/Seoul_Halloween_crowd_crush" target="_blank" style="text-decoration: underline;">Itaewon crowd crush</a>, cartoonist Haru’s world freezes at 8PM. He drifts between two realities—one where she still arrives home, and one where she never will. He draws her endlessly, speaks to her endlessly. In this generative VR experience, monologues and visuals emerge in real time, each moment fleeting, each encounter singular. The audience steps into Haru’s stillness, gently bearing witness to the enduring weight of her absence.
-        </p>
-    
-        <h5 style="margin-top: 2em; margin-bottom: 0.5em;">Project Overview</h5>
-        <p>
-            <em>8PM and the Cat</em> is a 13-minute, AI-driven VR narrative offering a personalized and emotionally adaptive experience. Through the interwoven perspectives of Haru and Mina, users navigate the tender space between longing and healing—where time stands still, but memories continue to breathe.
-        </p>
-    </div>
-    
-    
-    
+            <div class="sh-steps">
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/8pm.gif" alt="User typing a reflective response in VR" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>1. Reflect through text input</h3>
+                        <p>
+                            Via a virtual keyboard, users answer reflective questions such as <em>"What do you usually see outside your window at 8PM?"</em> Their response shapes the imagery that follows.
+                        </p>
+                    </div>
+                </article>
 
-    <!-- My Role -->
-<div class="concept">
-    <h4>My Role</h4>
-    <ul style="padding-left: 20px; list-style-type: disc;">
-        <li>Lead Developer</li>
-        <li>Prototyper</li>
-        <li>Game Designer</li>
-    </ul>
-</div>
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/eraser.gif" alt="Real-time comic panels and room textures shifting" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>2. Watch the world transform</h3>
+                        <p>
+                            GPT-4o generates illustrated comic panels and transforms the room's textures in real time. As Haru's emotional state shifts, both the 2D visuals and the surrounding space change to match the mood.
+                        </p>
+                    </div>
+                </article>
 
-
-    <!-- Tools -->
-    <div class="concept">
-        <h4>Development Environments and Tools</h4>
-        <p>
-            <b>Engine:</b> Unity (C#)<br>
-            <b>Platform:</b> Meta Quest<br>
-            <b>Collaboration:</b> Plastic SCM<br>
-            <b>Gen AI:</b> GPT-4o (OpenAI API), ElevenLabs (custom voice cloning)<br>
-            <b>Plugins:</b> Meta SDK<br>
-            <b>Languages Supported:</b> English & Korean
-        </p>
-    </div>
-
-    <!-- Prototype Section -->
-<div class="concept">
-    <h4>Prototype</h4>
-    <p>
-        <p style="text-align: center; font-weight: 700; font-size: 1.2em; font-style: italic; margin-bottom: 1em;">
-            💡 How can AI shape interactive storytelling in XR?
-        </p>
-        This question guided the early development of <em>8PM and the Cat</em>, a 13-minute AI-driven VR narrative about a man named Haru and his partner Mina. After losing Mina, Haru’s world freezes at 8PM—the hour they always spent together. 
-    </p>
-
-    <p>
-        The story is inspired by the idea that just as ants live in a two-dimensional world, unaware of the third, we humans may not fully perceive the fourth dimension—time. In this view, past, present, and future may coexist, and those we’ve lost might still be with us in ways we can’t yet perceive. We wanted this narrative to go beyond one man’s grief and speak to a collective human experience of loss, memory, and connection. To bring this idea to life in an immersive and deeply personal way, we turned to AI.
-    </p>
-
-    <p>
-        As both prototyper and developer, I spent several months experimenting with how generative AI could help bring this vision to life—crafting a story that responds and adapts to each user. I explored ways to generate voice narration, images, and room textures in real time, and tested how the story could change depending on what the user types or chooses.
-    </p>
-    <p>
-        Two key prototypes emerged from this phase: <strong>Gaze to Voice</strong> and <strong>StyleShift</strong>. Each explored a different technique for real-time AI storytelling. Together, they not only helped refine the final system used in <em>8PM and the Cat</em>, but also revealed how AI can unlock new emotional and spatial dimensions in XR narrative design.
-    </p>
-
-    <section id="projects-grid" class="grid-container d-flex justify-content-center flex-wrap gap-4 mt-4">
-        <a href="gazeToVoice.html" class="project-link grid-item text-center" data-category="ai" style="text-decoration: none; color: inherit; max-width: 250px;">
-            <div class="project-thumbnail mb-2">
-                <img src="img/voiceToText.gif" alt="Gaze to Voice" class="img-fluid rounded shadow-sm">
+                <article class="sh-step">
+                    <div class="sh-step-media">
+                        <img src="img/8pmCat.gif" alt="Immersive voice monologue playback" decoding="async">
+                    </div>
+                    <div class="sh-step-content">
+                        <h3>3. Listen to generated monologues</h3>
+                        <p>
+                            Emotional voice-over monologues are dynamically generated by GPT and synthesized through ElevenLabs using custom-trained voice models of the main characters, creating a layered dual-perspective narrative.
+                        </p>
+                    </div>
+                </article>
             </div>
-            <p class="project-category mb-1" style="color: #666;">#AI</p>
-            <p class="project-title fw-bold">Gaze to Voice:<br>Real-Time Story</p>
-        </a>
+        </section>
 
-        <a href="StyleShift.html" class="project-link grid-item text-center" data-category="ai" style="text-decoration: none; color: inherit; max-width: 250px;">
-            <div class="project-thumbnail mb-2">
-                <img src="img/realTimeTexture.gif" alt="StyleShift" class="img-fluid rounded shadow-sm">
+        <section class="sh-section">
+            <h2>What I Built</h2>
+            <p>
+                As lead developer and the only engineer on the team, I owned the full AI narrative stack in Unity, from early prototypes through the final build.
+            </p>
+            <p>I worked on:</p>
+            <ul class="sh-bullet-list">
+                <li>Designing and implementing the real-time GPT-4o image generation pipeline</li>
+                <li>Building dynamic room texture and comic panel systems tied to emotional prompts</li>
+                <li>Integrating GPT narration with ElevenLabs custom voice cloning</li>
+                <li>Prototyping user-input-driven branching for personalized narrative moments</li>
+                <li>Interaction design for dual-perspective storytelling between Haru and Mina</li>
+            </ul>
+        </section>
+
+        <section class="sh-section">
+            <h2>System Design</h2>
+            <p>
+                Each viewer's story is different, images and monologues shift dynamically based on user input, making the experience deeply personal and reflective.
+            </p>
+            <h3>User input pipeline</h3>
+            <div class="sh-flow" aria-label="User input pipeline">
+                <span class="sh-flow-step">User Input</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">GPT-4o Image Generation</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Illustrated Panels &amp; Room Textures</span>
             </div>
-            <p class="project-category mb-1" style="color: #666;">#AI</p>
-            <p class="project-title fw-bold">StyleShift: Real-Time Texture Generation<br>with Stable Diffusion</p>
-        </a>
-    </section>
-</div>
+            <h3>Emotional prompt pipeline</h3>
+            <div class="sh-flow" aria-label="Emotional prompt pipeline">
+                <span class="sh-flow-step">Pre-defined Prompts</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">GPT-4o Image Generation</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Real-time Visual &amp; Spatial Mood Shift</span>
+            </div>
+            <h3>Voice pipeline</h3>
+            <div class="sh-flow" aria-label="Voice pipeline">
+                <span class="sh-flow-step">Pre-defined Prompts</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">GPT Narration</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">ElevenLabs Voice</span>
+                <span class="sh-flow-arrow" aria-hidden="true">→</span>
+                <span class="sh-flow-step">Immersive Playback</span>
+            </div>
+        </section>
 
+        <section class="sh-section">
+            <h2>Core Features</h2>
+            <ul class="sh-bullet-list">
+                <li>Interactive narrative shaped by personal text input</li>
+                <li>Real-time visual generation via GPT-4o</li>
+                <li>Voice personalisation through cloned actor voices (ElevenLabs)</li>
+                <li>Emotional dual-perspective shifting between Haru's grief and Mina's memories</li>
+                <li>Theme of personal loss expanding into collective empathy through AI-driven storytelling</li>
+            </ul>
+        </section>
 
+        <section class="sh-section">
+            <h2>Recognition</h2>
+            <ul class="sh-bullet-list">
+                <li>Official Selection, <a href="https://www.labiennale.org/en/cinema/2025/venice-immersive/jeonyeok-8si-wa-goyangi-8-pm-and-cat" target="_blank" rel="noopener noreferrer">Venice Immersive Film Festival 2025</a></li>
+                <li>Official Selection, <a href="https://whatson.bfi.org.uk/lff/Online/default.asp?BOparam::WScontent::loadArticle::permalink=vr-lounge-lff25&BOparam::WScontent::loadArticle::context_id=" target="_blank" rel="noopener noreferrer">London BFI Expanded 2025</a></li>
+                <li>Official Selection, <a href="https://plus.bifan.kr/program/xr_selections_view.asp?pk_seq=9528&amp;sc_category_seq=0&amp;sc_num=1&amp;actEvent=view" target="_blank" rel="noopener noreferrer">BIFAN 2026</a></li>
+            </ul>
+        </section>
+    </main>
 
-    <!-- System Structure -->
-    <div class="concept">
-        <h4>System Structure</h4>
-        <p>Each viewer’s story is different—images and monologues shift dynamically based on user input, making the experience deeply personal and reflective.</p>
-
-        <p style="font-size: 16px;"><b>🧑‍💻 User Input ➝ 🎨 GPT-4o Image Generation</b></p>
-        <p>
-            Via a virtual keyboard, users are prompted with reflective questions such as:<br>
-            <em>“What do you usually see outside your window at 8PM?”</em><br>
-            The response is used to generate real-time imagery that reflects the user’s emotional world.
-        </p>
-
-        <p style="font-size: 16px;"><b>🗂️ Pre-defined Prompts ➝ 🎨 GPT-4o Image Generation</b></p>
-        <p>
-            In the experience, both the 2D visuals and the room’s textures change in real time based on predefined emotional prompts. Since Haru is a comic artist, the images are styled like illustrated panels. At the same time, the entire room environment transforms to match the mood expressed in the prompt. For example, if the prompt describes a tense or uneasy emotional state, both the visual content and the space around the user shift to reflect that atmosphere—creating a fully immersive emotional experience.
-        </p>
-
-        <p style="font-size: 16px;"><b>🗂️ Pre-defined Prompts ➝ 🧠 GPT Narration ➝ 🔊 ElevenLabs Voice ➝ 🎧 Immersive Playback</b></p>
-        <p>
-            Emotional voice-over monologues are dynamically generated by GPT and instantly synthesized into natural speech using ElevenLabs—based on a custom-trained voice model of the main characters.
-        </p>
-    </div>
-
-    <!-- Key Features -->
-    <div class="concept">
-        <h4>Core Features</h4>
-        <ul style="padding-left: 2px;">
-            <li><b>Interactive Narrative:</b> Users influence the story through personal text input</li>
-            <li><b>Real-Time Visual Generation:</b> GPT-4o generates scene imagery in real-time</li>
-            <li><b>Voice Personalization:</b> Narration delivered via cloned actor voices from ElevenLabs</li>
-            <li><b>Emotional Dual-Perspective:</b> The narrative shifts between Haru’s grief and Mina’s memories, creating a layered emotional experience</li>
-            <li><b>Theme:</b> From personal loss to collective empathy, through AI-driven storytelling</li>
-        </ul>
-    </div>
-
-    <br><br>
-    <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="sh-footer">
         <span>Seonjeong Park © 2026</span>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" style="margin-right: 10px;"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/norangi__/" style="margin-right: 10px;"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://harrietpark.github.io/" style="margin-right: 10px;"><i class="fa-brands fa-github"></i></a>
-            <a href="https://29harriet.itch.io/" style="margin-right: 10px;"><i class="fa-brands fa-itch-io"></i></a>
+            <a href="https://www.linkedin.com/in/seonjeongharrietpark/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/norangi__/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://harrietpark.github.io/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://29harriet.itch.io/" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
         </div>
     </footer>
-</section>
 
     <script src="js/avatarHomeButton.js"></script>
 </body>
