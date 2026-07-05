@@ -247,7 +247,7 @@ function ListSection(titleText, items) {
 function renderAboutPage() {
     const root = document.getElementById("about-root");
 
-    if (!root || typeof ABOUT_DATA === "undefined") {
+    if (!root || typeof ABOUT_DATA === "undefined" || root.children.length > 0) {
         return;
     }
 
