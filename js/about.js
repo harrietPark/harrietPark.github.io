@@ -167,15 +167,37 @@ function SkillsSection(skills) {
 
         const groupTitle = document.createElement("h3");
         groupTitle.textContent = group.title;
+        column.appendChild(groupTitle);
 
-        const list = document.createElement("ul");
-        group.items.forEach((item) => {
-            const listItem = document.createElement("li");
-            listItem.textContent = item;
-            list.appendChild(listItem);
-        });
+        if (group.groups) {
+            group.groups.forEach((subgroup) => {
+                const wrap = document.createElement("div");
+                wrap.className = "skills-subgroup";
 
-        column.append(groupTitle, list);
+                const label = document.createElement("p");
+                label.className = "skills-subgroup-label";
+                label.textContent = subgroup.label;
+
+                const list = document.createElement("ul");
+                subgroup.items.forEach((item) => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = item;
+                    list.appendChild(listItem);
+                });
+
+                wrap.append(label, list);
+                column.appendChild(wrap);
+            });
+        } else {
+            const list = document.createElement("ul");
+            group.items.forEach((item) => {
+                const listItem = document.createElement("li");
+                listItem.textContent = item;
+                list.appendChild(listItem);
+            });
+            column.appendChild(list);
+        }
+
         grid.appendChild(column);
     });
 

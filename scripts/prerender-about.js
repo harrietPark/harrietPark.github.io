@@ -78,7 +78,23 @@ let html = `<section class="about-intro"><h1>${esc(intro.title)}</h1>`;
 html += intro.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("");
 html += `<div class="about-cta-group">${intro.ctas.map((c) => link({ ...c, className: "about-cta" })).join("")}</div></section>`;
 html += `<section class="about-section experience-section"><h2>Experience</h2>${ABOUT_DATA.experiences.map(expItem).join("")}</section>`;
-html += `<section class="about-section skills-section"><h2>Skills</h2><div class="skills-grid">${ABOUT_DATA.skills.map((g) => `<div class="skills-column"><h3>${esc(g.title)}</h3><ul>${g.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("")}</div></section>`;
+function renderSkillItems(items) {
+    return `<ul>${items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
+}
+
+function renderSkillsColumn(group) {
+    const body = group.groups
+        ? group.groups
+              .map(
+                  (sub) =>
+                      `<div class="skills-subgroup"><p class="skills-subgroup-label">${esc(sub.label)}</p>${renderSkillItems(sub.items)}</div>`
+              )
+              .join("")
+        : renderSkillItems(group.items);
+    return `<div class="skills-column"><h3>${esc(group.title)}</h3>${body}</div>`;
+}
+
+html += `<section class="about-section skills-section"><h2>Skills</h2><div class="skills-grid">${ABOUT_DATA.skills.map(renderSkillsColumn).join("")}</div></section>`;
 html += listSection("Awards & Recognition", ABOUT_DATA.awards);
 html += listSection("Publications", ABOUT_DATA.publications);
 html += listSection("Education", ABOUT_DATA.education);

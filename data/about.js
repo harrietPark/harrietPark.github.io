@@ -51,6 +51,13 @@ const ABOUT_DATA = {
                     image: "img/Grow.png",
                     imageAlt: "Grow",
                     url: "https://www.noghost.co.uk/work/grow"
+                },
+                {
+                    title: "Space Explorers: Ultimate Edition ↗",
+                    meta: "Virtual Reality, Mixed Reality, Immersive Documentary",
+                    image: "img/SpaceExplorers.png",
+                    imageAlt: "Space Explorers Ultimate Edition",
+                    url: "https://www.meta.com/en-gb/experiences/space-explorers-ultimate-edition/28471616622437903/"
                 }
             ]
         },
@@ -113,16 +120,20 @@ const ABOUT_DATA = {
     ],
     skills: [
         {
-            title: "Spatial Development",
-            items: ["Unity", "Unreal", "Lens Studio", "Snap Spectacles", "Apple Vision Pro", "Meta Quest", "C#", "C++", "TypeScript", "JavaScript", "Python"]
+            title: "Spatial Computing",
+            items: ["Unity", "Unreal Engine", "Lens Studio", "Snap Spectacles", "Apple Vision Pro", "Meta Quest"]
         },
         {
-            title: "AI Workflows",
-            items: ["OpenAI", "Stable Diffusion", "ComfyUI", "Midjourney", "ElevenLabs", "Gaussian Splatting", "World Models"]
+            title: "AI",
+            items: ["OpenAI", "Gemini", "Stable Diffusion", "ComfyUI", "Gaussian Splatting"]
         },
         {
-            title: "Creative Tools",
-            items: ["Figma", "Blender", "Maya", "Adobe"]
+            title: "Software Engineering",
+            items: ["C#", "C++", "Python", "TypeScript", "React", "Supabase"]
+        },
+        {
+            title: "HCI & Prototyping",
+            items: ["User Studies", "Experimental Design", "Research Prototyping", "Statistical Analysis", "Multimodal Interaction", "Figma", "Blender"]
         }
     ],
     awards: [

@@ -29,9 +29,10 @@ XR Developer at [NoGhost](https://www.noghost.co.uk/) (Oct 2022 – present), Lo
 
 ## Skills (summary)
 
-Spatial: Unity, Unreal, Lens Studio, Snap Spectacles, Apple Vision Pro, Meta Quest, C#, C++, TypeScript, JavaScript, Python
-AI: OpenAI, Stable Diffusion, ComfyUI, Gemini, ElevenLabs, Gaussian Splatting
-Creative: Figma, Blender, Maya, Adobe
+Spatial Computing: Unity, Unreal Engine, Lens Studio, Snap Spectacles, Apple Vision Pro, Meta Quest
+AI: OpenAI, Gemini, Stable Diffusion, ComfyUI, Gaussian Splatting
+Software Engineering: C#, C++, Python, TypeScript, React, Supabase
+HCI & Prototyping: User Studies, Experimental Design, Research Prototyping, Statistical Analysis, Multimodal Interaction, Figma, Blender
 
 ## Contact & links
 
