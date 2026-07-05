@@ -23,6 +23,7 @@ const ABOUT_DATA = {
             icon: "NG",
             metaClass: "compact-meta",
             logo: "img/NoGhost.png",
+            logoUrl: "https://www.noghost.co.uk/",
             period: "Oct 2022 - Now",
             role: "XR Developer",
             description: [
@@ -58,6 +59,7 @@ const ABOUT_DATA = {
             icon: "K",
             metaClass: "compact-meta",
             logo: "img/KArts.png",
+            logoUrl: "http://kartsat.com/en/",
             period: "Oct 2024 - Aug 2025",
             role: "Lead Developer, Rapid Prototyper",
             description: [
@@ -78,6 +80,7 @@ const ABOUT_DATA = {
             company: "Goldsmiths & LASALLE",
             icon: "GL",
             logo: "img/Goldsmiths.png",
+            logoUrl: "https://www.gold.ac.uk/",
             period: "Apr 2022 - Jan 2025",
             role: "Lead Developer, Researcher",
             description: [
@@ -99,6 +102,7 @@ const ABOUT_DATA = {
             icon: "TB",
             metaClass: "compact-meta",
             logo: "img/Tripbtoz.png",
+            logoUrl: "https://www.tripbtoz.com/",
             period: "Feb 2020 - Apr 2022",
             role: "Contents Marketer",
             description: [
@@ -193,12 +197,14 @@ const ABOUT_DATA = {
         {
             title: "MSc Virtual & Augmented Reality",
             year: "2021-2022",
-            detail: "Goldsmiths, University of London"
+            detail: "Goldsmiths, University of London",
+            detailUrl: "https://www.gold.ac.uk/"
         },
         {
             title: "BA Game & Interactive Media Convergence, Chinese Language and Literature",
             year: "2015-2021",
-            detail: "Chung-Ang University, Seoul, Korea"
+            detail: "Chung-Ang University, Seoul, Korea",
+            detailUrl: "https://neweng.cau.ac.kr/index.do"
         }
     ]
 };

@@ -92,7 +92,21 @@ function ExperienceItem(experience) {
         const logo = document.createElement("img");
         logo.src = experience.logo;
         logo.alt = `${experience.company} logo`;
-        icon.appendChild(logo);
+
+        if (experience.logoUrl) {
+            const logoLink = document.createElement("a");
+            logoLink.href = experience.logoUrl;
+
+            if (/^https?:\/\//.test(experience.logoUrl)) {
+                logoLink.target = "_blank";
+                logoLink.rel = "noopener noreferrer";
+            }
+
+            logoLink.appendChild(logo);
+            icon.appendChild(logoLink);
+        } else {
+            icon.appendChild(logo);
+        }
     } else {
         icon.textContent = experience.icon;
     }
