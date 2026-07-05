@@ -245,9 +245,9 @@ function ListSection(titleText, items) {
 }
 
 function renderAboutPage() {
-    const root = document.getElementById("about-root");
+    const root = document.querySelector(".about-wrapper");
 
-    if (!root || typeof ABOUT_DATA === "undefined" || root.children.length > 0) {
+    if (!root || typeof ABOUT_DATA === "undefined" || root.querySelector(".about-intro")) {
         return;
     }
 

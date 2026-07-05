@@ -85,7 +85,7 @@ html += listSection("Education", ABOUT_DATA.education);
 
 let about = fs.readFileSync("about.html", "utf8");
 about = about.replace(
-    /(<div class="about-wrapper" id="about-root">)[\s\S]*?(<\/div>\s*<\/main>)/,
+    /(<div class="about-wrapper">)[\s\S]*?(<\/div>\s*<\/main>)/,
     `$1\n${html}\n        $2`
 );
 

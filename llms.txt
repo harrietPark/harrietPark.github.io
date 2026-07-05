@@ -15,7 +15,7 @@ Seonjeong Park works across research, design, and engineering to prototype, vali
 ## Selected projects
 
 - [Matterly](https://harrietpark.github.io/Matterly.html): Spatial AI learning on Snap Spectacles — scan everyday objects, reveal material lifecycles in AR, save to companion web object-dex. Finalist, Reality Hack at AWE 2026.
-- [PinPoint](https://harrietpark.github.io/PinPoint.html): Multi-platform spatial computing system for contextual briefings via AR glasses. XRCC 2026 Runner Up.
+- [PinPoint](https://harrietpark.github.io/PinPoint.html): Multi-platform spatial computing system for contextual briefings via AR glasses. XRCC 2026 Runner-Up.
 - [8pm and the Cat](https://harrietpark.github.io/8pmAndCat.html): 13-minute AI-driven VR film with personalised real-time narratives. Venice Immersive 2025, BFI Expanded 2025.
 - [Public Speaking in VR Research](https://harrietpark.github.io/Presentation.html): VR app reducing foreign language anxiety, tested with 40+ participants. Published in Frontiers in Virtual Reality; IEEE VR 2023.
 - [Baobab Diary](https://harrietpark.github.io/BaobabDiary.html): Mixed-reality mindfulness app with voice input and AI feedback. Winner, 2024 Korea Metaverse Developer Contest.

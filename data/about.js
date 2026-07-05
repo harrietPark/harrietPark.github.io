@@ -127,7 +127,7 @@ const ABOUT_DATA = {
     ],
     awards: [
         {
-            title: "XRCC 2026 Runner Up",
+            title: "XRCC 2026 Runner-Up",
             year: "2026",
             detail: "PinPoint",
             detailUrl: "PinPoint.html"
