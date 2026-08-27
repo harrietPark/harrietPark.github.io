@@ -1,8 +1,8 @@
 # Seonjeong Park
 
-> Design Engineer based in London, working at the intersection of AI and XR. Portfolio site with project case studies, experiments, and about/CV information.
+> Design Engineer and interaction prototyper designing new ways for people to interact with AI, physical objects, and the space around them.
 
-Seonjeong Park works across research, design, and engineering to prototype, validate, and ship immersive experiences — from production VR/MR at NoGhost to AI-driven spatial storytelling and Snap Spectacles prototypes.
+Seonjeong Park works across interaction design and engineering to turn spatial computing, multimodal AI, and robotics into working experiences people can touch, move through, and understand.
 
 ## Main pages
 
@@ -14,6 +14,7 @@ Seonjeong Park works across research, design, and engineering to prototype, vali
 
 ## Selected projects
 
+- [RoboLab](https://harrietpark.github.io/RoboLab.html): Three-layer robotics learning platform connecting hands-on MR experimentation, AI-supported reflection on the web, and physical robot building.
 - [Matterly](https://harrietpark.github.io/Matterly.html): Spatial AI learning on Snap Spectacles — scan everyday objects, reveal material lifecycles in AR, save to companion web object-dex. Finalist, Reality Hack at AWE 2026.
 - [PinPoint](https://harrietpark.github.io/PinPoint.html): Multi-platform spatial computing system for contextual briefings via AR glasses. XRCC 2026 Runner-Up.
 - [8pm and the Cat](https://harrietpark.github.io/8pmAndCat.html): 13-minute AI-driven VR film with personalised real-time narratives. Venice Immersive 2025, BFI Expanded 2025.
@@ -32,7 +33,7 @@ XR Developer at [NoGhost](https://www.noghost.co.uk/) (Oct 2022 – present), Lo
 Spatial Computing: Unity, Unreal Engine, Lens Studio, Snap Spectacles, Apple Vision Pro, Meta Quest
 AI: OpenAI, Gemini, Stable Diffusion, ComfyUI, Gaussian Splatting
 Software Engineering: C#, C++, Python, TypeScript, React, Supabase
-HCI & Prototyping: User Studies, Experimental Design, Research Prototyping, Statistical Analysis, Multimodal Interaction, Figma, Blender
+Interaction & Prototyping: Multimodal Interaction, Rapid Prototyping, Physical Computing, User Studies, Experimental Design, Figma, Blender
 
 ## Contact & links
 

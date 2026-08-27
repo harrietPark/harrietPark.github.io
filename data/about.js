@@ -132,8 +132,8 @@ const ABOUT_DATA = {
             items: ["C#", "C++", "Python", "TypeScript", "React", "Supabase"]
         },
         {
-            title: "HCI & Prototyping",
-            items: ["User Studies", "Experimental Design", "Research Prototyping", "Statistical Analysis", "Multimodal Interaction", "Figma", "Blender"]
+            title: "Interaction & Prototyping",
+            items: ["Multimodal Interaction", "Rapid Prototyping", "Physical Computing", "User Studies", "Experimental Design", "Figma", "Blender"]
         }
     ],
     awards: [

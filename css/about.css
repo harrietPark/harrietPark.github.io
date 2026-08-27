@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Albert Sans', 'NanumSquareRound', sans-serif;
     margin: 0;
     padding: 0;
     background: white;
@@ -24,7 +24,7 @@ main {
 .about-intro h1 {
     max-width: none;
     margin: 0 0 18px;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.35;
     letter-spacing: 0;
     font-weight: 500;
@@ -33,7 +33,7 @@ main {
 .about-intro p {
     max-width: none;
     margin: 0 0 11px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     font-weight: 300;
 }
@@ -52,7 +52,7 @@ main {
     color: black;
     border-radius: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     box-shadow: none;
@@ -73,7 +73,7 @@ main {
 
 .about-section h2 {
     margin: 0 0 20px;
-    font-size: 30px;
+    font-size: 34px;
     font-weight: 700;
     letter-spacing: 0;
 }
@@ -108,7 +108,7 @@ main {
     border-radius: 0;
     background: transparent;
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     box-shadow: none;
     overflow: visible;
@@ -146,7 +146,7 @@ main {
 }
 
 .experience-meta h3 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.1;
     padding-top: 0;
@@ -154,13 +154,13 @@ main {
 
 .experience-meta p {
     margin-top: 0;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.35;
     color: #4c4c4c;
 }
 
 .experience-content {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.58;
 }
 
@@ -219,12 +219,12 @@ main {
 }
 
 .project-link-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
 }
 
 .project-link-meta {
-    font-size: 15px;
+    font-size: 17px;
     color: #696969;
 }
 
@@ -236,7 +236,7 @@ main {
 
 .skills-column h3 {
     margin: 0 0 24px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
 }
 
@@ -246,7 +246,7 @@ main {
 
 .skills-subgroup-label {
     margin: 0 0 12px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -266,7 +266,7 @@ main {
     padding: 6px 10px;
     border-radius: 999px;
     background: #f7f7f7;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1;
 }
 
@@ -289,7 +289,7 @@ main {
 }
 
 .list-item h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 1.25;
 }
@@ -303,7 +303,7 @@ main {
 .list-item-link {
     display: block;
     width: fit-content;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 1.25;
     color: inherit;
@@ -323,7 +323,7 @@ main {
     margin-top: 6px;
     max-width: 740px;
     color: #5a5a5a;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.45;
 }
 
@@ -342,7 +342,7 @@ main {
 }
 
 .list-item span {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     white-space: nowrap;
 }
@@ -372,7 +372,7 @@ footer .social-icons {
 
 footer .social-icons a {
     color: grey;
-    font-size: 24px;
+    font-size: 26px;
     margin: 0 5px;
 }
 
@@ -405,7 +405,7 @@ footer .social-icons a {
     }
 
     .experience-meta h3 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .experience-meta-copy {
@@ -414,7 +414,7 @@ footer .social-icons a {
     }
 
     .experience-meta p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .skills-grid {
@@ -468,7 +468,7 @@ footer .social-icons a {
     }
 
     .experience-meta h3 {
-        font-size: 18px;
+        font-size: 20px;
         padding-top: 2px;
     }
 
@@ -478,7 +478,7 @@ footer .social-icons a {
     }
 
     .experience-meta p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .project-link-card.has-image {

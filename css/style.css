@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Albert Sans', 'NanumSquareRound', sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -189,7 +189,7 @@ footer .social-icons a {
     margin-top: 20px;
     background-color: #FDFFE0; /* Yellow background */
     color: #333333; /* Change this to your desired text color */
-    font-family: 'Inter', sans-serif;
+    font-family: 'Albert Sans', 'NanumSquareRound', sans-serif;
     padding: 60px; /* Adjust the padding if needed */
     border-radius: 10px; /* Adjust the border radius if needed */
     line-height: 1.2; /* Adjust line height for better readability */
@@ -199,7 +199,7 @@ footer .social-icons a {
 #personal {
     background-color: #FDFFE0; /* Change this to your desired background color */
     color: #333333; /* Change this to your desired text color */
-    font-family: 'Inter', sans-serif;
+    font-family: 'Albert Sans', 'NanumSquareRound', sans-serif;
     padding: 60px; /* Adjust the padding if needed */
     border-radius: 10px; /* Adjust the border radius if needed */
     line-height: 1.2; /* Adjust line height for better readability */
@@ -337,7 +337,7 @@ footer .social-icons a {
 
 .home-hero p {
     margin: 0 0 13px;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.45;
     font-weight: 300;
 }
@@ -407,7 +407,7 @@ footer .social-icons a {
     padding: 6px;
     border-radius: 4px;
     color: black;
-    font-size: clamp(7px, 1.5vw, 9px);
+    font-size: clamp(8px, 1.5vw, 10px);
     font-weight: 300;
     line-height: 1.2;
     text-align: center;
@@ -439,6 +439,24 @@ footer .social-icons a {
     transform: rotate(var(--postit-rotate));
 }
 
+.mind-map-composite .reachy-mini-sticker {
+    position: absolute;
+    z-index: 3;
+    top: -8%;
+    right: -40%;
+    width: clamp(62px, 25%, 76px);
+    height: auto;
+    pointer-events: none;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.14));
+    transform: rotate(5deg);
+    transform-origin: 50% 70%;
+    transition: transform 0.24s ease;
+}
+
+.postit-yellow:hover + .reachy-mini-sticker {
+    transform: translateY(-4px) rotate(2deg) scale(1.04);
+}
+
 .postit-blue {
     --postit-rotate: 2deg;
     left: 1%;
@@ -462,7 +480,7 @@ footer .social-icons a {
 .home-section h2,
 .home-contact h2 {
     margin: 0 0 22px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -498,7 +516,7 @@ footer .social-icons a {
 
 .experiment-card h3 {
     margin: 0 0 5px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.25;
 }
@@ -506,7 +524,7 @@ footer .social-icons a {
 .experiment-card p {
     margin: 0 0 6px;
     color: #333;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.35;
     font-weight: 400;
 }
@@ -514,7 +532,7 @@ footer .social-icons a {
 .experiment-card span {
     display: block;
     color: #666;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 1.25;
 }
@@ -542,20 +560,20 @@ footer .social-icons a {
 
 .selected-card h3 {
     margin: 0 0 6px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
 }
 
 .selected-card p {
     margin: 0 0 8px;
     color: #333;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.35;
 }
 
 .selected-card span {
     color: #666;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .home-view-all {
@@ -569,7 +587,7 @@ footer .social-icons a {
 
 .home-view-all .nav-button {
     padding: 7px 18px;
-    font-size: 13px;
+    font-size: 15px;
     border-radius: 16px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.18);
 }
@@ -580,7 +598,7 @@ footer .social-icons a {
 
 .home-contact p {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.45;
 }
 
@@ -604,13 +622,19 @@ footer .social-icons a {
     .mind-postit {
         width: clamp(58px, 15%, 68px);
         padding: 6px;
-        font-size: 6.5px;
+        font-size: 7.5px;
     }
 
     .debuggy-link {
         left: -18%;
         top: 8%;
         width: 42px;
+    }
+
+    .mind-map-composite .reachy-mini-sticker {
+        top: -4%;
+        right: -36%;
+        width: 52px;
     }
 
 }
@@ -626,7 +650,7 @@ footer .social-icons a {
     }
 
     .home-hero p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .mind-map-section {
@@ -641,6 +665,12 @@ footer .social-icons a {
     .mind-postit {
         width: clamp(48px, 14%, 56px);
         padding: 5px;
-        font-size: 6px;
+        font-size: 7px;
+    }
+
+    .mind-map-composite .reachy-mini-sticker {
+        top: -2%;
+        right: -35%;
+        width: 44px;
     }
 }

@@ -21,12 +21,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&family=Noto+Sans+KR&family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/playground.css">
     <link rel="stylesheet" href="css/site-header.css">
     <link rel="icon" href="img/profile.png" type="image/png">
 </head>
 
-<body class="home-page">
+<body>
     <header class="site-header">
         <div class="avatar-home-button">
             <a class="avatar-button" href="index.html" aria-label="Go to home" title="Seonjeong">
@@ -47,36 +47,39 @@
         </nav>
     </header>
 
-    <main class="home-main">
-        <div class="home-wrapper">
-            <section class="home-hero">
-                <h1>🪄 Playground</h1>
-                <p class="hero-kicker">Where the most fun happens — quick experiments with AI, XR, and creative tools.</p>
-                <p>I prototype here before ideas graduate to full project case studies. Same spirit as the home page experiments, collected in one place.</p>
+    <main>
+        <div class="content-wrapper">
+            <section id="intro">
+                <img src="img/playgroundImage.jpeg" alt="Playground Avatar" class="playground-avatar">
+                <p class="intro-description">Welcome to the Playground – the place where the most fun happens!<br>Here, I experiment with different tools and techniques, making magic come to life.<br>Dive in and explore how I blend creativity and technology to transform reality.</p>
+                <div class="emoji-icons" aria-hidden="true">🚧✨🛠️🧑‍🔧🎩🔍⚙️🔬</div>
             </section>
 
-            <section class="home-section">
-                <h2>Recent Experiments</h2>
-                <div class="experiment-grid">
-                    <a class="experiment-card" href="SemanticHighlight.html">
-                        <img src="img/notes.gif" alt="Semantic Highlight prototype">
-                        <h3>Semantic Highlight</h3>
-                        <p>Highlight text in AR, pull out meaning</p>
-                        <span>#AI #Spectacles</span>
-                    </a>
-                    <a class="experiment-card" href="gazeToVoice.html">
-                        <img src="img/voiceToText.gif" alt="Gaze to Voice prototype">
-                        <h3>Gaze to Voice</h3>
-                        <p>Real-time storytelling triggered by gaze</p>
-                        <span>#AI #VR</span>
-                    </a>
-                    <a class="experiment-card" href="StyleShift.html">
-                        <img src="img/realTimeTexture.gif" alt="StyleShift prototype">
-                        <h3>StyleShift</h3>
-                        <p>Live Stable Diffusion textures in Unity</p>
-                        <span>#AI #Unity</span>
-                    </a>
-                </div>
+            <section id="categories">
+                <button class="category-button active" data-category="all">ALL</button>
+                <button class="category-button" data-category="spatial">SPATIAL</button>
+                <button class="category-button" data-category="ai">AI</button>
+            </section>
+
+            <section id="projects-grid" class="grid-container">
+                <a href="SemanticHighlight.html" class="grid-item" data-category="ai spatial">
+                    <div class="project-thumbnail"><img src="img/notes.gif" alt="Semantic Highlight"></div>
+                    <p class="project-category">#AI #Spatial #Snap Spectacles</p>
+                    <p class="project-title">Semantic Highlight</p>
+                    <p class="project-year">2026</p>
+                </a>
+                <a href="gazeToVoice.html" class="grid-item" data-category="ai">
+                    <div class="project-thumbnail"><img src="img/voiceToText.gif" alt="Gaze to Voice"></div>
+                    <p class="project-category">#AI #ElevenLabs</p>
+                    <p class="project-title">Gaze to Voice: Real-Time Story</p>
+                    <p class="project-year">2024</p>
+                </a>
+                <a href="StyleShift.html" class="grid-item" data-category="ai">
+                    <div class="project-thumbnail"><img src="img/realTimeTexture.gif" alt="StyleShift"></div>
+                    <p class="project-category">#AI #Stable Diffusion</p>
+                    <p class="project-title">StyleShift: Real-Time Texture Generation</p>
+                    <p class="project-year">2024</p>
+                </a>
             </section>
         </div>
     </main>
@@ -91,6 +94,7 @@
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
     <script src="js/avatarHomeButton.js"></script>
 </body>
 

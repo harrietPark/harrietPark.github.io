@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Albert Sans', 'NanumSquareRound', sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -17,7 +17,7 @@ header {
 }
 
 #language-switcher {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #language-switcher a {
@@ -37,7 +37,7 @@ nav {
     color: black;
     border: none;
     padding: 10px 25px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     border-radius: 20px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -85,7 +85,7 @@ main {
     display: inline-block;
     margin-right: 2px;
     color: #333; /* Dark text color */
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Video Section */
@@ -97,7 +97,7 @@ main {
 .videotext {
     text-align: center;
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Align text and apply padding */
@@ -139,7 +139,7 @@ footer .social-icons {
 
 footer .social-icons a {
     color: grey;
-    font-size: 24px;
+    font-size: 28px;
     margin: 0 5px;
 }
 
@@ -150,16 +150,16 @@ footer .social-icons a {
     }
 
     .intro-subheading {
-        font-size: 18px; /* Adjust subheading size for mobile */
+        font-size: 20px; /* Adjust subheading size for mobile */
     }
 
     .intro-description {
-        font-size: 14px; /* Adjust description size for mobile */
+        font-size: 16px; /* Adjust description size for mobile */
     }
 
     .nav-button {
         padding: 8px 13px; /* Adjust padding for smaller buttons on mobile */
-        font-size: 8px; /* Adjust font size for smaller buttons on mobile */
+        font-size: 10px; /* Adjust font size for smaller buttons on mobile */
     }
 
     #buttons {
@@ -172,7 +172,7 @@ footer .social-icons a {
     }
 
     #language-switcher a {
-        font-size: 12px; /* Reduced font size for mobile */
+        font-size: 14px; /* Reduced font size for mobile */
         margin: 0 1px;
         text-decoration: none;
         color: black;
@@ -190,11 +190,11 @@ footer .social-icons a {
     .hastag {
         padding-top: 10px;
         text-align: left;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .hastag span {
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 5px;
     }
 

@@ -1,0 +1,635 @@
+.robolab-step-media--contain img {
+    box-sizing: border-box;
+    object-fit: contain;
+    background: #f7f8fa;
+}
+
+.robolab-step-media--contain img {
+    padding: 14px;
+}
+
+.robolab-step-media--contain img[src*="web-research-note"] {
+    padding: 0;
+}
+
+.robolab-parts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    box-sizing: border-box;
+    padding: 12px;
+    background: #f7f8fa;
+}
+
+.robolab-parts-grid img {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: contain;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.robolab-project-link-tail {
+    white-space: nowrap;
+}
+
+.sh-overview,
+.sh-section {
+    margin-bottom: 52px;
+    min-width: 0;
+}
+
+.sh-overview > *,
+.robolab-learning-design-item {
+    min-width: 0;
+}
+
+.sh-section h2 {
+    margin-bottom: 20px;
+}
+
+.sh-section p {
+    margin-bottom: 16px;
+}
+
+.sh-flow {
+    gap: 7px 9px;
+    margin: 20px 0;
+}
+
+.sh-flow-step {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+.sh-flow-arrow {
+    color: #aaa;
+}
+
+.robolab-overview-flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 8px 6px;
+    margin: 22px 0 0;
+}
+
+.robolab-overview-flow .sh-flow-step {
+    display: inline-block;
+    box-sizing: border-box;
+    min-height: 0;
+    padding: 7px 12px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    background: #f5f5f5;
+    box-shadow: none;
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+}
+
+.robolab-overview-flow .sh-flow-arrow {
+    color: #aaa;
+}
+
+.robolab-learning-path {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 26px 0 24px;
+}
+
+.robolab-learning-step {
+    --step-accent: #ff7a59;
+    box-sizing: border-box;
+    padding: 22px 20px 24px;
+    border-radius: 28px;
+    background: #f6f6f4;
+    overflow: hidden;
+}
+
+.robolab-learning-step--mr {
+    --step-accent: #ff7a59;
+    background: #f7f5f2;
+}
+
+.robolab-learning-step--web {
+    --step-accent: #6b7cff;
+    background: #f3f4fa;
+}
+
+.robolab-learning-step--physical {
+    --step-accent: #55a875;
+    background: #f3f7f4;
+}
+
+.robolab-learning-index {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 650;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--step-accent);
+}
+
+.sh-section .robolab-learning-step h3 {
+    min-height: 42px;
+    margin: 0 0 16px;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.4;
+}
+
+.sh-section .robolab-learning-step h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sh-section .robolab-learning-step h3 a:hover {
+    text-decoration: underline;
+}
+
+.robolab-learning-visual {
+    height: 150px;
+    margin: 0 0 18px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.78);
+}
+
+.robolab-learning-visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.robolab-learning-visual--mr img {
+    object-position: left center;
+}
+
+.robolab-learning-visual--web img {
+    object-position: center;
+}
+
+.robolab-learning-visual--physical img {
+    object-position: right center;
+}
+
+.sh-section .robolab-learning-step p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.robolab-step-media--evidence img {
+    padding: 0;
+}
+
+.robolab-media-card {
+    margin-top: 28px;
+    margin-bottom: 32px;
+}
+
+.robolab-media-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    background: #f2f3f4;
+}
+
+.robolab-media-card figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.45;
+    color: #666;
+    text-align: center;
+}
+
+.robolab-section-media {
+    margin: 24px 0 0;
+}
+
+.robolab-section-media--compact {
+    width: min(100%, 520px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.robolab-problem-story {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 24px;
+    align-items: start;
+    margin: 0 0 14px;
+}
+
+.sh-section .robolab-problem-lead {
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.65;
+    letter-spacing: 0;
+}
+
+.robolab-problem-photo {
+    margin: 0;
+}
+
+.robolab-problem-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.robolab-problem-photo figcaption {
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 1.4;
+    color: #777;
+    text-align: center;
+}
+
+.robolab-problem-takeaway {
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 24px;
+    margin-top: 14px;
+}
+
+.sh-section .robolab-problem-takeaway .sh-sticky-note {
+    margin: 0;
+    padding: 18px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.55;
+    transform: rotate(-0.7deg);
+}
+
+.robolab-medium-block {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.robolab-medium-block + .robolab-medium-block {
+    margin-top: 38px;
+}
+
+.sh-section .robolab-medium-block h3 {
+    margin: 0 0 12px;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.robolab-medium-copy > p:last-child {
+    margin-bottom: 0;
+}
+
+.robolab-medium-flow {
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.robolab-medium-flow .sh-flow-step {
+    padding: 7px 12px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    background: #f5f5f5;
+    font-weight: 500;
+}
+
+.robolab-learning-design-item + .robolab-learning-design-item {
+    margin-top: 38px;
+}
+
+.robolab-learning-design-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+    gap: 28px;
+    align-items: center;
+}
+
+.robolab-learning-design-split .robolab-section-media {
+    width: 100%;
+    margin: 0;
+}
+
+.robolab-kobi-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 32px;
+    align-items: center;
+}
+
+.robolab-kobi-portrait {
+    margin: 0;
+}
+
+.robolab-kobi-portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    box-shadow: 0 14px 34px rgba(49, 74, 110, 0.14);
+}
+
+.robolab-kobi-portrait figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #777;
+    text-align: center;
+}
+
+.sh-section .robolab-learning-design-item h3 {
+    margin: 0 0 14px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.robolab-design-flow {
+    justify-content: center;
+    margin: 22px 0;
+}
+
+.robolab-design-flow .sh-flow-step {
+    padding: 7px 11px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    background: #f5f5f5;
+    font-weight: 500;
+}
+
+.robolab-architecture-flow {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px 0;
+    padding: 26px 24px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+}
+
+.robolab-architecture-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.robolab-architecture-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 88px;
+    padding: 14px 10px;
+    border: 1px solid #222;
+    background: #fff;
+    text-align: center;
+}
+
+.robolab-architecture-node strong,
+.robolab-architecture-node span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #111;
+}
+
+.robolab-architecture-list {
+    list-style: none;
+    margin: 14px 0 0;
+    padding: 0 8px;
+}
+
+.robolab-architecture-list li {
+    margin: 0 0 4px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: #222;
+    overflow-wrap: anywhere;
+}
+
+.robolab-architecture-list li:last-child {
+    margin-bottom: 0;
+}
+
+.robolab-architecture-arrow {
+    align-self: start;
+    margin-top: 32px;
+    color: #222;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+    font-size: 23px;
+    line-height: 1;
+}
+
+.robolab-companion-media {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+    margin: 28px 0 32px;
+}
+
+.robolab-companion-media .robolab-media-card {
+    margin: 0;
+}
+
+.robolab-companion-media .robolab-media-card img {
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+}
+
+.robolab-companion-media a {
+    display: block;
+}
+
+.robolab-media-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.78fr);
+    gap: 16px;
+    align-items: start;
+    margin: 28px 0 32px;
+}
+
+.robolab-media-grid .robolab-media-card {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .robolab-learning-design-split {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .robolab-kobi-intro {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .robolab-kobi-portrait {
+        width: min(100%, 300px);
+        margin: 0 auto;
+    }
+
+    .robolab-architecture-flow {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 20px 18px;
+    }
+
+    .robolab-architecture-node {
+        min-height: 0;
+        padding: 14px 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .robolab-architecture-arrow {
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+        transform: rotate(90deg);
+    }
+
+    .robolab-architecture-list {
+        width: min(100%, 250px);
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        text-align: left;
+    }
+
+    .robolab-problem-story {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .robolab-problem-photo {
+        width: min(100%, 340px);
+        margin: 0 auto;
+    }
+
+    .robolab-problem-takeaway {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .sh-section .robolab-problem-takeaway .sh-sticky-note {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        box-sizing: border-box;
+        width: min(82vw, 280px);
+        max-width: 280px;
+        aspect-ratio: 1 / 1;
+        margin: 4px auto 8px;
+        padding: 24px;
+        border: 1px solid rgba(255, 226, 72, 0.72);
+        background: #fff6b0;
+        box-shadow: 4px 7px 16px rgba(0, 0, 0, 0.12);
+        transform: rotate(-1.2deg);
+    }
+
+    .robolab-companion-media {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .sh-overview,
+    .sh-overview > *,
+    .sh-meta-list,
+    .sh-meta-item,
+    .sh-overview-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .robolab-parts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .robolab-learning-path {
+        grid-template-columns: 1fr;
+    }
+
+    .robolab-overview-flow {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .robolab-overview-flow::-webkit-scrollbar {
+        display: none;
+    }
+
+    .robolab-overview-flow .sh-flow-step {
+        flex: 0 0 auto;
+        padding: 6px 9px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .robolab-overview-flow .sh-flow-arrow {
+        flex: 0 0 auto;
+    }
+
+    .robolab-learning-step {
+        padding: 22px;
+        border-radius: 24px;
+    }
+
+    .sh-section .robolab-learning-step h3 {
+        min-height: 0;
+    }
+
+    .robolab-learning-visual {
+        height: 190px;
+    }
+
+    .robolab-media-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+}

@@ -1,5 +1,7 @@
+@import url('fonts.css');
+
 html {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Albert Sans', 'NanumSquareRound', sans-serif;
 }
 
 body,
@@ -85,7 +87,7 @@ select {
     border-radius: 0;
     background: url("../img/SpeechBubble.png") center / 100% 100% no-repeat;
     color: black;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     line-height: 1.1;
     text-align: left;
@@ -150,7 +152,7 @@ select {
     color: black;
     border: none;
     padding: 10px 25px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Albert Sans', 'NanumSquareRound', sans-serif;
     font-size: 16px;
     font-weight: bold;
     border-radius: 20px;
@@ -209,7 +211,7 @@ footer::before {
     .nav-button,
     .language-toggle {
         padding: 8px 11px;
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .pronunciation-bubble {
@@ -219,7 +221,7 @@ footer::before {
         min-width: 0;
         height: 53px;
         padding: 26px 12px 28px 20px;
-        font-size: 7px;
+        font-size: 8px;
     }
 
     .pronunciation-bubble span {
@@ -227,7 +229,7 @@ footer::before {
     }
 
     .pronounce-button {
-        font-size: 9px;
+        font-size: 10px;
         right: 20px;
     }
 }
@@ -249,6 +251,6 @@ footer::before {
     .nav-button,
     .language-toggle {
         padding: 7px 9px;
-        font-size: 9px;
+        font-size: 10px;
     }
 }
