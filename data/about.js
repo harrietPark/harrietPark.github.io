@@ -138,6 +138,32 @@ const ABOUT_DATA = {
     ],
     awards: [
         {
+            year: "2026",
+            detail: "Hey :)",
+            detailUrl: "Hey.html",
+            links: [
+                {
+                    label: "CLAD Summer Hackathon 2nd Place ↗",
+                    url: "https://lenslist.co/clad-summer-hackathon#registration"
+                }
+            ]
+        },
+        {
+            year: "2026",
+            detail: "Matterly",
+            detailUrl: "Matterly.html",
+            links: [
+                {
+                    label: "AWE Reality Hack 2026 Finalist ↗",
+                    url: "https://reality-hack-at-awe-2026.devpost.com/"
+                },
+                {
+                    label: "Spectacles Community Challenge Runner-Up ↗",
+                    url: "https://blog.lenslist.co/2026/09/03/spectacles-community-challenge-15-winners-announcement/"
+                }
+            ]
+        },
+        {
             title: "XRCC 2026 Runner-Up",
             year: "2026",
             detail: "PinPoint",

@@ -74,7 +74,8 @@ main {
 #projects-grid,
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 200px));
+    justify-content: center;
     gap: 48px 30px;
     width: 100%;
     max-width: 1000px;
@@ -87,8 +88,13 @@ main {
     align-content: start;
     justify-items: center;
     min-width: 0;
+    width: 100%;
     text-decoration: none;
     color: inherit;
+}
+
+.grid-item[hidden] {
+    display: none;
 }
 
 a:visited,
@@ -216,5 +222,10 @@ footer .social-icons a {
 
     .intro-description {
         font-size: 14px;
+    }
+
+    #projects-grid,
+    .grid-container {
+        grid-template-columns: minmax(0, 200px);
     }
 }

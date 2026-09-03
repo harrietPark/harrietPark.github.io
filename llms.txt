@@ -14,8 +14,9 @@ Seonjeong Park works across interaction design and engineering to turn spatial c
 
 ## Selected projects
 
+- [Hey :)](https://harrietpark.github.io/Hey.html): Asynchronous spatial messaging for Specs and the web, where gestures wait in space until someone physically returns them. 2nd Place, CLAD Summer Hackathon Week 3: Connect.
 - [RoboLab](https://harrietpark.github.io/RoboLab.html): Three-layer robotics learning platform connecting hands-on MR experimentation, AI-supported reflection on the web, and physical robot building.
-- [Matterly](https://harrietpark.github.io/Matterly.html): Spatial AI learning on Snap Spectacles — scan everyday objects, reveal material lifecycles in AR, save to companion web object-dex. Finalist, Reality Hack at AWE 2026.
+- [Matterly](https://harrietpark.github.io/Matterly.html): Spatial AI learning on Snap Spectacles — scan everyday objects, reveal material lifecycles in AR, save to companion web object-dex. Finalist, Reality Hack at AWE 2026; Runner-Up, Spectacles Community Challenge #15 (July).
 - [PinPoint](https://harrietpark.github.io/PinPoint.html): Multi-platform spatial computing system for contextual briefings via AR glasses. XRCC 2026 Runner-Up.
 - [8pm and the Cat](https://harrietpark.github.io/8pmAndCat.html): 13-minute AI-driven VR film with personalised real-time narratives. Venice Immersive 2025, BFI Expanded 2025.
 - [Public Speaking in VR Research](https://harrietpark.github.io/Presentation.html): VR app reducing foreign language anxiety, tested with 40+ participants. Published in Frontiers in Virtual Reality; IEEE VR 2023.
