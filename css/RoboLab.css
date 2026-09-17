@@ -4,6 +4,10 @@
     background: #f7f8fa;
 }
 
+.sh-video-stack .sh-video-figure figcaption {
+    text-align: center;
+}
+
 .robolab-step-media--contain img {
     padding: 14px;
 }
@@ -220,6 +224,28 @@
     text-align: center;
 }
 
+.robolab-dashboard-link {
+    display: block;
+}
+
+.sh-section .robolab-next-steps-copy {
+    margin-top: 44px;
+}
+
+.robolab-product-vision img {
+    background: #f3f5f3;
+}
+
+.robolab-process-strip {
+    width: min(100%, 508px);
+    margin: 24px auto 0;
+}
+
+.robolab-process-strip img {
+    border-radius: 16px;
+    background: #f7f8fa;
+}
+
 .robolab-section-media {
     margin: 24px 0 0;
 }
@@ -281,6 +307,82 @@
     font-weight: 500;
     line-height: 1.55;
     transform: rotate(-0.7deg);
+}
+
+.robolab-research-block {
+    margin-top: 42px;
+}
+
+.sh-section .robolab-research-block > h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.robolab-research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.robolab-research-grid article {
+    box-sizing: border-box;
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid #e2e4e8;
+    border-radius: 16px;
+    background: #f7f8fa;
+}
+
+.robolab-research-grid .robolab-research-card--student {
+    border-color: #d9e4ff;
+    background: #f3f6ff;
+}
+
+.robolab-research-grid .robolab-research-card--teacher {
+    border-color: #d8eadf;
+    background: #f2f8f4;
+}
+
+.robolab-research-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #6b7484;
+}
+
+.robolab-research-card--student .robolab-research-label {
+    color: #486ab8;
+}
+
+.robolab-research-card--teacher .robolab-research-label {
+    color: #3f7d58;
+}
+
+.sh-section .robolab-research-grid h4 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 650;
+    line-height: 1.45;
+    color: #181818;
+}
+
+.sh-section .robolab-research-grid p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4d5158;
+}
+
+.sh-section .robolab-research-response {
+    margin-bottom: 0;
 }
 
 .robolab-medium-block {
@@ -384,13 +486,13 @@
 
 .robolab-architecture-flow {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
-    gap: 12px;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 9px;
     align-items: start;
     box-sizing: border-box;
     width: 100%;
     margin: 30px 0;
-    padding: 26px 24px;
+    padding: 24px 20px;
     border: 1px solid #d9d9d9;
     border-radius: 3px;
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
@@ -410,7 +512,7 @@
     box-sizing: border-box;
     width: 100%;
     min-height: 88px;
-    padding: 14px 10px;
+    padding: 14px 8px;
     border: 1px solid #222;
     background: #fff;
     text-align: center;
@@ -420,9 +522,17 @@
 .robolab-architecture-node span {
     display: block;
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.45;
     color: #111;
+    overflow-wrap: anywhere;
+}
+
+.robolab-architecture-node strong {
+    font-weight: 700;
+}
+
+.robolab-architecture-node span {
+    font-weight: 400;
 }
 
 .robolab-architecture-list {
@@ -453,25 +563,112 @@
     line-height: 1;
 }
 
-.robolab-companion-media {
+.robolab-companion-journey {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 0.92fr) 64px minmax(0, 1.08fr);
     gap: 18px;
-    align-items: start;
-    margin: 28px 0 32px;
+    align-items: center;
+    margin: 32px 0 34px;
 }
 
-.robolab-companion-media .robolab-media-card {
+.robolab-companion-stage {
+    min-width: 0;
     margin: 0;
 }
 
-.robolab-companion-media .robolab-media-card img {
+.robolab-companion-stage--mr > img {
+    display: block;
+    width: 100%;
     aspect-ratio: 16 / 10;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 22px;
+    background: #f1f2f4;
 }
 
-.robolab-companion-media a {
+.robolab-companion-stage figcaption {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin-top: 13px;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.45;
+    color: #444;
+}
+
+.robolab-companion-stage figcaption span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    border-radius: 50%;
+    background: #1f2329;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.robolab-sync-bridge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #8a9099;
+}
+
+.robolab-sync-bridge span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.robolab-sync-bridge strong {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.robolab-device-composition {
+    position: relative;
     display: block;
+    min-height: 330px;
+    overflow: hidden;
+    border-radius: 28px;
+    background: linear-gradient(145deg, #eef1f6 0%, #f8f8f6 100%);
+}
+
+.robolab-device-composition__desktop,
+.robolab-device-composition__mobile {
+    position: absolute;
+    display: block;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 16px 24px rgba(39, 46, 57, 0.12));
+    transition: transform 0.25s ease;
+}
+
+.robolab-device-composition__desktop {
+    top: 46px;
+    left: 24px;
+    width: 76%;
+}
+
+.robolab-device-composition__mobile {
+    right: 18px;
+    bottom: 20px;
+    width: 35%;
+}
+
+.robolab-device-composition:hover .robolab-device-composition__desktop {
+    transform: translateY(-3px);
+}
+
+.robolab-device-composition:hover .robolab-device-composition__mobile {
+    transform: translate(-3px, -4px) rotate(-1deg);
 }
 
 .robolab-media-grid {
@@ -484,6 +681,34 @@
 
 .robolab-media-grid .robolab-media-card {
     margin: 0;
+}
+
+@media (max-width: 820px) {
+    .robolab-architecture-flow {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 20px 18px;
+    }
+
+    .robolab-architecture-node {
+        min-height: 0;
+        padding: 14px 10px;
+    }
+
+    .robolab-architecture-arrow {
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+        transform: rotate(90deg);
+    }
+
+    .robolab-architecture-list {
+        width: min(100%, 250px);
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        text-align: left;
+    }
 }
 
 @media (max-width: 700px) {
@@ -502,34 +727,6 @@
         margin: 0 auto;
     }
 
-    .robolab-architecture-flow {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 20px 18px;
-    }
-
-    .robolab-architecture-node {
-        min-height: 0;
-        padding: 14px 10px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .robolab-architecture-arrow {
-        align-self: center;
-        justify-self: center;
-        margin: 0;
-        transform: rotate(90deg);
-    }
-
-    .robolab-architecture-list {
-        width: min(100%, 250px);
-        margin-right: auto;
-        margin-left: auto;
-        padding: 0;
-        text-align: left;
-    }
-
     .robolab-problem-story {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -543,6 +740,10 @@
     .robolab-problem-takeaway {
         grid-template-columns: 1fr;
         gap: 18px;
+    }
+
+    .robolab-research-grid {
+        grid-template-columns: 1fr;
     }
 
     .sh-section .robolab-problem-takeaway .sh-sticky-note {
@@ -562,9 +763,35 @@
         transform: rotate(-1.2deg);
     }
 
-    .robolab-companion-media {
+    .robolab-companion-journey {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 14px;
+    }
+
+    .robolab-sync-bridge {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .robolab-sync-bridge strong {
+        transform: rotate(90deg);
+    }
+
+    .robolab-device-composition {
+        min-height: 0;
+        aspect-ratio: 4 / 3;
+    }
+
+    .robolab-device-composition__desktop {
+        top: 13%;
+        left: 3%;
+        width: 80%;
+    }
+
+    .robolab-device-composition__mobile {
+        right: 3%;
+        bottom: 5%;
+        width: 38%;
     }
 
 }

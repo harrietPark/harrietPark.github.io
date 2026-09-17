@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/site-header.css">
     <link rel="stylesheet" href="css/SemanticHighlight.css">
-    <link rel="stylesheet" href="css/RoboLab.css?v=20260827-10">
+    <link rel="stylesheet" href="css/RoboLab.css?v=20260917-16">
     <link rel="icon" href="img/profile.png" type="image/png">
 </head>
 <body>
@@ -51,8 +51,19 @@
     <main class="sh-main">
         <h1 class="sh-title">RoboLab</h1>
 
-        <div class="sh-video-embed">
-            <iframe src="https://www.youtube.com/embed/akNRIWiOC9I?si=y4ra5tqiJZGXGb5x" title="RoboLab — YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="sh-video-stack" aria-label="RoboLab project videos">
+            <figure class="sh-video-figure">
+                <div class="sh-video-embed">
+                    <iframe src="https://www.youtube.com/embed/WYPYAi1Y0-Q?si=GJLMqWIuAkv8yfns" title="RoboLab project walkthrough — English version" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <figcaption>English version</figcaption>
+            </figure>
+            <figure class="sh-video-figure">
+                <div class="sh-video-embed">
+                    <iframe src="https://www.youtube.com/embed/4euVoBpYQwU" title="RoboLab project walkthrough — Korean version" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <figcaption>Korean version</figcaption>
+            </figure>
         </div>
 
         <section class="sh-overview" aria-label="Project overview">
@@ -64,6 +75,7 @@
                         <li>XR Development</li>
                         <li>Web Development</li>
                         <li>Architecture &amp; Backend</li>
+                        <li>Physical Kit Integration</li>
                     </ul>
                 </li>
                 <li class="sh-meta-item">
@@ -86,18 +98,20 @@
                 <li class="sh-meta-item">
                     <span class="sh-meta-label">Tech Stack</span>
                     <ul class="sh-tech-list">
-                        <li><strong>Engine:</strong> Unity</li>
+                        <li><strong>Engine:</strong> Unity, C#</li>
                         <li><strong>Platform:</strong> Meta Quest</li>
                         <li><strong>Collaboration:</strong> GitHub</li>
                         <li><strong>Gen AI:</strong> OpenAI, ElevenLabs</li>
-                        <li><strong>Plugins:</strong> Meta SDK</li>
+                        <li><strong>XR:</strong> Meta XR SDK</li>
                         <li><strong>Web:</strong> React, TypeScript, Vite</li>
                         <li><strong>Backend:</strong> Supabase, PostgreSQL</li>
+                        <li><strong>Hardware:</strong> ESP32, Web Bluetooth</li>
                     </ul>
                 </li>
                 <li class="sh-meta-item">
                     <span class="sh-meta-label">More Links</span>
                     <ul class="sh-meta-links">
+                        <li><a class="sh-meta-link" href="https://robolab-product-web.vercel.app/en" target="_blank" rel="noopener noreferrer">Product Website ↗</a></li>
                         <li><a class="sh-meta-link" href="https://robo-lab-web.vercel.app/" target="_blank" rel="noopener noreferrer">Companion Web Link ↗</a></li>
                     </ul>
                 </li>
@@ -107,7 +121,7 @@
                 <p class="sh-tagline">AI &amp; MR Robotics Learning Platform</p>
                 <p>RoboLab is a robotics learning platform for students encountering robotics and programming for the first time.</p>
                 <p>
-                    Students build and program an automatic watering robot in mixed reality, where normally invisible sensor data and program logic become visible alongside the robot itself. Their experiments are saved to a companion web app for reflection, with the longer-term goal of transferring the same logic to a modular ESP32 robot kit.
+                    Students build and program an automatic watering robot in mixed reality, where normally invisible sensor data and program logic become visible alongside the robot itself. Their experiments are saved to a companion web app for reflection, then the same rule can be sent to a modular ESP32 robot kit and tested with a real moisture sensor and water pump.
                 </p>
                 <div class="sh-flow robolab-overview-flow" aria-label="RoboLab learning journey">
                     <span class="sh-flow-step">Experiment in MR</span>
@@ -137,6 +151,34 @@
                     <p>What stayed with me was not just the difficulty of assembling the robot, but the uncertainty around it. So much of the process was happening right in front of me, yet it was still hard to tell what the system was seeing, what it was doing, and why. That same gap exists when learning robotics: a sensor reads a value, a condition checks it, and a pump turns on. The result is visible, but the reasoning in between often is not.</p>
                 </div>
             </div>
+
+            <div class="robolab-research-block">
+                <h3>What we heard from robotics educators</h3>
+                <p>Interviews with robotics and after-school educators showed that the same disconnect affected both sides of the classroom. Students could see a robot fail without knowing whether the cause was their rule, the assembly, or the hardware. Teachers could see the final result, but not every learner's reasoning and revisions in real time.</p>
+                <div class="robolab-research-grid" aria-label="Research findings and product responses">
+                    <article class="robolab-research-card--student">
+                        <span class="robolab-research-label">Student barrier</span>
+                        <h4>Repeat experiments feel costly</h4>
+                        <p>Broken parts, wiring errors, and setup time make it harder to freely retry an idea.</p>
+                    </article>
+                    <article class="robolab-research-card--student">
+                        <span class="robolab-research-label">Student barrier</span>
+                        <h4>Code and behaviour feel separated</h4>
+                        <p>The robot moves in one place while sensor values and code live on another screen.</p>
+                    </article>
+                    <article class="robolab-research-card--teacher">
+                        <span class="robolab-research-label">Teacher barrier</span>
+                        <h4>The source of an error is hard to see</h4>
+                        <p>A failed run does not reveal whether the issue came from logic, assembly, or a connection.</p>
+                    </article>
+                    <article class="robolab-research-card--teacher">
+                        <span class="robolab-research-label">Teacher barrier</span>
+                        <h4>Trial and error disappears</h4>
+                        <p>Teachers cannot watch every student, so the revisions that show understanding are easily lost.</p>
+                    </article>
+                </div>
+                <p class="robolab-research-response"><strong>Design response:</strong> create a safe MR space for repeatable experiments, reveal the robot's execution step by step, and preserve each attempt as learning evidence.</p>
+            </div>
         </section>
 
         <section class="sh-section robolab-mediums">
@@ -148,6 +190,10 @@
                     <p>We wanted students to learn robotics through something that could exist outside the lesson, rather than building a robot only to demonstrate a programming concept. That led us to a small smart farm. Students build an automatic watering robot, monitor soil moisture, and eventually grow and harvest crops such as carrots.</p>
                     <p>The farm gives each programming decision a visible consequence. If the soil becomes too dry, the plant needs water. If the watering rule works, the crop grows. It gave us a simple way to connect sensors, conditions, and actions to a problem students could immediately understand, while also giving them something to work towards beyond simply getting the code right.</p>
                 </div>
+                <figure class="robolab-media-card robolab-section-media robolab-product-vision">
+                    <img src="img/robolab/smart-farm-robot-family.png" alt="A family of modular RoboLab robots tending crops in a greenhouse" loading="lazy" decoding="async">
+                    <figcaption>A smart-farm setting makes sensing, decisions, and actions meaningful</figcaption>
+                </figure>
             </article>
 
             <article class="robolab-medium-block">
@@ -180,7 +226,7 @@
                         <article class="robolab-learning-step robolab-learning-step--physical">
                             <span class="robolab-learning-index">03 · ESP32 Kit</span>
                             <h3>Build and Test Physically</h3>
-                            <div class="robolab-learning-visual robolab-learning-visual--physical"><img src="img/robolab/mr-to-physical.png" alt="A physical watering robot working beside a real plant" loading="lazy" decoding="async"></div>
+                            <div class="robolab-learning-visual robolab-learning-visual--physical"><img src="img/robolab/physical-kit-testing.png" alt="A physical watering robot working beside a real plant while its rule is shown on the companion web" loading="lazy" decoding="async"></div>
                             <p>Apply the same understanding to real components, sensors, and environmental conditions.</p>
                         </article>
                     </div>
@@ -210,7 +256,7 @@
                         <p>Students first assemble the robot and test its components separately. They can see how the moisture value changes and manually test the pump before they are asked to connect the two through programming. This gives each new concept a physical reference before it becomes part of a larger rule.</p>
                     </div>
                     <figure class="robolab-media-card robolab-section-media robolab-section-media--compact">
-                        <img src="img/robolab/kobi-assembly.gif" alt="A student assembling Kobi and the watering robot with hand tracking in mixed reality" loading="lazy" decoding="async">
+                        <img src="img/robolab/kobi-assembly.gif" alt="A student assembling Cobi and the watering robot with hand tracking in mixed reality" loading="lazy" decoding="async">
                         <figcaption>Assembling the robot with hand tracking</figcaption>
                     </figure>
                 </div>
@@ -229,6 +275,10 @@
                         <figcaption>Building a robot rule with visual programming blocks</figcaption>
                     </figure>
                 </div>
+                <figure class="robolab-media-card robolab-process-strip">
+                    <img src="img/robolab/ux-rule-board-iteration.png" alt="Early sketches of the RoboLab rule-building interface beside the final mixed-reality Rule Board" loading="lazy" decoding="async">
+                    <figcaption>Translating early rule-building sketches into the spatial Rule Board</figcaption>
+                </figure>
             </article>
 
             <article class="robolab-learning-design-item">
@@ -237,43 +287,53 @@
                 <p>But it keeps going. RoboLab does not immediately point out what is missing. Students can watch the rule continue to run, compare what they expected with what actually happened, and return to the Rule Board to work out what needs to change.</p>
                 <p>An unexpected result becomes part of the experiment rather than something the system immediately corrects. This was important to me because debugging is not only about finding the right answer. It is also about learning to observe a system, form a hypothesis, make a change, and test it again.</p>
             </article>
+
+            <article class="robolab-learning-design-item">
+                <h3>Moving from a guided mission to an AI inquiry mode</h3>
+                <p>After completing the smart-farm mission, students can move into a more open inquiry mode. They describe a new goal for the robot, and Cobi breaks that goal into questions about the sensing condition and the action the robot should take. The learner still builds and tests the rule; AI helps turn an open-ended idea into a sequence they can reason through.</p>
+            </article>
         </section>
 
         <section class="sh-section robolab-learning-design">
-            <h2>Kobi, AI Learning Partner</h2>
+            <h2>Cobi, AI Learning Partner</h2>
 
             <article class="robolab-learning-design-item robolab-kobi-intro">
                 <div class="robolab-kobi-copy">
                     <h3>What if AI already knew where you were stuck?</h3>
-                    <p>Kobi came from the friction I felt while assembling Reachy Mini. An AI assistant might know the answer, but first I had to stop what I was doing and explain everything it could not see. Because Kobi lives inside RoboLab, it can receive context directly from the experience, such as the current mission, assembly progress, the rule a student has built, and what happened in the latest experiment. This means students can ask for help without having to reconstruct the whole situation first.</p>
+                    <p>Cobi came from the friction I felt while assembling Reachy Mini. An AI assistant might know the answer, but first I had to stop what I was doing and explain everything it could not see. Because Cobi lives inside RoboLab, it can receive context directly from the experience, such as the current mission, assembly progress, the rule a student has built, and what happened in the latest experiment. This means students can ask for help without having to reconstruct the whole situation first.</p>
                 </div>
                 <figure class="robolab-kobi-portrait">
-                    <img src="img/robolab/kobi-portrait.png" alt="A polished portrait of Kobi, RoboLab's AI learning partner" loading="lazy" decoding="async">
-                    <figcaption>Kobi, RoboLab's contextual AI learning partner</figcaption>
+                    <img src="img/robolab/kobi-portrait.png" alt="A polished portrait of Cobi, RoboLab's AI learning partner" loading="lazy" decoding="async">
+                    <figcaption>Cobi, RoboLab's contextual AI learning partner</figcaption>
                 </figure>
             </article>
 
             <article class="robolab-learning-design-item">
                 <h3>Designing AI for younger learners</h3>
-                <p>Because RoboLab is designed for younger students, I wanted to be careful about how much of the learning process we handed over to AI. Kobi is not there to generate the correct rule for them. Its role is closer to a learning partner that helps students notice something they may have missed and think through the next step themselves. When a student gets stuck, Kobi uses a Socratic-style progression rather than jumping straight to the answer:</p>
-                <div class="sh-flow robolab-design-flow" aria-label="Kobi support progression">
+                <p>Because RoboLab is designed for younger students, I wanted to be careful about how much of the learning process we handed over to AI. Cobi is not there to generate the correct rule for them. Its role is closer to a learning partner that helps students notice something they may have missed and think through the next step themselves. When a student gets stuck, Cobi uses a Socratic-style progression rather than jumping straight to the answer:</p>
+                <div class="sh-flow robolab-design-flow" aria-label="Cobi support progression">
                     <span class="sh-flow-step">Observe</span><span class="sh-flow-arrow" aria-hidden="true">→</span>
                     <span class="sh-flow-step">Compare</span><span class="sh-flow-arrow" aria-hidden="true">→</span>
                     <span class="sh-flow-step">Hint</span><span class="sh-flow-arrow" aria-hidden="true">→</span>
                     <span class="sh-flow-step">Show</span>
                 </div>
-                <p>If the pump keeps running, Kobi might first ask the student to watch how the moisture value changes. If they are still unsure, it can ask them to compare that value with their current condition. More direct hints and spatial guidance only appear when more help is needed, or when the student explicitly asks to be shown. We also avoided treating experiments as simply right or wrong. An unexpected result becomes something to investigate and use in the next attempt.</p>
+                <p>If the pump keeps running, Cobi might first ask the student to watch how the moisture value changes. If they are still unsure, it can ask them to compare that value with their current condition. More direct hints and spatial guidance only appear when more help is needed, or when the student explicitly asks to be shown. We also avoided treating experiments as simply right or wrong. An unexpected result becomes something to investigate and use in the next attempt.</p>
             </article>
 
             <article class="robolab-learning-design-item">
                 <h3>Making it easier to ask for help</h3>
-                <p>Knowing what to ask can be difficult when the subject itself is unfamiliar. Students can talk to Kobi at any time using the microphone on the back of their hand. At moments where a question could help move the learning forward, RoboLab can also suggest a small number of contextual questions. Rather than expecting students to know what to ask, the interface offers a few contextual question prompts as a starting point, while still letting them speak to Kobi freely in their own words.</p>
+                <p>Knowing what to ask can be difficult when the subject itself is unfamiliar. Students can talk to Cobi at any time using the microphone on the back of their hand. At moments where a question could help move the learning forward, RoboLab can also suggest a small number of contextual questions. Rather than expecting students to know what to ask, the interface offers a few contextual question prompts as a starting point, while still letting them speak to Cobi freely in their own words.</p>
+                <figure class="robolab-media-card robolab-process-strip">
+                    <img src="img/robolab/ux-hand-interaction.png" alt="Three iterations of the hand-mounted microphone and contextual help interaction in RoboLab" loading="lazy" decoding="async">
+                    <figcaption>Iterating from an explicit hand control to contextual help in the workspace</figcaption>
+                </figure>
             </article>
 
             <article class="robolab-learning-design-item">
                 <h3>Keeping AI predictable where it matters</h3>
-                <p>Not every line Kobi speaks needs to be generated in real time. Core instructions, story moments, and important learning prompts use pre-written voice lines so that the wording and learning flow stay consistent. We use generated voice for these scripted lines, alongside real-time AI responses when students ask open-ended questions. The current voice pipeline combines pre-recorded dialogue generated with ElevenLabs with real-time responses using OpenAI's API and TTS. This hybrid approach gave us more control over important parts of the experience while still allowing Kobi to respond naturally when a student asks something we could not predict in advance.</p>
-                <p>For me, designing Kobi became less about how much AI we could add and more about where AI was genuinely useful, what context it should receive, how much help it should give, and when it should stay out of the way.</p>
+                <p>Not every line Cobi speaks needs to be generated in real time. Core instructions, story moments, and important learning prompts use pre-written voice lines so that the wording and learning flow stay consistent. For open-ended questions, OpenAI handles speech recognition and generates a response from selected learning context, while ElevenLabs gives Cobi a consistent voice. This hybrid approach gave us more control over important parts of the experience while still allowing Cobi to respond naturally when a student asks something we could not predict in advance.</p>
+                <p>We also limited the AI to the context needed for the current activity. Listening only begins when the learner activates the microphone, raw conversation is not kept as a long-term learning record, service credentials remain on the server, and each student's structured learning data is access-controlled.</p>
+                <p>For me, designing Cobi became less about how much AI we could add and more about where AI was genuinely useful, what context it should receive, how much help it should give, and when it should stay out of the way.</p>
             </article>
         </section>
 
@@ -282,7 +342,7 @@
 
             <article class="robolab-learning-design-item">
                 <h3>Keeping information close to the thing it belongs to</h3>
-                <p>Once we decided what should happen in MR, the next question was how to keep the space understandable. I did not want RoboLab to become a room full of floating panels. Instead, I tried to place each interface where students would naturally expect to find it. Tools that should always be available, such as talking to Kobi, stay with the student on the back of their hand. The Rule Board and experiment controls live on the desk. Information about a specific robot stays attached to that robot. The same idea applies while the robot is running. A moisture reading appears beside the sensor. The active block is highlighted as the rule executes. Students can follow the condition being checked and then see the pump respond in the same space. This was the part of MR that felt most useful to me. Instead of asking students to connect code on one screen with a robot somewhere else, the logic becomes part of the robot's environment.</p>
+                <p>Once we decided what should happen in MR, the next question was how to keep the space understandable. I did not want RoboLab to become a room full of floating panels. Instead, I tried to place each interface where students would naturally expect to find it. Tools that should always be available, such as talking to Cobi, stay with the student on the back of their hand. The Rule Board and experiment controls live on the desk. Information about a specific robot stays attached to that robot. The same idea applies while the robot is running. A moisture reading appears beside the sensor. The active block is highlighted as the rule executes. Students can follow the condition being checked and then see the pump respond in the same space. This was the part of MR that felt most useful to me. Instead of asking students to connect code on one screen with a robot somewhere else, the logic becomes part of the robot's environment.</p>
                 <figure class="robolab-media-card robolab-section-media">
                     <img src="img/robolab/mr-rule-board.png" alt="The Rule Board, robot, sensor data, and interaction controls arranged together in mixed reality" loading="lazy" decoding="async">
                     <figcaption>Keeping the Rule Board and robot behaviour in the same space</figcaption>
@@ -303,16 +363,21 @@
             <h2><a href="https://robo-lab-web.vercel.app/" target="_blank" rel="noopener noreferrer">Companion Web ↗</a></h2>
             <p>MR worked well for building and experimenting, but it was not the place where I wanted students to look through a long history of previous attempts.</p>
             <p>So each experiment is saved to a companion web app. Students can return to the robots they built, open earlier experiments, compare different versions of a rule, and see the visual blocks alongside the generated code. Instead of keeping only the final successful attempt, RoboLab keeps the process:</p>
-            <div class="robolab-companion-media" aria-label="Experiment notes across MR and the companion web">
-                <figure class="robolab-media-card">
+            <div class="robolab-companion-journey" aria-label="An experiment moving from MR to the companion web">
+                <figure class="robolab-companion-stage robolab-companion-stage--mr">
                     <img src="img/robolab/research-note.gif" alt="A RoboLab experiment being saved as a research note in mixed reality" loading="lazy" decoding="async">
-                    <figcaption>Experiment note in MR</figcaption>
+                    <figcaption><span>01</span> Save the experiment in MR</figcaption>
                 </figure>
-                <figure class="robolab-media-card">
-                    <a href="https://robo-lab-web.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the RoboLab companion web">
-                        <img src="img/robolab/web-research-note.png" alt="The same RoboLab experiment reconstructed in the companion web" loading="lazy" decoding="async">
+                <div class="robolab-sync-bridge" aria-hidden="true">
+                    <span>sync</span>
+                    <strong>→</strong>
+                </div>
+                <figure class="robolab-companion-stage robolab-companion-stage--web">
+                    <a class="robolab-device-composition" href="https://robo-lab-web.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the RoboLab companion web">
+                        <img class="robolab-device-composition__desktop" src="img/robolab/companion-desktop.png" alt="RoboLab experiment details displayed on a desktop monitor" loading="lazy" decoding="async">
+                        <img class="robolab-device-composition__mobile" src="img/robolab/companion-mobile.png" alt="RoboLab experiment history and rule blocks displayed on a mobile phone" loading="lazy" decoding="async">
                     </a>
-                    <figcaption>Experiment history on the companion web</figcaption>
+                    <figcaption><span>02</span> Continue on desktop or mobile</figcaption>
                 </figure>
             </div>
             <div class="sh-flow robolab-design-flow" aria-label="RoboLab experiment history">
@@ -322,15 +387,25 @@
                 <span class="sh-flow-step">What happened next</span>
             </div>
             <p>That history is useful for the student, but the web also makes the experience easier to share. A teacher or parent can look through the same experiments without needing access to the headset.</p>
-            <p>Quest and Web are connected through a six-digit pairing code, so an experiment created in MR can continue outside the headset without creating a separate workflow. AI also turns the recorded experiment data into a short reflection. The important part is that the reflection is based on what actually happened in the experiment rather than replacing the experiment itself.</p>
+            <p>Quest and Web are connected through a six-digit pairing code, so an experiment created in MR can continue outside the headset without creating a separate workflow. AI turns the recorded experiment data into a one-line summary and three concrete prompts: what happened, what changed, and what the new result was. The original rule and execution data remain available beside that reflection, so AI explains the evidence rather than inventing a verdict.</p>
+        </section>
+
+        <section class="sh-section robolab-learning-design">
+            <h2>From MR to a Working Physical Robot</h2>
+            <p>We implemented the complete handoff from RoboLab's digital learning experience to a physical ESP32 watering robot. A rule built and tested in MR can be reviewed as generated C++, sent from the companion web through Bluetooth Low Energy, and run using real soil-moisture data to control the water pump.</p>
+            <p>The physical kit returns sensor readings and execution results to the web, so students can compare what happened in the MR experiment with how the same logic behaves in the real environment.</p>
+            <figure class="robolab-media-card robolab-section-media">
+                <img src="img/robolab/physical-kit-testing.png" alt="A working ESP32 watering robot using a real soil-moisture sensor beside the RoboLab companion web" loading="lazy" decoding="async">
+                <figcaption>The implemented ESP32 kit running a rule transferred from the companion web</figcaption>
+            </figure>
         </section>
 
         <section class="sh-section robolab-learning-design">
             <h2>Architecture</h2>
             <article class="robolab-learning-design-item">
                 <h3>Keeping the learning data connected across devices</h3>
-                <p>RoboLab needed the Quest experience, companion web, and AI to work from the same experiment history.</p>
-                <p>The Unity application handles the parts that need to happen in real time: robot assembly, sensor simulation, the Rule Board, and rule execution. When an experiment finishes, structured data such as the robot configuration, rule, sensor values, and execution result is saved through Supabase and PostgreSQL. The React companion web then uses the same data to reconstruct the student's experiment history.</p>
+                <p>RoboLab needed the Quest experience, companion web, AI, and physical kit to work from the same experiment history.</p>
+                <p>The Unity application handles the parts that need to happen in real time: robot assembly, sensor simulation, the Rule Board, and rule execution. Records are first kept on the device and synchronize through Supabase when a network is available. The React companion web reconstructs the student's experiment history and can pass a completed rule to the physical robot through Web Bluetooth.</p>
 
                 <div class="robolab-architecture-flow" aria-label="RoboLab system architecture">
                     <div class="robolab-architecture-column">
@@ -374,20 +449,42 @@
                             <li>sharing</li>
                         </ul>
                     </div>
+                    <span class="robolab-architecture-arrow" aria-hidden="true">↔</span>
+                    <div class="robolab-architecture-column">
+                        <div class="robolab-architecture-node">
+                            <strong>ESP32 / BLE</strong>
+                            <span>(physical robot)</span>
+                        </div>
+                        <ul class="robolab-architecture-list">
+                            <li>receive a verified rule</li>
+                            <li>read soil moisture</li>
+                            <li>evaluate conditions</li>
+                            <li>control the pump</li>
+                            <li>return live results</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <p>AI sits alongside this system rather than controlling it. Kobi receives selected context from the current experience for real-time guidance, while the web uses recorded experiment data to generate reflections.</p>
+                <p>AI sits alongside this system rather than controlling it. Cobi receives selected context from the current experience for real-time guidance, while the web uses recorded experiment data to generate reflections. The rule itself and its success state come from deterministic execution data.</p>
             </article>
         </section>
 
         <section class="sh-section robolab-learning-design">
-            <h2>Next Steps</h2>
-            <p>The current prototype completes the MR and companion web parts of RoboLab.</p>
-            <p>The next step is the physical kit. A rule that a student has already built, tested, and understood in MR could be translated into code for an ESP32-based robot and tested again with real sensors and actuators. Eventually, real sensor data could also come back into RoboLab, making it possible to compare what happened in the virtual experiment with what happened in the physical environment. The goal was never to replace physical robotics. RoboLab is meant to make the path toward it easier to understand.</p>
-            <figure class="robolab-media-card robolab-section-media">
-                <img src="img/robolab/physical-kit-testing.png" alt="A physical watering robot connected to a real plant and companion web experiment history" loading="lazy" decoding="async">
-                <figcaption>Testing the physical kit with real sensors and actuators</figcaption>
-            </figure>
+            <h2>Educator Tools &amp; Next Steps</h2>
+            <p>With the MR app, companion web, and physical ESP32 kit working together, the next area of development is helping educators use the resulting learning data. We designed an educator-dashboard prototype, although it is not yet connected to live records.</p>
+
+            <article class="robolab-learning-design-item">
+                <h3><a href="https://robo-lab-web.vercel.app/teacher" target="_blank" rel="noopener noreferrer">Educator dashboard prototype ↗</a></h3>
+                <p>The educator view brings progress, experiment activity, and patterns of difficulty into one place, creating a foundation for more focused classroom feedback once it is connected to live learning data.</p>
+                <figure class="robolab-media-card robolab-section-media">
+                    <a class="robolab-dashboard-link" href="https://robo-lab-web.vercel.app/teacher" target="_blank" rel="noopener noreferrer" aria-label="Open the RoboLab educator dashboard prototype">
+                        <img src="img/robolab/educator-dashboard-laptop.png" alt="An educator reviewing the RoboLab class dashboard on a laptop" loading="lazy" decoding="async">
+                    </a>
+                    <figcaption>A dashboard concept for seeing progress and where students need support</figcaption>
+                </figure>
+            </article>
+
+            <p class="robolab-next-steps-copy">Next, we plan to expand student playtesting and respond to issues identified through educator interviews and early tests: adapting hint difficulty to the learner's progress, making the MR workspace easier to reposition, improving voice input, and connecting the educator dashboard to real records of progress, repeated attempts, and rule revisions. The goal is not to replace physical robotics, but to make the path toward it easier to understand and easier to teach.</p>
         </section>
 
     </main>

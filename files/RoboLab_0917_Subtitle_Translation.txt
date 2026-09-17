@@ -1,0 +1,98 @@
+RoboLab English Subtitle Translation
+Source video: 0917(3).mp4
+Duration: 01:53.846
+
+00:00.000 - 00:01.400
+KO  우주를 항해하던 작은 AI 코어 코비,
+EN  Cobi, a small AI core traveling through space,
+
+00:01.500 - 00:06.600
+KO  갑작스러운 사고로 지구로 떨어지게 되는데...
+EN  is sent crashing to Earth by a sudden accident...
+
+00:07.500 - 00:10.400
+KO  코비와 함께 스마트팜을 복구하며 로봇과 코딩을 배우는 MR 실험실, 로보랩
+EN  RoboLab is an MR laboratory where students restore a smart farm with Cobi while learning robotics and coding.
+
+00:10.500 - 00:14.900
+KO  MR 로봇 실험실 생성
+    헤드셋을 착용하고 책상이나 바닥을 바라보면, 평면 공간을 인식해 나만의 로봇 실험실을 생성합니다.
+EN  Create an MR Robot Lab
+    Look at a desk or the floor. RoboLab detects a flat surface and creates your own robot lab.
+
+00:16.000 - 00:25.400
+KO  로봇 부품 학습
+    컨트롤 패널에서 로봇 부품을 하나씩 불러오고, 상세 설명을 확인해 어떤 기능의 부품인지 이해합니다.
+EN  Explore Robot Components
+    Bring out each part from the control panel and learn what it does.
+
+00:25.500 - 00:33.600
+KO  로봇 부품 조립
+    예시 홀로그램을 따라 부품을 조립해 로봇을 완성합니다.
+EN  Assemble the Robot
+    Follow the example hologram to assemble the components and complete the robot.
+
+00:37.500 - 00:41.900
+KO  규칙 보드 코딩
+    규칙 보드에 규칙 블록들을 배열해 로봇의 동작을 코딩합니다.
+EN  Code on the Rule Board
+    Arrange rule blocks on the board to program the robot's behavior.
+
+00:42.000 - 00:46.900
+KO  규칙 보드 코딩
+    그리고 이를 실행시켜보며 알맞게 동작하는지 확인합니다.
+EN  Code on the Rule Board
+    Run the rule and check whether the robot behaves as intended.
+
+00:47.000 - 00:51.900
+KO  AI 학습 파트너 코비
+    코비는 빠른 정답 대신, 적절한 질문을 통해 학생이 스스로 답을 찾도록 도와줍니다.
+EN  Cobi, the AI Learning Partner
+    Instead of giving quick answers, Cobi asks questions that help students find their own solutions.
+
+00:52.000 - 00:56.400
+KO  AI 학습 파트너 코비
+    학생은 손등의 마이크 버튼을 눌러 직접 말하거나, 예시 질문을 눌러 코비와 대화할 수 있습니다.
+EN  Cobi, the AI Learning Partner
+    Students can speak through the hand-mounted microphone or tap a suggested question.
+
+00:56.500 - 01:11.000
+KO  AI 탐구 모드
+    한 로봇의 코딩을 완료한 후, 코비에게 직접 만들고 싶은 동작을 제안하고 함께 탐구할 수 있습니다.
+EN  AI Inquiry Mode
+    After programming a robot, students can propose a new behavior and explore how to build it with Cobi.
+
+01:14.000 - 01:22.900
+KO  MR 실험 노트
+    저장한 규칙, 실험 과정, 학습 내용은 모두 실험 노트에 기록되어 다시 볼 수 있습니다.
+EN  MR Experiment Notes
+    Saved rules, experiment steps, and learning outcomes are recorded for later review.
+
+01:23.000 - 01:27.100
+KO  웹 연동 실험 노트
+    MR 환경 안에서 저장된 노트의 내용은 웹으로 연동되어 데스크톱 웹, 모바일 웹 환경에서도 다시 볼 수 있습니다.
+EN  Connected Web Experiment Notes
+    Notes saved in MR sync to the web for review on desktop or mobile.
+
+01:34.000 - 01:42.100
+KO  교육자용 대시보드
+    교육자는 대시보드를 통해 학생들의 진행 상황과 어려워한 개념, 규칙을 어떻게 수정해 나갔는지 확인할 수 있습니다.
+EN  Educator Dashboard
+    Educators can see student progress, difficult concepts, and how each rule evolved.
+
+01:43.500 - 01:46.900
+KO  실물 키트 연동
+    웹 실험 노트를 통해 직접 3D 프린팅으로 제작할 수 있는 실물 로봇 키트와도 연동이 가능합니다.
+EN  Physical Kit Integration
+    The web experiment notes connect to a physical robot kit made with 3D-printed parts.
+
+01:47.000 - 01:49.800
+KO  실물 키트 연동
+    학생은 이해한 내용을 실제 로봇에서 어떻게 작동하는지 확인할 수 있습니다.
+EN  Physical Kit Integration
+    Students can test how what they learned works on a real robot.
+
+Notes
+- The source video has no separate subtitle track. The Korean subtitles are burned into the image.
+- The SRT timings were matched to the visible title and description cards at approximately 0.5-second precision.
+- Short gaps without explanatory subtitle cards are intentionally left blank.
