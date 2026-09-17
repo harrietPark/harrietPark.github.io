@@ -127,6 +127,7 @@ a:hover, a:active {
     color: inherit;
 }
 .project-thumbnail {
+    position: relative;
     width: 200px;
     max-width: 100%;
     aspect-ratio: 1 / 1;
@@ -145,6 +146,25 @@ a:hover, a:active {
     object-position: center;
 }
 
+.award-mark {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    z-index: 1;
+    width: 34px;
+    height: 32px;
+    pointer-events: none;
+}
+
+.award-mark::before {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: linear-gradient(180deg, #FFF7A8 0%, #FFD51F 48%, #F2A900 100%);
+    -webkit-mask: url('../img/award-trophy-transparent.png') center / contain no-repeat;
+    mask: url('../img/award-trophy-transparent.png') center / contain no-repeat;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.68));
+}
 
 .project-thumbnail:hover,
 .grid-item:active .project-thumbnail {
@@ -175,15 +195,6 @@ a:hover, a:active {
     color: #333;
     line-height: 1.35;
     margin: 0;
-}
-
-.project-description {
-    max-width: 240px;
-    margin: 7px 0 0;
-    color: #555;
-    font-size: 13px;
-    line-height: 1.4;
-    text-align: center;
 }
 
 footer {
