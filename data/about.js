@@ -164,10 +164,15 @@ const ABOUT_DATA = {
             ]
         },
         {
-            title: "XRCC 2026 Runner-Up",
             year: "2026",
             detail: "PinPoint",
-            detailUrl: "PinPoint.html"
+            detailUrl: "PinPoint.html",
+            links: [
+                {
+                    label: "XRCC 2026 Runner-Up ↗",
+                    url: "https://www.xrcc.events/"
+                }
+            ]
         },
         {
             year: "2025-2026",
@@ -193,9 +198,14 @@ const ABOUT_DATA = {
             year: "2024"
         },
         {
-            title: "2024 Metaverse Developer Contest",
             detail: "Baobab Diary",
-            detailUrl: "BaobabDiary.html"
+            detailUrl: "BaobabDiary.html",
+            links: [
+                {
+                    label: "2024 Metaverse Developer Contest ↗",
+                    url: "https://www.metaversedev.kr/contest-award/projects/75fa530f-fe0f-4475-ab63-e5018cd02548"
+                }
+            ]
         },
         {
             title: "Goldsmiths-LASALLE Partnership Innovation",
