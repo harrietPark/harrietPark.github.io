@@ -139,6 +139,17 @@ const ABOUT_DATA = {
     awards: [
         {
             year: "2026",
+            detail: "RoboLab",
+            detailUrl: "RoboLab.html",
+            links: [
+                {
+                    label: "2026 AI & XR Service Developer Competition ↗",
+                    url: "https://www.metaversedev.kr/board_notice/show/0cc15231-05b4-4000-b804-88595dbc4a96"
+                }
+            ]
+        },
+        {
+            year: "2026",
             detail: "Hey :)",
             detailUrl: "Hey.html",
             links: [
