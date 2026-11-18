@@ -1,0 +1,153 @@
+/* Reuse the case-study type, spacing, and page width from SemanticHighlight.css. */
+.roomsmiths-agents {
+    display: grid;
+    gap: 28px;
+    margin-top: 32px;
+}
+
+.roomsmiths-agent {
+    display: grid;
+    grid-template-columns: 144px minmax(0, 1fr);
+    gap: 28px;
+    align-items: center;
+}
+
+.roomsmiths-agent-avatar {
+    position: relative;
+    width: 144px;
+    height: 144px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #f7f7f7;
+}
+
+.roomsmiths-agent-avatar img {
+    position: absolute;
+    width: 400px;
+    max-width: none;
+    height: 400px;
+}
+
+.roomsmiths-agent--spark img { left: -252px; top: -99px; }
+.roomsmiths-agent--maker img { left: -131px; top: -85px; }
+.roomsmiths-agent--fixer img { left: -16px; top: -106px; clip-path: inset(0 64% 0 0); }
+
+.roomsmiths-agent-bubble {
+    position: relative;
+    padding: 24px 28px;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    background: #fff;
+}
+
+.roomsmiths-agent-bubble::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-left: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.roomsmiths-agent--maker {
+    grid-template-columns: minmax(0, 1fr) 144px;
+}
+
+.roomsmiths-agent--maker .roomsmiths-agent-avatar { grid-column: 2; grid-row: 1; }
+.roomsmiths-agent--maker .roomsmiths-agent-bubble { grid-column: 1; grid-row: 1; }
+.roomsmiths-agent--maker .roomsmiths-agent-bubble::before {
+    left: auto;
+    right: -7px;
+    transform: translateY(-50%) rotate(225deg);
+}
+
+.roomsmiths-page .roomsmiths-agent-bubble h3 {
+    margin: 0 0 12px;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.roomsmiths-page .roomsmiths-agent-bubble p { margin: 0 0 14px; }
+.roomsmiths-agent-tools { font-size: 14px; line-height: 1.5; color: #666; }
+
+.roomsmiths-journey { margin-top: 32px; }
+.roomsmiths-journey-step {
+    display: grid;
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 24px;
+    padding: 32px 0 40px;
+    border-top: 1px solid #e8e8e8;
+}
+.roomsmiths-journey-step:first-child { padding-top: 0; border-top: 0; }
+.roomsmiths-journey-step:last-child { padding-bottom: 0; }
+.roomsmiths-journey-number { padding-top: 5px; font-size: 14px; line-height: 1.4; color: #777; }
+.roomsmiths-journey-content { min-width: 0; }
+.roomsmiths-page .roomsmiths-journey-content h3 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+}
+.roomsmiths-journey-content > p { max-width: 72ch; }
+.roomsmiths-demo {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: #f3f3f3;
+    border-radius: 4px;
+    object-fit: contain;
+}
+.roomsmiths-flow-figure { min-width: 0; margin: 0; }
+.roomsmiths-flow-figure img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 4px; }
+.roomsmiths-flow-figure figcaption { margin-top: 10px; font-size: 14px; line-height: 1.5; color: #666; }
+.roomsmiths-media-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.roomsmiths-page .roomsmiths-export-link { margin-top: 20px; }
+.roomsmiths-page .roomsmiths-offline-note { margin-top: 36px; }
+
+.roomsmiths-system-map { display: grid; grid-template-columns: 1.1fr 1fr; gap: 20px; margin: 28px 0 40px; }
+.roomsmiths-system-client, .roomsmiths-system-web, .roomsmiths-system-services > div { padding: 24px; border: 1px solid #e1e1e1; border-radius: 4px; }
+.roomsmiths-system-client { background: #fafafa; }
+.roomsmiths-system-services { display: grid; gap: 20px; }
+.roomsmiths-system-web, .roomsmiths-system-map figcaption { grid-column: 1 / -1; }
+.roomsmiths-system-web { background: #fafafa; }
+.roomsmiths-system-label { display: block; margin-bottom: 10px; font-size: 12px; font-weight: 600; line-height: 1.4; text-transform: uppercase; letter-spacing: 0.04em; color: #777; }
+.roomsmiths-page .roomsmiths-system-map h3 { margin: 0 0 12px; font-size: 17px; font-style: normal; }
+.roomsmiths-page .roomsmiths-system-map p, .roomsmiths-system-map dd { font-size: 14px; line-height: 1.6; margin: 0; }
+.roomsmiths-system-map dl { display: grid; gap: 20px; margin: 20px 0 0; }
+.roomsmiths-system-map dt { margin-bottom: 4px; font-size: 14px; font-weight: 600; line-height: 1.4; }
+.roomsmiths-system-map dd { color: #555; }
+.roomsmiths-system-map figcaption { font-size: 14px; line-height: 1.5; color: #666; }
+.roomsmiths-page #system-design > h3 { margin-top: 32px; font-style: normal; }
+.roomsmiths-system-notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.roomsmiths-page .roomsmiths-system-notes h3 { margin: 0 0 10px; font-style: normal; }
+.roomsmiths-page .roomsmiths-system-notes p { margin: 0; }
+
+@media (max-width: 700px) {
+    .roomsmiths-media-pair, .roomsmiths-system-map, .roomsmiths-system-notes { grid-template-columns: 1fr; }
+    .roomsmiths-journey-step { grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 28px 0 32px; }
+    .roomsmiths-page .roomsmiths-journey-content h3 { font-size: 20px; }
+    .roomsmiths-agent, .roomsmiths-agent--maker { grid-template-columns: 88px minmax(0, 1fr); gap: 16px; }
+    .roomsmiths-agent-avatar { width: 88px; height: 88px; }
+    .roomsmiths-agent-avatar img { transform: scale(0.61); transform-origin: 0 0; }
+    .roomsmiths-agent--spark img { left: -154px; top: -60px; }
+    .roomsmiths-agent--maker img { left: -80px; top: -52px; }
+    .roomsmiths-agent--fixer img { left: -10px; top: -65px; }
+    .roomsmiths-agent--maker .roomsmiths-agent-avatar { grid-column: 1; }
+    .roomsmiths-agent--maker .roomsmiths-agent-bubble { grid-column: 2; }
+    .roomsmiths-agent--maker .roomsmiths-agent-bubble::before { left: -7px; right: auto; transform: translateY(-50%) rotate(45deg); }
+    .roomsmiths-agent-bubble { padding: 18px; border-radius: 14px; }
+}
+@media (max-width: 440px) {
+    .roomsmiths-agent, .roomsmiths-agent--maker { grid-template-columns: 1fr; gap: 12px; }
+    .roomsmiths-agent--maker .roomsmiths-agent-avatar { grid-column: 1; grid-row: auto; }
+    .roomsmiths-agent--maker .roomsmiths-agent-bubble { grid-column: 1; grid-row: auto; }
+    .roomsmiths-agent-bubble::before, .roomsmiths-agent--maker .roomsmiths-agent-bubble::before {
+        top: -7px; left: 36px; border: 0; border-left: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; transform: rotate(45deg);
+    }
+}
